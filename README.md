@@ -1,42 +1,37 @@
 # SAP Datasphere
 
 # Description
-This is my journey of learning the SAP Datasphere product.
+This repository is an introduction of SAP Datasphere, a data warehouse platform built on the SAP Business Technology Platform (SAP BTP).
 
 # Overview
-Two years ago, SAP Datasphere was introduced. I was tasked with exploring its features to determine how we could leverage it to address the pain points within our existing SAP BI solution, which relies on ABAP CDS views in the S/4HANA called embedded BW solution.
+Two years ago, SAP Datasphere was introduced. I was tasked with exploring its features to determine how we could leverage it to address the pain points within our existing SAP BI solution, which relies heavily on ABAP CDS views created in the S/4HANA called embedded analytics.
 
-I delved into the product and developed Proof of Concepts (POCs). Unfortunately, I did not keep detailed records. Now that I have some time, I want to revisit this product and document my insights and thoughts here.
+I delved into SAP Datasphere and developed some Proof of Concepts (POCs). Unfortunately, I did not keep the detailed records at that time. Since I have some time now, I revisited the tool and documented my insights and thoughts here. Hope this documentation will help you gain a better understanding of SAP Datasphere.
 
-The product continues to evolve, and my understanding may not be entirely accurate. However, I hope this documentation will help you gain a better understanding of SAP Datasphere.
 
 # Requirements
 You can get 30days free trial version of SAP Datashpere.
+[Here](https://www.sap.com/products/technology-platform/datasphere/trial.html)
 
+# Contents
 
-# 1. Getting Started
-I alwasy want to ask some questions in learing something new.
+SAP has already ownered many good BI products and solutions E.g.
 
-Q1:
-SAP has ownered many good BI products and solutions E.g.
-On-premises- BW(BWonHANA or BW/4HANA), HANA, BusniessOjbect<BR>
-On-cloud - HANA Cloud, Data Warehouse Cloud, SAC. S/4HANA Cloud
+On-premises: BW(BWonHANA or BW/4HANA), HANA, BusniessOjbect
 
-Who does SAP want to launch a new BI product? And why does SAP name it as SAP Fabric? At the meaning time, Microsfot has released its Data Fabric product in Azure? Are they similar? 
+On-cloud: DWC, HANA Cloud, SAC
 
-A1:
-Yes, they are similar. They both try to combine the data from the traditional BW system with other data, structured and unstructured, from the 3rd party systems either on-Promise or on-Cloud.
+Datasphere is very similar to DWC. But it is an upgrade version of DWC, called SAP data fabric. Like Micrsoft Fabric (formerly known as Azure Synapse Analytics), it offer similar capabilities for integrating, managing, and analyzing data from various sources.
 
-In retail business, we want to analyze the relationship between the store traffic data and the marketing campaign data(SAP CRM). We have the devliery date in SAP ERP(SD) and also want to confirm the goods arrival time by referrring to the travel information. We want to collect the realtime data from the production lines and adjust the production plan in SAP ERP system. We want to do data analysis or machine learning on both SAP data and other data.
+Business Scenarios:
 
-The Data Fabric is the product to meet the requirments in these buiness senarios. We can see the features like stream, python, data science(ML/AI) and pipelines are supported in the cloud product.
+👉 In retail business, we want to analyze the relationship between the store traffic data(3rd party) and the marketing campaign data(SAP CRM). 
 
-If we are going to go for SAP Datasphere, we probably need to ask the following questions:
+👉 We have the devliery date in SAP(ERP/SD) system. We also want to confirm the goods arrival time by referrring to the travel information. 
 
-- Are we going to move to cloud?
-- How much business data are in SAP systems currently?
-- Do we need to ingest data from non-SAP system? If yes, what is the percentage?
-- What benefit can it (data combination) bring to the business? 
+👉 We collect the stream data from the production lines and try to adjust the production plan in SAP(PP) system. 
 
-# 2 SAP Datashpere
+👉 We plan to perform the machine learning.
 
+To suport the business requirements, SAP Datashere provides the following features 
+1. 
