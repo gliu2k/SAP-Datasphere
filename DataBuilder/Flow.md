@@ -8,7 +8,7 @@ Copy the data from one or multiple (remote) source systems into datasphere(local
 
 It is used to copy the data first in a limited time window.
 
-**Here is a link to an excellent series on Replication Flow.** [Blog](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-series-part-1-overview/ba-p/13581472)
+Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-series-part-1-overview/ba-p/13581472) on Replication Flow.
 
 
 # 2. Data Flow 
@@ -43,8 +43,16 @@ It is an ETL similiar to BW transformation but is using the **VIEW** to convert 
 
 ![alt text](/DataBuilder/images/Flow_GV2.png?raw=true)
 
-# 4. Intelligent Lookups
+# 4. Task Chains
 
-This feature is similar to **Fuzzy** join in **Azure Fabric**. You can find the datails about it in the below link.
+It is similar to BW Process Chain. 
 
-[Blog]( https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-intelligent-lookup-series-what-is-a-fuzzy-match-and-why/ba-p/13558732)
+![alt text](/DataBuilder/images/Flow_TaskChains.png?raw=true)
+
+# 5. Intelligent Lookups
+
+This feature is similar to **Fuzzy** join in **Azure Fabric**. You can find the datails about it in the [blog]( https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-intelligent-lookup-series-what-is-a-fuzzy-match-and-why/ba-p/13558732).
+
+![alt text](/DataBuilder/images/Flow_InetLookups.png?raw=true)
+
+
