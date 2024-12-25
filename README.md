@@ -1,7 +1,9 @@
 # SAP Datasphere
 
+
 # Description
 This repository is an introduction of SAP Datasphere, a data warehouse platform built on the SAP Business Technology Platform (SAP BTP).
+
 
 # Overview
 Two years ago, SAP Datasphere was introduced. I was tasked with exploring its features to determine how we could leverage it to address the pain points within our existing SAP BI solution, which relies heavily on ABAP CDS views created in the S/4HANA called embedded analytics.
@@ -32,7 +34,7 @@ SAP Datasphere is very similar to SAP DWC. But it is an upgrade version of SAP D
 👉 We collect the stream data from the production lines and try to adjust the production plan in SAP(PP) system. 
 
 👉 We plan to perform the machine learning.
-<BR/><BR/>
+
 To suport the business requirements, SAP Datashere provides the following features 
 
 ### 1. Administration
