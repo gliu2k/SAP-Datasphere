@@ -44,16 +44,17 @@ There are two types of views, SQL View and Graphics View, in datasphere. Both ar
 It supports SQL and SQLScript(**table function**). The latter is the same as the table function used in AMDP or ABAP CDS View.
 
 ### Graphic View
+It is similar to the HANA Calculation View. It is optimized and has better performance.
+
 ![alt text](/DataBuilder/images/NewGV.png?raw=true)
 
-It is similar to the HANA Calcaultion View. It is optimized and has better performance.
-
--	It has "semamtic type" as well. And, only the fact one can be used in the Analytic Model.
--	The "attributes" are the same as "columns" defined in HANA view
-- The attribute can have "association" too.
--	It has "Input Parameter", as same as in HANA view. It should be pushed to lower node in order to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
-- Join, UNION, Filter and projection(show/hide columns), Aggretion Node are the same as in HANA view
-- Data preview is avaialbe in each node.
+> [!IMPORTANT]
+>-	It has "semamtic type" as well. And, only the fact one can be used in the Analytic Model.
+>-	The "attributes" are the same as "columns" defined in HANA view
+>-  The attribute can have "association" too.
+>-	It has "Input Parameter", as same as in HANA view. It should be pushed to lower node in order to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
+>-  Join, UNION, Filter and projection(show/hide columns), Aggretion Node are the same as in HANA view.
+>-  Data preview is avaialbe in each node.
 
 ## ER Model
 It is used to display the detailed information in the object so that we can have a good understanding about the design of a model.
@@ -63,8 +64,7 @@ It is used to display the detailed information in the object so that we can have
 
 ## Analytic Models
 
-![alt text](/images/NewGV.png?raw=true)
-
+![alt text](/DataBuilder/images/NewGV.png?raw=true)
 
 [Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
 
@@ -74,6 +74,8 @@ It is used to display the detailed information in the object so that we can have
 ## Data Access
 ![alt text](/images/NewGV.png?raw=true)
 
+[Privieage]()
+[datga Access ]https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353
 
 
 
