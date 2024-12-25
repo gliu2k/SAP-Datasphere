@@ -1,4 +1,4 @@
-# Data Builder
+# Data Builder - Model
 
 In fact, it contains not only the model components but also the ETL elements. In this section, I will focus on the data modeling part.
 
