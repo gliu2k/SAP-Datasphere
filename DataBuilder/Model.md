@@ -76,6 +76,12 @@ This is a feature that allows to load the snapshot of the view data into the mem
 
 ![alt text](/DataBuilder/images/GV_Analyzer2.png?raw=true)
 
+#### 2.2.4. Data Access Control
+
+It is to apply the row-level data access to the data,  similarly to the **Analytic Privileges** in SAP HANA. 
+
+![alt text](/DataBuilder/images/GV_DCA.png?raw=true)
+
 ## 3. ER Models
 It provides a detailed view about how the model is designed.
 
