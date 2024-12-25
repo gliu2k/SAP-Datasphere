@@ -11,30 +11,30 @@ In fact, it contains not only the model components but also the ETL elements. In
 You can create the local tables, generate a local table by importing CSV file, or import remote tables. 
 
 > [!NOTE]
-> Remote tables: virtual table as in HANA-SDA or the “link”, as in **Azure Fabirc**, which maps to the physical object locating in the remote system.
+> Remote tables: virtual table as in HANA-SDA or the “link”, as in **Azure Fabric**, which maps to the physical object locating in the remote system.
 
 
 ### 1.1. Semantic Usage:
 ![alt text](/DataBuilder/images/NewTable.png?raw=true)
 
 > [!IMPORTANT] 
-> -	**Fact**: Transaction Data and the only type can be used in creating Analyitc Model
-> -	**Dimension/Text/Hiearchy**: master data and are used in the assiciation of fact, view or other dimension tables 
+> -	**Fact**: Transaction Data and the only type can be used in creating Analytic Model
+> -	**Dimension/Text/Hierarchy**: master data and are used in the association of fact, view or other dimension tables 
 
-### 1.2. Assocation: 
-![alt text](/DataBuilder/images/TableAssoication.png?raw=true)
-Define the attributes/text of the data field
+### 1.2. Association: 
+![alt text](/DataBuilder/images/TableAssociation.png?raw=true)
+Define the attributes/text of the field
 
 ### 1.3. Delta Capture
 ![alt text](/DataBuilder/images/TableDelta.png?raw=true)
 
 > [!IMPORTANT] 
-> - Two local tables, the active and the detla table("technicalname_Delta") are generated when the “Delat Capture” flag is turned on. 
-> - Two additional fields, "Change Type" and "Change Datae" are included in the "delta" table,. The "Change Type" can have value of "I"(initial), "D"(delete) and "U"(updated) in the same record after certain acitivy take place.
+> - Two local tables, the active and the detla table("Technicalname_Delta") are generated when the “Delat Capture” flag is turned on. 
+> - Two additional fields, "Change Type" and "Change Datae" are included in the "delta" table. The "Change Type" can have value of "I"(initial), "D"(delete) and "U"(updated) in the same record after certain activity takes place.
 
 
 ## 2. Views
-There are two types of views, SQL View and Graphics View, in datasphere. Both are the virtual objects. 
+There are two types of views, SQL View and Graphics View, in datasphere. Both are virtual objects. 
 
 ![alt text](/DataBuilder/images/Views.png?raw=true)
 
@@ -47,15 +47,15 @@ It is similar to the HANA Calculation View. Graphic View is optimized and has be
 ![alt text](/DataBuilder/images/NewGV.png?raw=true)
 
 > [!IMPORTANT]
->-	It has "semamtic type" as well. And, only the fact one can be used in the Analytic Model.
+>-	It has "semantic type" as well. And, only the fact one can be used in the Analytic Model.
 >-	The "attributes" are the same as "columns" defined in HANA view
 >-  The attribute can have "association" too.
->-	It has "Input Parameter", as same as in HANA view. It should be pushed to lower node in order to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
->-  Join, Union, Filter, Projection(show/hide columns), Aggretion nodes are the same as in HANA Calcuation View(Graphic).
->-  Data preview is avaialbe in each node.
+>-	It has "Input Parameter", as same as in HANA view. It should be pushed to lower node to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
+>-  Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes are the same as in HANA Calculation View(Graphic).
+>-  Data preview is available in each node.
 
 ## 3. ER Models
-It provides the detailed view about how the model is designed.
+It provides a detailed view about how the model is designed.
 
 ![alt text](/DataBuilder/images/ERModel.png?raw=true)
 
@@ -65,20 +65,20 @@ It provides the detailed view about how the model is designed.
 ![alt text](/DataBuilder/images/NewAM.png?raw=true)
 
 > [!Note]
->- We need to create the association in the fact talbe/view to bring in the attributes of the dimension.
+>- We need to create the association in the fact table/view to bring in the attributes of the dimension.
 >- We can create variables to map to the "input parameter" created in the graphic view.
 
 **This is a good article about Analytic Model.**
 - [Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
 
-## 5. Currency Conviersion Views
-![alt text](/images/NewGV.png?raw=true)
+## 5. Currency Conversion Views
+![alt text](/DataBuilder/images/Others.png?raw=true)
 
 <pre>🚩 You can find the "HowTo" steps in the below link.</pre>
 - [Howto](https://community.sap.com/t5/technology-blogs-by-members/currency-translation-in-sap-datasphere/ba-p/13688008)
 
 ## 6. Data Access Controls
-<pre>🚩 This feature is not available in the trial version. You can find the detailed informaiton in the below link.</pre>
+<pre>🚩 This feature is not available in the trial version. You can find the detailed information in the below link.</pre>
 - [Data Access Controls](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)
 
 <pre>The below link is the guide of the access control to the datasphere objects.</pre>
