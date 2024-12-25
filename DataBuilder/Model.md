@@ -65,14 +65,14 @@ Create a new GV using the previourly GV and add the associations (as in the loca
 #### 2.2.2. Data Persistence
 This is a feature that allows to load the snapshot of the view data into the memory to achieve the semi-realtime fuctionality and improve the query performance. It can be run onetime or by schculing jobs. 
 
-![alt text](/DataBuilder/images/NewGV_Persistence.png?raw=true)
+![alt text](/DataBuilder/images/GV_Persistence.png?raw=true)
 
 #### 2.2.2. View Analyzer
 
-- ![alt text](/DataBuilder/images/GV_Analyzer.png?raw=true)
+![alt text](/DataBuilder/images/GV_Analyzer.png?raw=true)
 
-> Importnace
-> This feature is similiar to PlanViz tool in HANA. It allows to analyze the SQL Execution Plan and understand the runtime and the reocrds selected in each node. In ddtionaion, it can teil how much memory the view may consume.
+> [!IMPORTANT] 
+> This feature is similiar to PlanViz tool in HANA. It allows to analyze the SQL Execution Plan and to understand the query runtime and memory consumption.
 
 
 ## 3. ER Models
