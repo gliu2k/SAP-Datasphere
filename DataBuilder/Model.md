@@ -67,13 +67,14 @@ This is a feature that allows to load the snapshot of the view data into the mem
 
 ![alt text](/DataBuilder/images/GV_Persistence.png?raw=true)
 
-#### 2.2.2. View Analyzer
-
-![alt text](/DataBuilder/images/GV_Analyzer.png?raw=true)
+#### 2.2.3. View Analyzer
 
 > [!IMPORTANT] 
 > This feature is similiar to PlanViz tool in HANA. It allows to analyze the SQL Execution Plan and to understand the query runtime and memory consumption.
 
+![alt text](/DataBuilder/images/GV_Analyzer1.png?raw=true)
+
+![alt text](/DataBuilder/images/GV_Analyzer2.png?raw=true)
 
 ## 3. ER Models
 It provides a detailed view about how the model is designed.
