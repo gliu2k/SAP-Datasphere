@@ -4,7 +4,7 @@ In fact, it contains not only the model components but also the ETL elements.In 
 ![alt text](/DataBuilder/images/DataBuilder.png?raw=true)
 
 
-## Tables
+## 1. Tables
 
 ![alt text](/DataBuilder/images/Tables.png?raw=true)
 
@@ -14,20 +14,20 @@ You can create the local tables, generate a local table by importing CSV file, o
 > Remote tables: virtual table as in HANA-SDA or the “link”, as in **Azure Fabirc**, which maps to the physical object locating in the remote system.
 
 
-### 1. Semantic Usage:
+### 1.1. Semantic Usage:
 ![alt text](/DataBuilder/images/NewTable.png?raw=true)
 
 > [!IMPORTANT] 
 > -	**Fact**: Transaction Data and the only type can be used in creating Analyitc Model
 > -	**Dimension/Text/Hiearchy**: master data and are used in the assiciation of fact, view or other dimension tables 
 
-### 2. Assocation: 
+### 1.2. Assocation: 
 ![alt text](/DataBuilder/images/TableAssoication.png?raw=true)
 Define the attributes/text of the data field
 
 
 
-### 3. Delta Capture
+### 1.3. Delta Capture
 ![alt text](/DataBuilder/images/TableDelta.png?raw=true)
 
 > [!IMPORTANT] 
@@ -35,15 +35,15 @@ Define the attributes/text of the data field
 > - Two additional fields, "Change Type" and "Change Datae" are included in the "delta" table,. The "Change Type" can have value of "I"(initial), "D"(delete) and "U"(updated) in the same record after certain acitivy take place.
 
 
-## Views
+## 2. Views
 There are two types of views, SQL View and Graphics View, in datasphere. Both are the virtual objects. 
 
 ![alt text](/DataBuilder/images/Views.png?raw=true)
 
-### SQL View
+### 2.1 SQL View
 It supports SQL and SQLScript(**table function**). The latter is the same as the table function used in AMDP or ABAP CDS View.
 
-### Graphic View
+### 2.2.Graphic View
 It is similar to the HANA Calculation View. It is optimized and has better performance.
 
 ![alt text](/DataBuilder/images/NewGV.png?raw=true)
@@ -56,7 +56,7 @@ It is similar to the HANA Calculation View. It is optimized and has better perfo
 >-  Join, UNION, Filter and projection(show/hide columns), Aggretion Node are the same as in HANA view.
 >-  Data preview is avaialbe in each node.
 
-## ER Model
+## 2.3 ER Model
 It is used to display the detailed information in the object so that we can have a good understanding about the design of a model.
 
 ![alt text](/DataBuilder/images/ERModel.png?raw=true)
