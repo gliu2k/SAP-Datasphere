@@ -78,10 +78,9 @@ We can create variables to map to the parameter created in the fact view.
 ![alt text](/images/NewGV.png?raw=true)
 
 ## 6. Data Access Control
-![alt text](/images/NewGV.png?raw=true)
+<pre>🚩 This feature is not available in the trial version. You can find the detailed informaiton in the below link.</pre>
 
-[Privieage]
-[datga Access ]https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353
+- [Data Access Controls](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)
 
-
-
+<pre>The below link is the guide of the access to the datasphere objects.</pre>
+- [Privileges and Permissions](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/d7350c6823a14733a7a5727bad8371aa.html)
