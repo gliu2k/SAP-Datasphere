@@ -76,11 +76,12 @@ This is a feature that allows to load the snapshot of the view data into the mem
 
 ![alt text](/DataBuilder/images/GV_Analyzer2.png?raw=true)
 
-In the analysis result(available in "Data Integration Monitor"), you can find the execution infirmation. 
-- Run Time
-- Memory Consumption
-- Statistics (processed records in each node)
-- 
+#### In the analysis result, which is available in "Data Integration Monitor", you can find the execution information. 
+
+  -  Run Time
+  -  Memory Consumption
+  -  Statistics (processed records in each node)
+
 ![alt text](/DataBuilder/images/GV_Analyzer3.png?raw=true)
 
 #### 2.2.4. Data Access Controls
