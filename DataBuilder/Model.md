@@ -1,62 +1,72 @@
 # Data Builder
-![alt text](/images/1.png?raw=true)
 
-In fact, it contains not only the models componetes but also ETL compoenets.In this section, I will focus on the data modeling part.
+In fact, it contains not only the model components but also the ETL elements.In this section, I will focus on the data modeling part.
+![alt text](/DataBuilder/images/DataBuilder.png?raw=true)
+
 
 ## Tables
 
-![alt text](/images/Tables.png?raw=true)
+![alt text](/DataBuilder/images/Tables.png?raw=true)
 
-You can create the local tables, or create a local table by importing from CSV file, or create the remote tables. 
+You can create the local tables, generate a local table by importing CSV file, or import remote tables. 
 
-In creating the local table, you need to speciy the sematic types which include
-
-Remote tables: it is like HANA-SDA or the “link” concept in Azure Fabirc. It is a virtual object which maps to the physical object located in the remote system. E.g. S/4HANA(on premise)
-
- 
-You can create local tables (or create from CSV file) or import remote tables. 
+> [!NOTE]
+> Remote tables: virtual table as in HANA-SDA or the “link”, as in **Azure Fabirc**, which maps to the physical object locating in the remote system.
 
 
-### Semantic Usage:
-![alt text](/images/NewTable.png?raw=true)
+### 1. Semantic Usage:
+![alt text](/DataBuilder/images/NewTable.png?raw=true)
 
--	Fact: Transaction Data, used for Analyitcs Model
--	Dimension/Text/Hiearchy: master data, used for the assocication 
+> [!IMPORTANT] 
+> -	**Fact**: Transaction Data and the only type can be used in creating Analyitc Model
+> -	**Dimension/Text/Hiearchy**: master data and are used in the assiciation of fact, view or other dimension tables 
 
-### Assocation: defined the attributes of a dimension table
+### 2. Assocation: 
+![alt text](/DataBuilder/images/TableAssoication.png?raw=true)
+Define the attributes/text of the data field
 
 
 
-### Delta Capture
-![alt text](/images/TableDelta.png?raw=true)
-Two tables will be genated when the “Delat Caure” flag is turned on.
+### 3. Delta Capture
+![alt text](/DataBuilder/images/TableDelta.png?raw=true)
 
-Comparing to the active table, additional two fields are added into the delta tables. The change type can be I (initial), D(delete), U(updated) in the same records after ceterain acitivtiies take place.
-
+> [!IMPORTANT] 
+> - Two local tables, the active and the detla table("technicalname_Delta") are generated when the “Delat Capture” flag is turned on. 
+> - Two additional fields, "Change Type" and "Change Datae" are included in the "delta" table,. The "Change Type" can have value of "I"(initial), "D"(delete) and "U"(updated) in the same record after certain acitivy take place.
 
 
 ## Views
-![alt text](/images/Views.png?raw=true)
+There are two types of views, SQL View and Graphics View, in datasphere. Both are the virtual objects. 
+
+![alt text](/DataBuilder/images/Views.png?raw=true)
 
 ### SQL View
+It supports SQL and SQLScript(**table function**). The latter is the same as the table function used in AMDP or ABAP CDS View.
 
-### Graphics View
-![alt text](/images/NewGV.png?raw=true)
+### Graphic View
+![alt text](/DataBuilder/images/NewGV.png?raw=true)
 
-Graphics View – Simparly to HAAN Calcaultion View
-1.	It is sematic type as well. Ony the fct can be used in the Anslyistics
-2.	Attributes is the same to columns in HANA view
-3.	Import Parameters, same as in HANA view. You can push it to low node to improve performance and then map it to the variables crated in the analytic model
-Join, Filter and projection(to show/hide colums) , Aggretion Node.
+It is similar to the HANA Calcaultion View. It is optimized and has better performance.
 
+-	It has "semamtic type" as well. And, only the fact one can be used in the Analytic Model.
+-	The "attributes" are the same as "columns" defined in HANA view
+- The attribute can have "association" too.
+-	It has "Input Parameter", as same as in HANA view. It should be pushed to lower node in order to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
+- Join, UNION, Filter and projection(show/hide columns), Aggretion Node are the same as in HANA view
+- Data preview is avaialbe in each node.
 
-## ER Models
-![alt text](/images/NewGV.png?raw=true)
+## ER Model
+It is used to display the detailed information in the object so that we can have a good understanding about the design of a model.
 
+![alt text](/DataBuilder/images/ERModel.png?raw=true)
 
 
 ## Analytic Models
+
 ![alt text](/images/NewGV.png?raw=true)
+
+
+[Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
 
 ## Currency Conviersion View
 ![alt text](/images/NewGV.png?raw=true)
