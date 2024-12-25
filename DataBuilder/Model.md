@@ -25,8 +25,6 @@ You can create the local tables, generate a local table by importing CSV file, o
 ![alt text](/DataBuilder/images/TableAssoication.png?raw=true)
 Define the attributes/text of the data field
 
-
-
 ### 1.3. Delta Capture
 ![alt text](/DataBuilder/images/TableDelta.png?raw=true)
 
@@ -40,10 +38,10 @@ There are two types of views, SQL View and Graphics View, in datasphere. Both ar
 
 ![alt text](/DataBuilder/images/Views.png?raw=true)
 
-### 2.1 SQL View
+### 2.1. SQL View
 It supports SQL and SQLScript(**table function**). The latter is the same as the table function used in AMDP or ABAP CDS View.
 
-### 2.2.Graphic View
+### 2.2. Graphic View
 It is similar to the HANA Calculation View. It is optimized and has better performance.
 
 ![alt text](/DataBuilder/images/NewGV.png?raw=true)
@@ -57,30 +55,30 @@ It is similar to the HANA Calculation View. It is optimized and has better perfo
 >-  Data preview is avaialbe in each node.
 
 ## 3. ER Models
-It provides the detailed information so that we can have a good view about how the model is designed.
+It provides the detailed view about how the model is designed.
 
 ![alt text](/DataBuilder/images/ERModel.png?raw=true)
-
-
-We need to crate the assicaotn in the fact object to bring in its attributes. Like prduct
-
-We can create variables to map to the parameter created in the fact view.
 
 
 ## 4. Analytic Models
 
 ![alt text](/DataBuilder/images/NewGV.png?raw=true)
 
+> [!Note]
+>- We need to create the association in the fact talbe/view to bring in the attributes of the dimension.
+>- We can create variables to map to the "input parameter" created in the graphic view.
 
 [Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
 
-## 5. Currency Conviersion View
+## 5. Currency Conviersion Views
 ![alt text](/images/NewGV.png?raw=true)
 
-## 6. Data Access Control
-<pre>🚩 This feature is not available in the trial version. You can find the detailed informaiton in the below link.</pre>
+<pre>🚩 You can find the "HowTo" steps in the below link.</pre>
+- [Howto](https://community.sap.com/t5/technology-blogs-by-members/currency-translation-in-sap-datasphere/ba-p/13688008)
 
+## 6. Data Access Controls
+<pre>🚩 This feature is not available in the trial version. You can find the detailed informaiton in the below link.</pre>
 - [Data Access Controls](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)
 
-<pre>The below link is the guide of the access to the datasphere objects.</pre>
+<pre>The below link is the guide of the access control to the datasphere objects.</pre>
 - [Privileges and Permissions](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/d7350c6823a14733a7a5727bad8371aa.html)
