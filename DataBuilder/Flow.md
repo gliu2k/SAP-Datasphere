@@ -22,12 +22,12 @@ Load and transform (Join, Union, Projection, Aggregation and **Python** script) 
 
 # 3. Transformation Flow 
 
-It is an ETL and is similiar to BW transformation but is using the **VIEW** features to convert the data.
+It is an ETL similiar to BW transformation but is using the **VIEW** to convert the data.
 
 ![alt text](/DataBuilder/images/Flow_TF1.png?raw=true)
 
 > [!IMPORTANT] 
-> - Support delta loading (**ONLY** load the changed data in the source table. We have covered it in the databuilder section)  
+> - Support **delta** loading (**ONLY** load the changed data in the source table. It is covered in the databuilder section)  
 > - Easy for trouble-shooting if the source ocntans bad data
 > - Use **upsert** method, which means we don't need to clear the target table
 
@@ -45,6 +45,6 @@ It is an ETL and is similiar to BW transformation but is using the **VIEW** feat
 
 # 4. Intelligent Lookups
 
-This is a new feature. It is similar to **Fuzzy** join in Azure Fabric. You can find the datails in the below link.
+This feature is similar to **Fuzzy** join in **Azure Fabric**. You can find the datails about it in the below link.
 
 [Blog]( https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-intelligent-lookup-series-what-is-a-fuzzy-match-and-why/ba-p/13558732)
