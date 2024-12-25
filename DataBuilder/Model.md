@@ -1,6 +1,6 @@
 # Data Builder
 
-In fact, it contains not only the model components but also the ETL elements.In this section, I will focus on the data modeling part in here.
+In fact, it contains not only the model components but also the ETL elements. In this section, I will focus on the data modeling part.
 ![alt text](/DataBuilder/images/DataBuilder.png?raw=true)
 
 
@@ -42,7 +42,7 @@ There are two types of views, SQL View and Graphics View, in datasphere. Both ar
 It supports SQL and SQLScript(**table function**). The latter is the same as the table function used in AMDP or ABAP CDS View.
 
 ### 2.2. Graphic View
-It is similar to the HANA Calculation View. It is optimized and has better performance.
+It is similar to the HANA Calculation View. Graphic View is optimized and has better performance.
 
 ![alt text](/DataBuilder/images/NewGV.png?raw=true)
 
@@ -51,7 +51,7 @@ It is similar to the HANA Calculation View. It is optimized and has better perfo
 >-	The "attributes" are the same as "columns" defined in HANA view
 >-  The attribute can have "association" too.
 >-	It has "Input Parameter", as same as in HANA view. It should be pushed to lower node in order to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
->-  Join, UNION, Filter and projection(show/hide columns), Aggretion Node are the same as in HANA view.
+>-  Join, Union, Filter, Projection(show/hide columns), Aggretion nodes are the same as in HANA Calcuation View(Graphic).
 >-  Data preview is avaialbe in each node.
 
 ## 3. ER Models
@@ -62,13 +62,14 @@ It provides the detailed view about how the model is designed.
 
 ## 4. Analytic Models
 
-![alt text](/DataBuilder/images/NewGV.png?raw=true)
+![alt text](/DataBuilder/images/NewAM.png?raw=true)
 
 > [!Note]
 >- We need to create the association in the fact talbe/view to bring in the attributes of the dimension.
 >- We can create variables to map to the "input parameter" created in the graphic view.
 
-[Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
+**This is a good article about Analytic Model.**
+- [Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
 
 ## 5. Currency Conviersion Views
 ![alt text](/images/NewGV.png?raw=true)
