@@ -22,8 +22,9 @@ You can create the local tables, generate a local table by importing CSV file, o
 > -	**Dimension/Text/Hierarchy**: master data and are used in the association of fact, view or other dimension tables 
 
 ### 1.2. Association: 
+Add the attributes/text to the field.
 ![alt text](/DataBuilder/images/TableAssociation.png?raw=true)
-Define the attributes/text of the field
+
 
 ### 1.3. Delta Capture
 ![alt text](/DataBuilder/images/TableDelta.png?raw=true)
@@ -81,5 +82,5 @@ It provides a detailed view about how the model is designed.
 <pre>🚩 This feature is not available in the trial version. You can find the detailed information in the below link.</pre>
 - [Data Access Controls](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)
 
-<pre>The below link is the guide of the access control to the datasphere objects.</pre>
+**The below link is the guide of the access control to the datasphere objects.**
 - [Privileges and Permissions](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/d7350c6823a14733a7a5727bad8371aa.html)
