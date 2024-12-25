@@ -1,6 +1,6 @@
 # Data Builder
 
-In fact, it contains not only the model components but also the ETL elements.In this section, I will focus on the data modeling part.
+In fact, it contains not only the model components but also the ETL elements.In this section, I will focus on the data modeling part in here.
 ![alt text](/DataBuilder/images/DataBuilder.png?raw=true)
 
 
@@ -56,25 +56,31 @@ It is similar to the HANA Calculation View. It is optimized and has better perfo
 >-  Join, UNION, Filter and projection(show/hide columns), Aggretion Node are the same as in HANA view.
 >-  Data preview is avaialbe in each node.
 
-## 2.3 ER Model
-It is used to display the detailed information in the object so that we can have a good understanding about the design of a model.
+## 3. ER Models
+It provides the detailed information so that we can have a good view about how the model is designed.
 
 ![alt text](/DataBuilder/images/ERModel.png?raw=true)
 
 
-## Analytic Models
+We need to crate the assicaotn in the fact object to bring in its attributes. Like prduct
+
+We can create variables to map to the parameter created in the fact view.
+
+
+## 4. Analytic Models
 
 ![alt text](/DataBuilder/images/NewGV.png?raw=true)
 
+
 [Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
 
-## Currency Conviersion View
+## 5. Currency Conviersion View
 ![alt text](/images/NewGV.png?raw=true)
 
-## Data Access
+## 6. Data Access Control
 ![alt text](/images/NewGV.png?raw=true)
 
-[Privieage]()
+[Privieage]
 [datga Access ]https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353
 
 
