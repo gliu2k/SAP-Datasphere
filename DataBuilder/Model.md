@@ -57,6 +57,31 @@ It is similar to the HANA Calculation View. Graphic View is optimized and has be
 >-  Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes are the same as in HANA Calculation View(Graphic).
 >-  Data preview is available in each node.
 
+#### 2.2.1. Association
+Create a new GV using the previourly GV and add the associations
+
+![alt text](/DataBuilder/images/NewGV_Asso.png?raw=true)
+
+#### 2.2.2. Data Persistence
+This is a feature that allows to load the snapshot of the view data into the memory to achieve the semi-realtime fuctionality and improve the query performance. It can be run onetime or by schculing jobs. 
+
+![alt text](/DataBuilder/images/NewGV_Persistence.png?raw=true)
+
+- Vuew Analyzer
+
+- ![alt text](/DataBuilder/images/NewGV_Persistence.png?raw=true)
+
+> Importnace
+> This feature is similiar to PlanViz tool in HANA. It allows to analyze the SQL Execution Plan and understand the runtime and the reocrds selected in each node. In ddtionaion, it can teill how much memory the view may consume.
+
+
+
+It is HANA PlanViz feature which allow we to analzye the exution plan of the view and the  ( number of records and the consumption of the memory)
+
+
+
+
+
 ## 3. ER Models
 It provides a detailed view about how the model is designed.
 
