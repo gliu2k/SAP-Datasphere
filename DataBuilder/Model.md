@@ -76,7 +76,7 @@ This is a feature that allows to load the snapshot of the view data into the mem
 
 ![alt text](/DataBuilder/images/GV_Analyzer2.png?raw=true)
 
-#### 2.2.4. Data Access Control
+#### 2.2.4. Data Access Controls
 
 Apply the access to the view data at the row-level. 
 It is very similarly to the **Analytic Privileges** in SAP HANA and is defined in **Piont 6** of this section.
