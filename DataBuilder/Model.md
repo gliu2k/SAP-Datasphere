@@ -58,7 +58,7 @@ It is similar to the HANA Calculation View. Graphic View is optimized and has be
 >-  Data preview is available in each node.
 
 #### 2.2.1. Association
-Create a new GV using the previourly GV and add the associations
+Create a new GV using the previourly GV and add the associations (as in the local table)
 
 ![alt text](/DataBuilder/images/NewGV_Asso.png?raw=true)
 
@@ -67,19 +67,12 @@ This is a feature that allows to load the snapshot of the view data into the mem
 
 ![alt text](/DataBuilder/images/NewGV_Persistence.png?raw=true)
 
-- Vuew Analyzer
+#### 2.2.2. View Analyzer
 
-- ![alt text](/DataBuilder/images/NewGV_Persistence.png?raw=true)
+- ![alt text](/DataBuilder/images/GV_Analyzer.png?raw=true)
 
 > Importnace
-> This feature is similiar to PlanViz tool in HANA. It allows to analyze the SQL Execution Plan and understand the runtime and the reocrds selected in each node. In ddtionaion, it can teill how much memory the view may consume.
-
-
-
-It is HANA PlanViz feature which allow we to analzye the exution plan of the view and the  ( number of records and the consumption of the memory)
-
-
-
+> This feature is similiar to PlanViz tool in HANA. It allows to analyze the SQL Execution Plan and understand the runtime and the reocrds selected in each node. In ddtionaion, it can teil how much memory the view may consume.
 
 
 ## 3. ER Models
