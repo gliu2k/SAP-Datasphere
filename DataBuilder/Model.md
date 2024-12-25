@@ -1,6 +1,7 @@
 # Data Builder
 
 In fact, it contains not only the model components but also the ETL elements. In this section, I will focus on the data modeling part.
+
 ![alt text](/DataBuilder/images/DataBuilder.png?raw=true)
 
 
@@ -14,15 +15,16 @@ You can create the local tables, generate a local table by importing CSV file, o
 > Remote tables: virtual table as in HANA-SDA or the “link”, as in **Azure Fabric**, which maps to the physical object locating in the remote system.
 
 
-### 1.1. Semantic Usage:
+### 1.1. Semantic Usage
 ![alt text](/DataBuilder/images/NewTable.png?raw=true)
 
 > [!IMPORTANT] 
 > -	**Fact**: Transaction Data and the only type can be used in creating Analytic Model
 > -	**Dimension/Text/Hierarchy**: master data and are used in the association of fact, view or other dimension tables 
 
-### 1.2. Association: 
+### 1.2. Association
 Add the attributes/text to the field.
+
 ![alt text](/DataBuilder/images/TableAssociation.png?raw=true)
 
 
@@ -35,7 +37,7 @@ Add the attributes/text to the field.
 
 
 ## 2. Views
-There are two types of views, SQL View and Graphics View, in datasphere. Both are virtual objects. 
+There are two types of views, SQL View and Graphics View, in datasphere. Both are virtual objects. <BR/>
 
 ![alt text](/DataBuilder/images/Views.png?raw=true)
 
@@ -62,6 +64,10 @@ It provides a detailed view about how the model is designed.
 
 
 ## 4. Analytic Models
+
+The Analytic Model must be built on the object of **Fact** semantic.
+
+![alt text](/DataBuilder/images/AM.png?raw=true)
 
 ![alt text](/DataBuilder/images/NewAM.png?raw=true)
 
