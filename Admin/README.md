@@ -15,3 +15,7 @@ it is a common practice to create separate tenants for development (DEV), qualit
 <pre>🚩 Since this is a trial version, I will skip the transport and security sections.</pre>
 
 
+## 3. SQL EndPoint
+It is a very useful tool that provides access to the underlying HANA Cloud.
+
+See the [details](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-how-to-integrate-open-sql-procedures-in-a-task-chain/ba-p/13860628)
