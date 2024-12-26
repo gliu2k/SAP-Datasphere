@@ -4,13 +4,13 @@ Manage, monitor and track the process of integrating data among the objects and 
 
 ## 1. Views
 
-Monitor the job for the **View** data persistence
+Monitor the jobs of loading the **View** persistence data into memory
 
 ![alt text](/Integration/images/DIM_View.png?raw=true)
 
 ## 2. Flows
 
-Montoir the jobs of data **Flows**
+Montoir the jobs of the data **Flows**
 
 ![alt text](/Integration/images/Flows_log.png?raw=true)
 
