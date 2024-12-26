@@ -16,7 +16,7 @@ You can get 30days free trial version of SAP Datasphere from [here](https://www.
 
 # Contents
 
-SAP has already owned many good BI products and solutions **E.g.**
+SAP already possesses many good BI products and solutions **E.g.**
 
 **On-premises: BW(BWonHANA or BW/4HANA), HANA, BusinessObject**
 
