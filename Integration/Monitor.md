@@ -4,7 +4,7 @@ Manage, monitor and track the process of integrating data among the objects and 
 
 ## 1. Views
 
-Montoir the job for the **View** data persistence
+Monitor the job for the **View** data persistence
 
 ![alt text](/Integration/images/DIM_View.png?raw=true)
 
