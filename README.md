@@ -12,8 +12,7 @@ I delved into SAP Datasphere and developed some Proof of Concepts (POCs). Unfort
 
 
 # Requirements
-You can get 30days free trial version of SAP Datashpere.
-[Here](https://www.sap.com/products/technology-platform/datasphere/trial.html)
+You can get 30days free trial version of SAP Datashpere from [here](https://www.sap.com/products/technology-platform/datasphere/trial.html).
 
 # Contents
 
