@@ -2,39 +2,39 @@
 
 
 # Description
-This repository is an introduction of SAP Datasphere, a data warehouse platform built on the SAP Business Technology Platform (SAP BTP).
+This repository is an introduction to SAP Datasphere, a data warehouse platform built on the SAP Business Technology Platform (SAP BTP).
 
 
 # Overview
-Two years ago, SAP Datasphere was introduced. I was tasked with exploring its features to determine how we could leverage it to address the pain points within our existing SAP BI solution, which relies heavily on ABAP CDS views created in the S/4HANA called embedded analytics.
+Two years ago, SAP Datasphere was introduced. I was tasked with exploring its features to determine how we could leverage it to address the pain points within our existing SAP BI solution, which relies heavily on ABAP CDS views known as embedded analytics in S/4HANA system.
 
-I delved into SAP Datasphere and developed some Proof of Concepts (POCs). Unfortunately, I did not keep the detailed records at that time. Since I have some time now, I revisited the tool and documented my insights and thoughts here. Hope this documentation will help you gain a better understanding of SAP Datasphere.
+I dived into SAP Datasphere and developed some Proof of Concepts (POCs). Unfortunately, I did not keep the detailed records at that time. Now that I have some time, I revisited the tool and documented my insights and thoughts here. Hope this documentation will help you gain a better understanding of SAP Datasphere.
 
 
 # Requirements
-You can get 30days free trial version of SAP Datashpere from [here](https://www.sap.com/products/technology-platform/datasphere/trial.html).
+You can get 30days free trial version of SAP Datasphere from [here](https://www.sap.com/products/technology-platform/datasphere/trial.html).
 
 # Contents
 
-SAP has already ownered many good BI products and solutions **E.g.**
+SAP has already owned many good BI products and solutions **E.g.**
 
-**On-premises: BW(BWonHANA or BW/4HANA), HANA, BusniessOjbect**
+**On-premises: BW(BWonHANA or BW/4HANA), HANA, BusinessObject**
 
 **On-cloud: DWC, HANA Cloud, SAC**
 
-SAP Datasphere is very similar to SAP DWC. But it is an upgrade version of SAP DWC, called SAP data fabric. Like **Micrsoft Fabric** (formerly known as **Azure Synapse Analytics**), it offer similar capabilities for integrating, managing, and analyzing data from various sources.
+SAP Datasphere is very similar to SAP DWC. But it is an upgraded version of SAP DWC, called SAP data fabric. Like **Microsoft Fabric** (formerly known as **Azure Synapse Analytics**), it offers similar capabilities for integrating, managing, and analyzing data from various sources.
 
 ### Business Scenarios
 
 👉 In retail business, we want to analyze the relationship between the store traffic data(3rd party) and the marketing campaign data(SAP CRM). 
 
-👉 We have the devliery date in SAP(ERP/SD) system. We also want to confirm the goods arrival time by referrring to the travel information. 
+👉 We have the delivery date in SAP(ERP/SD) system. We also want to confirm the goods arrival time by referring to the travel information. 
 
 👉 We collect the stream data from the production lines and try to adjust the production plan in SAP(PP) system. 
 
 👉 We plan to perform the machine learning.
 
-To suport the business requirements, SAP Datashere provides the following features 
+To support the business requirements, SAP Datasphere provides the following features 
 
 ### 1. Administration
 - [Admin](Admin/README.md)
@@ -46,7 +46,7 @@ To suport the business requirements, SAP Datashere provides the following featur
 ### 3. Business Builder
 - [Model](BusinessBuilder/Model.md)
   
-### 4. Data Integration Moinotr
+### 4. Data Integration Monitor
 - [Monitor](Integration/Monitor.md)
 
 ### 5. Roadmap
