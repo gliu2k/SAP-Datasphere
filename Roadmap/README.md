@@ -33,15 +33,16 @@ There are limits of BW Bridger. (SAP Note xxx)
 - Tables (SLT)
   
 Pros and Cons:
-
-- Fewer customers develop the custom-CDSView including the delta.
+- It may not be a long term solution.
+- Fewer customers develop the custom CDSView with the delta mechanism. 
 [Example](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd1/README.md)
 
 The doable way is to load the delta data from SAP standard CDSViews. 
-[HowTo]
-When we want to make enhancements, are we going to create a custom CDSView by referring to (copying) the SAP standard ones?
+[HowTo](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-ii-delta-handling/ba-p/13425761)
 
-And, we need to rebuild the DataSphere **VIEWs** on top of these CDSViews structures.
+We need to rebuild the DataSphere **VIEWs** on top of these CDSViews structures.
 
-- I think this may be the best way. The workload is almost the same as using CDSViews. Most starndard CDSViews are very simple. But it is very flexiable.  
+When we want to make enhancements, are we going to create the custom CDSView by referring to (copying) the SAP standard one?
+
+- I think this may be the best way. The workload of modeling is almost the same as replicating the CDSViews. Most starndard CDSViews are very simple. But it is much more flexiable. SLT can replicate the delta tables in realtime. 
 
