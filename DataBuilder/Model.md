@@ -37,15 +37,15 @@ Add the attributes/text to the field.
 
 
 ## 2. Views
-There are two types of views, SQL View and Graphics View, in datasphere. Both are virtual objects. <BR/>
+There are two types of views, SQL View and Graphical View, in datasphere. Both are virtual objects. <BR/>
 
 ![alt text](/DataBuilder/images/Views.png?raw=true)
 
 ### 2.1. SQL View
 It supports SQL and SQLScript(**table function**). The latter is the same as the table function used in AMDP or ABAP CDS View.
 
-### 2.2. Graphic View
-It is similar to the HANA Calculation View. Graphic View is optimized and has better performance.
+### 2.2. Graphical View
+It is similar to the HANA Calculation View. Graphical View is optimized and has better performance.
 
 ![alt text](/DataBuilder/images/NewGV.png?raw=true)
 
@@ -54,7 +54,7 @@ It is similar to the HANA Calculation View. Graphic View is optimized and has be
 >-	The "attributes" are the same as "columns" defined in HANA view
 >-  The attribute can have "association" too.
 >-	It has "Input Parameter", as same as in HANA view. It should be pushed to lower node to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
->-  Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes are the same as in HANA Calculation View(Graphic).
+>-  Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes are the same as in HANA Calculation View(Graphical).
 >-  Data preview is available in each node.
 
 #### 2.2.1. Association
