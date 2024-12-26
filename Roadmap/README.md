@@ -1,28 +1,41 @@
-# Roadmap to Datashpere
+# Roadmap to SAP Datashpere
 
-SAP is persuadng its customers move to Datashper. SAP must pave the way and make sure the sommth migration and gurene the previouse invment in BW system. Is it possible?
+SAP is persuading the customers to move to Datasphere. The way has been paved to make sure the smooth migration and guarantee the investment in BW system. 
 
-No matter the target ysetm is Datasphere or DWC, SAP suggest to move to BW Bridger, a persiste layer. SAP Bridge is on-could, it is on HANA Cloude plantform but still hving ABAP stack.
+SAP suggests moving to BW Bridger, a persist layer in SAP cloud. It is on HANA Cloud platform but still has ABAP stack, which makes it possible to migrate the BW objects smoothly.  
 
-There are two ways to coverst the conetnt in BW to BW Bridgher
-1 Scritp
- Only the metnat of the objects are converted. All the data will be reloaded from the source systems(S/4HANA or ERP) instead of the BW.
-2 Converison
- Both the mettadata and data are converted. This is for the sneario where the historcial data are note avaiilabe in the source system(S/4HANA or ERP)
-But After taht data will be loaded from the source system.
+![alt text](/Roadmap/images/Path.png?raw=true)
 
-There are limists of BW Bridger. No reports....
+## 1. Migratie to BW Bridge
 
-We need to make virtial tables and move hte counsmption layer into datashere, where the SAC.
+![alt text](/Roadmap/images/Bridge.png?raw=true)
+There are two ways to migrate the contents from on-promise BW system to BW Bridge.
+
+- Script
+Only the metadata of the objects are converted. The data are reloaded from the source systems (S/4HANA or ERP).
+
+- Conversion
+Both the metadata of objects and the data are converted. This is for the scenario where the historical data are not available in the source system (S/4HANA or ERP). After the conversion, the new data will be loaded from the source system into BW Bridge.
+
+
+
+There are limits of BW Bridger. (SAP Note xxx)
 
 1 All the bex are gone
 2 
 
-We can load the data throgh 
+![alt text](/Roadmap/images/Future.png?raw=true)
 
+## 2. How to load the data into BW Bridge or DataSphere for the source system(S/4HANA, ERP)
 
-BW API (old way)
-CDSView ODP
-Tables (SLT)
+- BW API extractor
+- CDSView (ODP)
+Pros and Cons:
+Fewer customers develop the custom-CDSView including the delta.
+The doable solution is to load the data from SAP standard CDSViews. But what is the plan if we want to make enhancement? Are we going to create a custom CDSView by referring to (copying) the SAP standard ones. 
 
- To 
+We need to build DataSphere VIEWs on top of the structures of the CDSViews.
+
+- Tables (SLT)
+I think this may be the best way. 
+
