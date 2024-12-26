@@ -58,19 +58,19 @@ It is similar to the HANA Calculation View. Graphic View is optimized and has be
 >-  Data preview is available in each node.
 
 #### 2.2.1. Association
-Create a new GV using the previourly GV and add the associations (as in the local table)
+Create a new GV using the previously GV and add the associations (as in the local table)
 
 ![alt text](/DataBuilder/images/NewGV_Asso.png?raw=true)
 
 #### 2.2.2. Data Persistence
-This is a feature that allows to load the snapshot of the view data into the memory to achieve the semi-realtime fuctionality and improve the query performance. It can be run onetime or by schculing jobs. 
+This is a feature that allows to load the snapshot of the view data into the memory to achieve the semi-realtime functionality and improve the query performance. It can be run onetime or by scheduling jobs. 
 
 ![alt text](/DataBuilder/images/GV_Persistence.png?raw=true)
 
 #### 2.2.3. View Analyzer
 
 > [!IMPORTANT] 
-> This feature is similiar to PlanViz tool in HANA. It allows to analyze the SQL Execution Plan and to understand the query runtime and memory consumption.
+> This feature is similar to the PlanViz tool in HANA. It allows for the analysis of the SQL Execution Plan, providing insights into query runtime and memory consumption.
 
 ![alt text](/DataBuilder/images/GV_Analyzer1.png?raw=true)
 
