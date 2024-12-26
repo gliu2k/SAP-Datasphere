@@ -32,8 +32,8 @@ Add the attributes/text to the field.
 ![alt text](/DataBuilder/images/TableDelta.png?raw=true)
 
 > [!IMPORTANT] 
-> - Two local tables, the active and the detla table("Technicalname_Delta") are generated when the “Delat Capture” flag is turned on. 
-> - Two additional fields, "Change Type" and "Change Datae" are included in the "delta" table. The "Change Type" can have value of "I"(initial), "D"(delete) and "U"(updated) in the same record after certain activity takes place.
+> - Two local tables, the active table and the detla table("Technicalname_Delta"), are generated when the “Delat Capture” flag is turned on. 
+> - Two additional fields, "Change Type" and "Change Datae" are included in the "delta" table. The "Change Type" can have value of "I"(initial), "D"(delete) and "U"(update) after specific activities are applied to the record.
 
 
 ## 2. Views
@@ -50,10 +50,10 @@ It is similar to the HANA Calculation View. Graphical View is optimized and has 
 ![alt text](/DataBuilder/images/NewGV.png?raw=true)
 
 > [!IMPORTANT]
->-	It has "semantic type" as well. And, only the fact one can be used in the Analytic Model.
+>-	View has "semantic type" as well. And, only the fact view can be used in the Analytic Model.
 >-	The "attributes" are the same as "columns" defined in HANA view
 >-  The attribute can have "association" too.
->-	It has "Input Parameter", as same as in HANA view. It should be pushed to lower node to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
+>-	It has "Input Parameter" which is the same as in HANA view. It should be pushed down to the lower node to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
 >-  Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes are the same as in HANA Calculation View(Graphical).
 >-  Data preview is available in each node.
 
@@ -63,7 +63,7 @@ Create a new GV using the previously GV and add the associations (as in the loca
 ![alt text](/DataBuilder/images/NewGV_Asso.png?raw=true)
 
 #### 2.2.2. Data Persistence
-This is a feature that allows to load the snapshot of the view data into the memory to achieve the semi-realtime functionality and improve the query performance. It can be run onetime or by scheduling jobs. 
+This is a feature that allows to load the snapshot of the view data into the memory to achieve the semi-realtime functionality and improve the query performance. It can be run once or scheduled to run as a recurring job.
 
 ![alt text](/DataBuilder/images/GV_Persistence.png?raw=true)
 
