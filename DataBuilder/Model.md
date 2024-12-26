@@ -12,7 +12,7 @@ In fact, it contains not only the model components but also the ETL elements. In
 You can create the local tables, generate a local table by importing CSV file, or import remote tables. 
 
 > [!NOTE]
-> Remote tables: virtual table as in HANA-SDA or the “link”, as in **Azure Fabric**, which maps to the physical object locating in the remote system.
+> Remote tables are the virtual tables as in SDA(HANA) or the “link” as in **Azure Fabric**, which maps to the physical object locating in the remote system.
 
 
 ### 1.1. Semantic Usage
