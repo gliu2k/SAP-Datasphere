@@ -61,6 +61,6 @@ I think this approach is better and offers greater flexibility. The workload for
 
 
 # 3. User Management
-We can batch input the users from *CSV* file in GoLive. And, we can synchronize the users and achieve SSO via SAML. See [here](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455)
+We can import the users from *CSV* file in GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455)
 
 
