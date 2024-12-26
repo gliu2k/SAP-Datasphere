@@ -58,3 +58,9 @@ These are the Methods and Their Drawbacks
 I think this approach is better and offers greater flexibility. The workload for remodeling is nearly the same as replicating CDSViews. SLT can replicate the delta data changes of the tables in real-time. We can compare the reports in datasphere side-by-side with the BW system.
 
 [Link](https://learning.sap.com/learning-journeys/modernizing-your-data-warehouse-landscape-from-sap-bw-to-sap-datasphere/introducing-the-greenfield-approach)
+
+
+# 3. User Management
+We can batch input the users from *CSV* file in GoLive. And, we can synchronize the users and achieve SSO via SAML. See [here](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455)
+
+
