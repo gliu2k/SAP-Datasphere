@@ -4,7 +4,7 @@
 
 # 1. Replication Flow 
 
-Copy the data from one or multiple (remote) source systems into datasphere(local) at. There is no transformation.
+Copy the data from one or multiple (remote) source systems into datasphere(local). There is no transformation.
 
 It is used to copy the data first in a limited time window.
 
@@ -22,12 +22,12 @@ Load and transform (Join, Union, Projection, Aggregation and **Python** script) 
 
 # 3. Transformation Flow 
 
-It is an ETL similiar to BW transformation but is using the **VIEW** to convert the data.
+It is an ETL process similar to BW transformation, but it uses **VIEW** to transform the data.
 
 ![alt text](/DataBuilder/images/Flow_TF1.png?raw=true)
 
 > [!IMPORTANT] 
-> - Support **delta** loading (**ONLY** load the changed data in the source table. It is covered in the databuilder section)  
+> - Support **delta** loading (**ONLY** load the changed data in the detla table of the source. It is covered in the databuilder section)  
 > - Easy for troubleshooting if the source contains bad data
 > - Use **upsert** method, which means we don't need to clear the target table
 
@@ -39,7 +39,7 @@ It is an ETL similiar to BW transformation but is using the **VIEW** to convert 
 
 ![alt text](/DataBuilder/images/Flow_GV1.png?raw=true)
 >  [!TIP]
-> You can leverage an existing view, Graphical or SQL view, in the transformation flow as in the below screenshot.
+> You can leverage an existing view, Graphical or SQL view, in the transformation flow as shown in the below screenshot.
 
 ![alt text](/DataBuilder/images/Flow_GV2.png?raw=true)
 
@@ -51,7 +51,7 @@ It is similar to BW Process Chain.
 
 # 5. Intelligent Lookups
 
-This feature is like **Fuzzy** join in **Azure Fabric**. You can find the details about it in the [blog]( https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-intelligent-lookup-series-what-is-a-fuzzy-match-and-why/ba-p/13558732).
+This feature is like **Fuzzy** join in **Azure Fabric**. You can find the details about it in this [blog]( https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-intelligent-lookup-series-what-is-a-fuzzy-match-and-why/ba-p/13558732).
 
 ![alt text](/DataBuilder/images/Flow_InetLookups.png?raw=true)
 
