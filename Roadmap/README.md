@@ -28,14 +28,20 @@ There are limits of BW Bridger. (SAP Note xxx)
 
 ## 2. How to load the data into BW Bridge or DataSphere for the source system(S/4HANA, ERP)
 
-- BW API extractor
-- CDSView (ODP)
-Pros and Cons:
-Fewer customers develop the custom-CDSView including the delta.
-The doable solution is to load the data from SAP standard CDSViews. But what is the plan if we want to make enhancement? Are we going to create a custom CDSView by referring to (copying) the SAP standard ones. 
-
-We need to build DataSphere VIEWs on top of the structures of the CDSViews.
-
+- BW SAPI Extractor
+- CDSView (Extractor ODP)
 - Tables (SLT)
-I think this may be the best way. 
+  
+Pros and Cons:
+
+- Fewer customers develop the custom-CDSView including the delta.
+[Example](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd1/README.md)
+
+The doable way is to load the delta data from SAP standard CDSViews. 
+[HowTo]
+When we want to make enhancements, are we going to create a custom CDSView by referring to (copying) the SAP standard ones?
+
+And, we need to rebuild the DataSphere **VIEWs** on top of these CDSViews structures.
+
+- I think this may be the best way. The workload is almost the same as using CDSViews. Most starndard CDSViews are very simple. But it is very flexiable.  
 
