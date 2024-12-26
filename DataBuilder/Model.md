@@ -109,7 +109,7 @@ The Analytic Model must be built on the object of **Fact** semantic.
 >- We need to create the association in the fact table/view to bring in the attributes of the dimension.
 >- We can create variables to map to the "input parameter" created in the graphic view.
 
-**This is a good article about Analytic Model.**
+**This is a good article regarding Analytic Model.**
 - [Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
 
 ## 5. Currency Conversion Views
