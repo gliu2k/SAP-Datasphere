@@ -1,48 +1,59 @@
 # Roadmap to SAP Datashpere
 
-SAP is persuading the customers to move to Datasphere. The way has been paved to make sure the smooth migration and guarantee the investment in BW system. 
+SAP is encouraging customers to transition to Datasphere. 
 
-SAP suggests moving to BW Bridger, a persist layer in SAP cloud. It is on HANA Cloud platform but still has ABAP stack, which makes it possible to migrate the BW objects smoothly.  
+
+# 1. Migration
+
+The path has been laid out to ensure a smooth migration and protect the investment in the BW system.
+
+[Introducing the Migration from SAP BW to SAP Datasphere, SAP BW Bridge](https://learning.sap.com/learning-journeys/modernizing-your-data-warehouse-landscape-from-sap-bw-to-sap-datasphere/introducing-the-migration-from-sap-bw-to-sap-datasphere-sap-bw-bridge)
+
+SAP recommends moving to BW Bridge first. It operates on SAP HANA Cloud platform but still includes the ABAP stack, enabling a seamless migration of BW objects.
 
 ![alt text](/Roadmap/images/Path.png?raw=true)
 
-## 1. Migratie to BW Bridge
+
+## 1.1. Migrate to BW Bridge
 
 ![alt text](/Roadmap/images/Bridge.png?raw=true)
-There are two ways to migrate the contents from on-promise BW system to BW Bridge.
 
-- Script
+- There are two ways to migrate the contents from on-promise BW system to BW Bridge.
+
+  - Script
 Only the metadata of the objects are converted. The data are reloaded from the source systems (S/4HANA or ERP).
 
-- Conversion
+  - Conversion
 Both the metadata of objects and the data are converted. This is for the scenario where the historical data are not available in the source system (S/4HANA or ERP). After the conversion, the new data will be loaded from the source system into BW Bridge.
 
-
-
-There are limits of BW Bridger. (SAP Note xxx)
-
-1 All the bex are gone
-2 
+- There are limitions of BW Bridger. (See SAP Note 3117800)
+  - Queries are not supported.
+  - No support for the OLAP engine and functionality dependent on the OLAP engine, e.g., analysis authorizations, query as InfoProvider, query execution, calculation of non-cumulative key figures (aka inventory key figures).
+  ....
 
 ![alt text](/Roadmap/images/Future.png?raw=true)
 
-## 2. How to load the data into BW Bridge or DataSphere for the source system(S/4HANA, ERP)
+## 1.2. Load data into DataSphere from the source systems(S/4HANA, ERP)
+
+These are the Methods and Their Drawbacks
 
 - BW SAPI Extractor
-- CDSView (Extractor ODP)
-- Tables (SLT)
+  - It may not be a long term solution.
+    
+- CDSView Extractor (ODP)
+  - Fewer customers develop the custom CDSView with the delta mechanism. 
+  [Example](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd1/README.md)
+
+  - The doable way is to load the delta data from SAP standard CDSViews. 
+  [HowTo](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-ii-delta-handling/ba-p/13425761)
+
+  We need to rebuild the DataSphere **VIEWs** on top of these CDSViews structures. When we want to make enhancements, are we going to create the custom CDSView by referring to (copying) the SAP standard one?
   
-Pros and Cons:
-- It may not be a long term solution.
-- Fewer customers develop the custom CDSView with the delta mechanism. 
-[Example](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd1/README.md)
+- Tables (SLT)
+  - Remodeling
+    
+# 2. Greenfiled - BW SideCar + SLT
 
-The doable way is to load the delta data from SAP standard CDSViews. 
-[HowTo](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-ii-delta-handling/ba-p/13425761)
+I think this may be the best way and much more flexiable. The workload of modeling is almost the same as replicating the CDSViews. SLT can replicate the delta tables in realtime. We can compare the reports side-by-side with the BW system.
 
-We need to rebuild the DataSphere **VIEWs** on top of these CDSViews structures.
-
-When we want to make enhancements, are we going to create the custom CDSView by referring to (copying) the SAP standard one?
-
-- I think this may be the best way. The workload of modeling is almost the same as replicating the CDSViews. Most starndard CDSViews are very simple. But it is much more flexiable. SLT can replicate the delta tables in realtime. 
-
+[Link](https://learning.sap.com/learning-journeys/modernizing-your-data-warehouse-landscape-from-sap-bw-to-sap-datasphere/introducing-the-greenfield-approach)
