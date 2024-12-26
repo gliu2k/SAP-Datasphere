@@ -28,10 +28,10 @@ It is an ETL similiar to BW transformation but is using the **VIEW** to convert 
 
 > [!IMPORTANT] 
 > - Support **delta** loading (**ONLY** load the changed data in the source table. It is covered in the databuilder section)  
-> - Easy for trouble-shooting if the source ocntans bad data
+> - Easy for troubleshooting if the source contains bad data
 > - Use **upsert** method, which means we don't need to clear the target table
 
-# 3.1. SQLCript View(Table Function)
+# 3.1. SQLScript View(Table Function)
 
 ![alt text](/DataBuilder/images/Flow_TF2.png?raw=true)
 
@@ -39,7 +39,7 @@ It is an ETL similiar to BW transformation but is using the **VIEW** to convert 
 
 ![alt text](/DataBuilder/images/Flow_GV1.png?raw=true)
 >  [!TIP]
-> You can leverage an existed view, Graphical or SQL view, in the transformation flow as in the below screenshot.
+> You can leverage an existing view, Graphical or SQL view, in the transformation flow as in the below screenshot.
 
 ![alt text](/DataBuilder/images/Flow_GV2.png?raw=true)
 
@@ -51,7 +51,7 @@ It is similar to BW Process Chain.
 
 # 5. Intelligent Lookups
 
-This feature is similar to **Fuzzy** join in **Azure Fabric**. You can find the datails about it in the [blog]( https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-intelligent-lookup-series-what-is-a-fuzzy-match-and-why/ba-p/13558732).
+This feature is like **Fuzzy** join in **Azure Fabric**. You can find the details about it in the [blog]( https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-intelligent-lookup-series-what-is-a-fuzzy-match-and-why/ba-p/13558732).
 
 ![alt text](/DataBuilder/images/Flow_InetLookups.png?raw=true)
 
