@@ -19,3 +19,13 @@ it is a common practice to create separate tenants for development (DEV), qualit
 It is a very useful tool that provides access to the underlying HANA Cloud.
 
 See [details](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-how-to-integrate-open-sql-procedures-in-a-task-chain/ba-p/13860628)
+
+## 4. Connections
+It is not avaible in the trial version. You can find many resources by searching on Google. This is a good [series](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-connectivity-series/ba-p/13598537)
+
+## 5. Transport
+It is not avaible in the trial version. You can find many resources by searching on Google. This is a good [series](https://community.sap.com/t5/technology-blogs-by-members/life-cycle-management-in-sap-datasphere-transporting-content-between/ba-p/13576990)
+
+## 6. Monitor
+It is not avaible in the trial version. You can find many resources by searching on Google. This is a good [series](https://community.sap.com/t5/technology-blogs-by-members/performance-monitoring-in-sap-datasphere/ba-p/13860769)
+
