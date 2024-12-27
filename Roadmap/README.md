@@ -112,11 +112,11 @@ Detla can be reset.
 - **Summary:**
   - We cannot choose "Initial and Detla" type in Transformation Flow if the source table does not support "Detla".
   - We cannot use the Active Table of the source table which supports "Detla" mode and select "Initial and Delta" type in Transformation Flow. "Initial Only" is the only option.
-  - We can choose "Initial Only" type in the first execution of the Transformation Flow and need to change it to "Initial and Delta" type in the consequential execution. (I am thinking why not select "Initial and Delta" in the very beginning.
+  - We can choose "Initial Only" type in the first execution of the Transformation Flow but need to change it to "Initial and Delta" type in the consequential execution. (I am thinking why not select "Initial and Delta" in the very beginning.
 
 # 4.2 BW Bridge to DataSphere.
 
-You can see the details in this [blog](https://community.sap.com/t5/technology-blogs-by-sap/delta-extraction-of-adso-from-sap-bw-bridge-into-sap-datasphere-via/ba-p/13651788) about how to load the delta data from the changelog table of ADSO in BW bridge. However, it does not include the case when 0RecordMode = 'A'. 
+You can find the details in this [blog](https://community.sap.com/t5/technology-blogs-by-sap/delta-extraction-of-adso-from-sap-bw-bridge-into-sap-datasphere-via/ba-p/13651788) about how to load the delta data from the changelog table of ADSO in BW bridge. However, it does not include the case when 0RecordMode = 'A'. 
 
 Using BW Bridge(ADSOs) heavily relies on the logic built in the BW system. 
 
