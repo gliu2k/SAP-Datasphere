@@ -55,7 +55,7 @@ Below are the methods and their drawbacks
     
 # 2. Greenfield - BW SideCar + SLT
 
-I think this approach is better and offers greater flexibility. The workload for remodeling is nearly the same as replicating CDSViews. SLT can replicate the delta data changes of the tables in real-time. We can compare the reports in datasphere side-by-side with the BW system.
+I think this approach is better and offers greater flexibility. The workload for remodeling is nearly the same as utilizing CDSViews. SLT can replicate the delta data changes of the tables in real-time. We can compare the reports in datasphere side-by-side with the BW system.
 
 [Link](https://learning.sap.com/learning-journeys/modernizing-your-data-warehouse-landscape-from-sap-bw-to-sap-datasphere/introducing-the-greenfield-approach)
 
