@@ -36,12 +36,12 @@ The ADOs tables are replciated from BW bridge and the models are rebuilt in Data
 
 ## 1.2. Load data into DataSphere from the source systems(S/4HANA, ERP)
 
-These are the Methods and Their Drawbacks
+Below are the methods and their drawbacks
 
 - BW SAPI Extractor
   - It may not be a long-term solution.
     
-- CDSView Extractor (ODP)
+- CDS View Extractor (ODP)
   - Fewer customers develop the custom CDSView with the delta mechanism. 
   [Example](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd1/README.md)
 
