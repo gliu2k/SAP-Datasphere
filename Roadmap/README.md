@@ -63,6 +63,7 @@ I think this approach is better and offers greater flexibility. The workload for
 # 3. User Management
 We can import the users from *CSV* file in GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455)
 
+**I don't know how to integrate it with SAP GRC. The role assignment needs to be done manually in DataSphere.**
 
 # 4. Delta Data Loading
 Generally， this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
