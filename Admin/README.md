@@ -24,8 +24,8 @@ See [details](https://community.sap.com/t5/technology-blogs-by-members/sap-datas
 It is not avaible in the trial version. You can find many resources by searching on Google. This is a good [series](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-connectivity-series/ba-p/13598537)
 
 ## 5. Transport
-It is not avaible in the trial version. You can find many resources by searching on Google. This is a good [series](https://community.sap.com/t5/technology-blogs-by-members/life-cycle-management-in-sap-datasphere-transporting-content-between/ba-p/13576990)
+It is not avaible in the trial version. You can find many resources by searching on Google. This is a good [blog](https://community.sap.com/t5/technology-blogs-by-members/life-cycle-management-in-sap-datasphere-transporting-content-between/ba-p/13576990)
 
 ## 6. Monitor
-It is not avaible in the trial version. You can find many resources by searching on Google. This is a good [series](https://community.sap.com/t5/technology-blogs-by-members/performance-monitoring-in-sap-datasphere/ba-p/13860769)
+It is not avaible in the trial version. You can find many resources by searching on Google. This is a good [blog](https://community.sap.com/t5/technology-blogs-by-members/performance-monitoring-in-sap-datasphere/ba-p/13860769)
 
