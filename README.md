@@ -50,7 +50,7 @@ To support the business requirements, SAP Datasphere provides the following feat
 - [Monitor](Integration/Monitor.md)
 
 ### 5. Roadmap
-- [Roadmap](Roadmpa/README.md)
+- [Roadmap](Roadmap/README.md)
 
 > [!CAUTION]
 > You may encount *403 Forbidden* in navigation after clicking some hyperlinks. Please copy and open the URL in a new browser tab.
