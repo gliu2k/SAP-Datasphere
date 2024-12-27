@@ -20,10 +20,10 @@ SAP recommends moving to BW Bridge first. It operates on SAP HANA Cloud platform
 
 - There are two ways to migrate the contents from on-promise BW system to BW Bridge.
 
-  - Shell Conversion
+  - Shell Conversion: 
 Only the metadata of the objects are transferred. The data are reloaded from the source systems (S/4HANA or ERP).
 
-  - Remote Conversion
+  - Remote Conversion: 
 Both the metadata and data are transferred. This is for the scenario where the historical data are not available in the source systems. After the conversion, the new data will be loaded from the source systems into BW Bridge.
 
 - There are limitations of BW Bridger(See SAP Note 3117800). 
