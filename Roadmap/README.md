@@ -65,36 +65,59 @@ We can import the users from *CSV* file in GoLive. And, we can synchronize the u
 
 
 # 4. Delta Loading
-Generally this topic should be included in the Flow section in Databuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integarate it with other system like S/4HANA and BW Brdige.
+Generally， this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
 
 Let's take a quick at the **Delta** within Datasphere. We have talked about delta in the Flow and Model in DataBuilder section. We need to turn on "delta capture" in 
-local table and use Trransfmoration Flow to do datla laoding.
+local table and use Transformation Flow to do dalta data loading.
 
-# 4.1 In DataShphere 
-# 4.1.1. Non-Delta Loaidng 
-Souce Table - Non-Delta
+## 4.1. Delta in DataSphere 
+### 4.1.1. Full Data Loading 
+
+Source Table - Non-Delta
+
+Target Table - Delta
+
+Transformation flow - We can only choose "Initial Only" in "load type"
+
+In the first execution of **Transformation Flow**, 3 records are loaded into target.
+![alt text](/Roadmap/images/AD1.png?raw=true)
+
+We changed 1 record in the source table and run the **Transformation Flow**. All three records are loaded again into the target.
+![alt text](/Roadmap/images/AD2.png?raw=true)
+
+The same is shown in the log.
+![alt text](/Roadmap/images/log2.png?raw=true)
+
+
+#### 4.1.2 Delta Data Loading 
+
+Source Table - Delta
+
 Target Table - Detla
-In such case, we can only choose "load type" to "Initial Only" in tranformation flow.
 
-In the 1st exection, 3 records are loaded. We changed 1 record in the source table. In the TF log, we can see all 3 records are loaded again ito the target table.
+Transformation Flow - select "Delta Table" of the source and "Initial and Delta" type
 
-# 4.1 Delta Loaidng 
+In the first execution of **Transformation Flow**, three records are loaded into the target.
+![alt text](/Roadmap/images/AD1.png?raw=true)
 
-Souce Table - Delta
-Target Table - Detla
+We changed 1 record in the source table and run the **Transformation Flow** again. Only the changed record is loaded into the target.
+![alt text](/Roadmap/images/AD2.png?raw=true)
 
+The same is shown in the log.
+![alt text](/Roadmap/images/log2.png?raw=true)
 
+Detla can be reset.
+![alt text](/Roadmap/images/ResetWaterMark.png?raw=true)
 
-- You cannot choose "Initial and Detla" type in Transformation Flow if the source table does not support "Detla".
-- You cannot use the Active Table of the source table which supports "Detla" mode and select "Initial and Delta" type in Transformation Flow. "initial Only" is the only option.
-- You can choose "Initial Only" in the 1st execution in Transformation Flow and need to switch it back to "Initital and Delta" type in the consequtal exteion.. ( I am thinking why not selet "Initital and Delat" in the very beginning.
-
-"Initial and Delta" only picks the changed records in the delta table of the source table after the last execution of Transformation Flow .
+- **Summary:**
+  - We cannot choose "Initial and Detla" type in Transformation Flow if the source table does not support "Detla".
+  - We cannot use the Active Table of the source table which supports "Detla" mode and select "Initial and Delta" type in Transformation Flow. "Initial Only" is the only option.
+  - We can choose "Initial Only" type in the first execution of the Transformation Flow and need to change it to "Initial and Delta" type in the consequential execution. (I am thinking why not select "Initial and Delta" in the very beginning.
 
 # 4.2 BW Bridge to DataSphere.
 
-You can see the details in this [blog](https://community.sap.com/t5/technology-blogs-by-sap/delta-extraction-of-adso-from-sap-bw-bridge-into-sap-datasphere-via/ba-p/13651788) about how to load the delta records in ADSO changelog table in . Howerver, it does not have the case when \0RecordMode = 'A'. 
+You can see the details in this [blog](https://community.sap.com/t5/technology-blogs-by-sap/delta-extraction-of-adso-from-sap-bw-bridge-into-sap-datasphere-via/ba-p/13651788) about how to load the delta data from the changelog table of ADSO in BW bridge. However, it does not include the case when 0RecordMode = 'A'. 
 
-Using ADSOs still havery rely on the logics in the BW system. It is better to rebuild everything from the scrach.
+Using BW Bridge(ADSOs) heavily relies on the logic built in the BW system. 
 
 
