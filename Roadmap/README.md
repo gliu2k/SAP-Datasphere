@@ -31,7 +31,7 @@ Both the metadata and data are transferred. This is for the scenario where the h
   - No support for the OLAP engine and functionality dependent on the OLAP engine, e.g., analysis authorizations, query as InfoProvider, query execution, calculation of non-cumulative key figures (aka inventory key figures).
   - ....
 
-The ADOs tables are replciated from BW bridge and the models are rebuilt in DataSphere. See **4.2**. The new reports are created in SAC.
+The ADOs tables are replciated from BW bridge and the models are rebuilt in DataSphere. See section **4.2**. The new reports are created in SAC.
 ![alt text](/Roadmap/images/Future.png?raw=true)
 
 ## 1.2. Load data into DataSphere from the source systems(S/4HANA, ERP)
@@ -63,7 +63,9 @@ I think this approach is better and offers greater flexibility. The workload for
 # 3. User Management
 We can import the users from *CSV* file in GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455)
 
-**I don't know how to integrate it with SAP GRC. The role assignment needs to be done manually in DataSphere.**
+- I'm not sure how to integrate it with SAP GRC. 
+  - Where is the approval process carried out?
+  - Assigning the roles to the users needs to be done manually in DataSphere?
 
 # 4. Delta Data Loading
 Generally， this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
