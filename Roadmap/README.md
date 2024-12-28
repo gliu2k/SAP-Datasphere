@@ -113,9 +113,9 @@ Detla can be reset.
 ![alt text](/Roadmap/images/ResetWaterMark.png?raw=true)
 
 - **Summary:**
-  - We cannot choose "Initial and Detla" type in Transformation Flow if the source table does not support "Detla".
-  - We cannot use the Active Table of the source table which supports "Detla" mode and select "Initial and Delta" type in Transformation Flow. "Initial Only" is the only option.
-  - We can choose "Initial Only" type in the first execution of the Transformation Flow but need to change it to "Initial and Delta" type in the consequential execution. (I am thinking why not select "Initial and Delta" in the very beginning.
+  - We CANNOT choose "Initial and Detla" type in Transformation Flow if the source table does not support "Detla".
+  - We CANNOT use the Active Table of the source table (source table supports "Delta" mode as well) and select "Initial and Delta" type in Transformation Flow. "Initial Only" is the only option.
+  - We can choose "Initial Only" type in the first execution of the Transformation Flow but need to change it to "Initial and Delta" type in the consequential execution. (Why not select "Initial and Delta" from the very beginning.)
 
 # 4.2 BW Bridge to DataSphere.
 
