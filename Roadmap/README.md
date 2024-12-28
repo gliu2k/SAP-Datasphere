@@ -64,7 +64,7 @@ I think this approach is better and offers greater flexibility. The workload for
 We can import the users from *CSV* file in GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455)
 
 > [!Note]
-> I'm not sure how to integrate it with SAP GRC. The way I figure out is to load the GRC tables, where the user and role infomration are stored, into Datasphere.
+> I'm not sure how to integrate it with SAP GRC. The way I figure out is to load the GRC tables, where the user and role infomration are stored, into Datasphere. But theb it is not clear which HANA XS procedures to call to update the stanadard datasphere tables.
  
 
 # 4. Delta Data Loading
