@@ -76,15 +76,25 @@ This is a feature that allows to load the snapshot of the view data into the mem
 
 ![alt text](/DataBuilder/images/GV_Analyzer2.png?raw=true)
 
-#### In the analysis result, which is available in "Data Integration Monitor", you can find the execution information. 
+- In the analysis result, which is available in "Data Integration Monitor", you can find the execution information. 
 
   -  Run Time
   -  Memory Consumption
   -  Statistics (processed records in each node)
 
-![alt text](/DataBuilder/images/GV_Analyzer3.png?raw=true)
+#### 2.2.4. Linage Analysis
 
-#### 2.2.4. Data Access Controls
+![alt text](/DataBuilder/images/LinageAnalysis.png?raw=true)
+
+![alt text](/DataBuilder/images/LinageAnalysis.png?raw=true)
+
+> [!Note] 
+> "Linage Analysis" is kind like the combination of "displaying the dependencies" in CDSView and "showing the where-used" list in SAP. Don't forget to unfold the '+' on the very right of the last object.
+
+
+![image](https://github.com/user-attachments/assets/c4076c2e-afc4-4485-ad96-279ed0244afe)
+
+#### 2.2.5. Data Access Controls
 
 Apply the access to the view data at the row-level. 
 It is very similarly to the **Analytic Privileges** in SAP HANA and is defined in **Piont 6** of this section.
