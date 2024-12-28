@@ -64,7 +64,7 @@ I think this approach is better and offers greater flexibility. The effort spent
 We can import the users from *CSV* file in GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455)
 
 > [!Note]
-> I'm not sure how to integrate it with SAP GRC. The way I figure out is to load the GRC tables, where the user and role infomration are stored, into Datasphere. But then it is not clear which HANA XSA (Datasphere is developed in javascript on top of NodeJS + HAHA XSA architect.) procedures to call to update the stanadard datasphere tables.
+> I don't know how to integrate it into SAP GRC. I guess we have to manually assign the roles to the user in Datasphere. SAP may release SDK, the HANA XSA procedures(Datasphere is developed in Javascript on top of NodeJS + HAHA XSA architect), to call to update the standard datasphere tables.
  
 
 # 4. Delta Data Loading
@@ -134,7 +134,7 @@ So far, compared to Azure Fabric product, I think it has the following limits.
 - No vector DB 
 - No service for ML and AI. Datasphere does not support python notebook. BTW it said that the python(script) in dataflow has bad performance.
 - No embedded 3rd party services such as "Databricks", "Chatgpt", "Huggling Face" and etc.
-- No SDK to automate processes such as synchronizing users and roles from SAP GRC
+- No SDK (there is Command Line interface though)
  
 They might already be included, but it will take some time for me to find out. Alternatively, they could still be under development, and SAP may plan to add them in the future.
 
