@@ -70,7 +70,7 @@ This is a feature that allows to load the snapshot of the view data into the mem
 #### 2.2.3. View Analyzer
 
 > [!IMPORTANT] 
-> This feature is similar to the PlanViz tool in HANA. It allows for the analysis of the SQL Execution Plan, providing insights into query runtime and memory consumption.
+> This feature is similar to the **PlanViz** tool in HANA. It allows for the analysis of the SQL Execution Plan, providing insights into query runtime and memory consumption.
 
 ![alt text](/DataBuilder/images/GV_Analyzer1.png?raw=true)
 
@@ -92,7 +92,7 @@ It is very similarly to the **Analytic Privileges** in SAP HANA and is defined i
 ![alt text](/DataBuilder/images/GV_DCA.png?raw=true)
 
 ## 3. ER Models
-It provides a detailed view about how the model is designed.
+It provides a detailed view about how the model is designed. I don't think it has extensive usage in the real business scenarios. 
 
 ![alt text](/DataBuilder/images/ERModel.png?raw=true)
 
