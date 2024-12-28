@@ -134,6 +134,7 @@ So far, compared to Azure Fabric product, I think it has the following limits.
 - No vector DB 
 - No service for ML and AI. Datasphere does not support python notebook. BTW it said that the python(script) in dataflow has bad performance.
 - No embedded 3rd party services such as "Databricks", "Chatgpt", "Huggling Face" and etc.
+- No SDK to automate processes such as synchronizing users and roles from SAP GRC
  
 They might already be included, but it will take some time for me to find out. Alternatively, they could still be under development, and SAP may plan to add them in the future.
 
