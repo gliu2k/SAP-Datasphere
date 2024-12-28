@@ -37,7 +37,7 @@ SAP Datasphere is very similar to SAP DWC. But it is an upgraded version of SAP 
 To support the business requirements, SAP Datasphere provides the following features 
 
 ### 1. Administration
-- [Admin](Admin/README.md)
+- [Admin](Admin/Admin.md)
   
 ### 2. Data Builder
 - [Model](DataBuilder/Model.md)
@@ -50,7 +50,7 @@ To support the business requirements, SAP Datasphere provides the following feat
 - [Monitor](Integration/Monitor.md)
 
 ### 5. Roadmap
-- [Roadmap](Roadmap/README.md)
+- [Roadmap](Roadmap/Roadmap.md)
 
 > [!CAUTION]
 > You may encount *403 Forbidden* in navigation after clicking some hyperlinks. Please copy and open the URL in a new browser tab.
