@@ -125,18 +125,18 @@ Using BW Bridge(ADSOs) heavily relies on the logic built in the BW system.
 
 # 5. Limits
 
-According to my unsersntading, SAP Datasphere is a integarated cloud platform to process data. It should comprise advanget services (APIs) to processes struture, unstructre and realtime.
+According to my understanding, SAP Datasphere is an integrated data Fabric platform. It should comprise advantage services (APIs) to processes structured, unstructured and realtime data.
 
-So far, comparing to Azure Fabric, I think it has the following limits.
+So far, compared to Azure Fabric product, I think it has the following limits.
 
-- No unque data format. In Azure Fabric, it is Apache parquet. It is very supports SQL, python and SQLLess. 
-- No sepcific service for stream data(KQL)
+- No unique file format. While in Azure Fabric, it is Apache **Parquet** which is supported by SQL(serverless SQL) and python. 
+- No specific service for stream data(KQL)
 - No vector DB 
-- No services for ML and AI. It does not even support python notebook. BTW it said the python(script) in dataflow has bad perforamnce.
-- No emebeded 3rd party services such as "databarick", chatgpt, "huggle face" and etc...
+- No service for ML and AI. Datasphere does not support python notebook. BTW it said that the python(script) in dataflow has bad performance.
+- No embedded 3rd party services such as "Databricks", "Chatgpt", "Huggling Face" and etc.
  
-Myabe tehy are there, it takes some time for me to find out. Maybe they are still under-dvelopment and SAP plan add these new features in the future.
+They might already be included, but it will take some time for me to find out. Alternatively, they could still be under development, and SAP may plan to add them in the future.
 
-In the landscope, I can only see that the **integration** is only on the **DATA** level not the Applciations (service) level. Maybe Datashpere is a data mesh, it relies on other sevieices in the cloud platform. But, the data format becomes the critcal factor..... Will the mainstream tools support HANA data file? 
+![alt text](/Roadmap/images/Arch.png?raw=true)
 
-
+In the landscape, it shows that the **Integration** is only at the **DATA** level not at the Application(service) level. Maybe Datasphere is a data mesh that relies on other services in the cloud platform. But the file format becomes a critical factor. Will the mainstream tools support HANA file format? 
