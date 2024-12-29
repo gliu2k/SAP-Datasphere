@@ -131,7 +131,7 @@ So far, compared to Azure Fabric product, I think it has the following limits.
 - No specific service for stream data(KQL)
 - No vector DB 
 - No ML and AI services. Datasphere does not support python notebook. BTW it said that the python(script) in dataflow has bad performance. Don't know why not inetgrate SAP [AICore Services](https://github.com/SAP-samples/azure-openai-aicore-cap-api/blob/main/documentation/01-ai-core-azure-openai-proxy/01-ai-sap-getting-started.md) from BTP into DataSphere.
-- No embedded 3rd party services such as "Databricks", "Chatgpt", "Huggling Face" and etc.
+- No embedded 3rd party services such as "Databricks", "Chatgpt", "Huggling Face" and etc. They are embedded in [Generative AI Hub](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/generative-ai-hub-in-sap-ai-core) of SAP BTP.
 - No SDK (there is Command Line interface though)
   
 They might already be included, but it will take some time for me to find out. Alternatively, they could still be under development, and SAP may plan to add them in the future.
