@@ -63,10 +63,8 @@ I think this approach is better and offers greater flexibility. The effort spent
 # 3. User Management
 We can import the users from *CSV* file in GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455)
 
-> [!Note]
-> I don't know how to integrate it into SAP GRC. I guess we have to manually assign the roles to the user in Datasphere. SAP may release SDK, the HANA XSA procedures(Datasphere is developed in Javascript on top of NodeJS + HAHA XSA architect), to call to update the standard datasphere tables.
+**There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions in S/4HANA(GRC) into Datasphere.**
  
-
 # 4. Delta Data Loading
 Generally， this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
 
