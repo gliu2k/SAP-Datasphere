@@ -11,6 +11,15 @@ It is used to copy the data first in a limited time window.
 Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-series-part-1-overview/ba-p/13581472) on Replication Flow.
 
 
+> [!IMPORTANT] 
+>🚩  **It can load delta data from source BW or S/4 systems.**
+>
+> Based on the 'Source Connection' type Delta option will be enabled in Replication Flow. See [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-replication-flow-delta-functionality/ba-p/13927903).
+>
+> Either ODP or STL is configured. See [details](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd3/README.md).
+
+
+
 # 2. Data Flow 
 
 Load and transform (Join, Union, Projection, Aggregation and **Python** script) the data from the source to the target. It does not support delta (**insert** method). We must truncate the target table before reloading the data.
