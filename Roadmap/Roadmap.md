@@ -130,10 +130,10 @@ So far, compared to Azure Fabric product, I think it has the following limits.
 - No unique file format. While in Azure Fabric, it is Apache **Parquet** which is supported by SQL(serverless SQL) and python. 
 - No specific service for stream data(KQL)
 - No vector DB 
-- No service for ML and AI. Datasphere does not support python notebook. BTW it said that the python(script) in dataflow has bad performance.
+- No service for ML and AI. Datasphere does not support python notebook. BTW it said that the python(script) in dataflow has bad performance. Don't know why not inetgrate SAP [AICore](https://github.com/SAP-samples/azure-openai-aicore-cap-api/blob/main/documentation/01-ai-core-azure-openai-proxy/01-ai-sap-getting-started.md) from BTP into DataSphere.
 - No embedded 3rd party services such as "Databricks", "Chatgpt", "Huggling Face" and etc.
 - No SDK (there is Command Line interface though)
- 
+  
 They might already be included, but it will take some time for me to find out. Alternatively, they could still be under development, and SAP may plan to add them in the future.
 
 ![alt text](/Roadmap/images/Arch.png?raw=true)
