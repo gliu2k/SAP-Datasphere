@@ -16,7 +16,7 @@ Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-s
 >
 > Based on the 'Source Connection' type Delta option will be enabled in Replication Flow. See [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-replication-flow-delta-functionality/ba-p/13927903).
 >
-> Either ODP or STL needs to be configured to enable delta capture. See [details](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd3/README.md).
+> Either ODP or SLT needs to be configured to enable delta capture. See [details](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd3/README.md).
 
 
 
