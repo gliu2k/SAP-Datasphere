@@ -48,7 +48,7 @@ Below are the methods and their drawbacks
   - The doable way is to load the delta data from SAP standard CDSViews. 
   [HowTo](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-ii-delta-handling/ba-p/13425761)
 
-  - We need to rebuild the DataSphere **VIEWs** on top of these CDSViews structures. When we want to make enhancements, are we going to create the custom CDSView by referring to (copying) the SAP standard one?
+  - We need to rebuild the DataSphere **VIEWs** on top of SAP standard CDSViews structures. When we want to make enhancements, are we going to create the custom CDSView by referring to (copying) the SAP standard one?
   
 - Tables (SLT)
   - Remodeling
