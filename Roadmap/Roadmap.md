@@ -115,7 +115,10 @@ Detla can be reset.
   - We CANNOT use the Active Table of the source table (source table supports "Delta" mode as well) and select "Initial and Delta" type in Transformation Flow. "Initial Only" is the only option.
   - We can choose "Initial Only" type in the first execution of the Transformation Flow but need to change it to "Initial and Delta" type in the consequential execution. (Why not select "Initial and Delta" from the very beginning.)
 
-# 4.2 BW Bridge to DataSphere.
+## 4.2 Delta Capture in the source systems
+Refer to **"Replication Flow"** in **"Flow"** section of **DataBuilder**
+
+## 4.3 BW Bridge to DataSphere.
 
 You can find the details in this [blog](https://community.sap.com/t5/technology-blogs-by-sap/delta-extraction-of-adso-from-sap-bw-bridge-into-sap-datasphere-via/ba-p/13651788) about how to load the delta data from the changelog table of ADSO in BW bridge. However, it does not include the case when 0RecordMode = 'A'. 
 
