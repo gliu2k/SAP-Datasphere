@@ -66,7 +66,7 @@ We can import the users from *CSV* file in GoLive. And, we can synchronize the u
 **There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA(GRC) into Datasphere.**
  
 # 4. Delta Data Loading
-Generally， this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
+Generally，this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
 
 Let's take a quick at the **Delta** within Datasphere. We have talked about delta in the Flow and Model in DataBuilder section. We need to turn on "delta capture" in 
 local table and use Transformation Flow to do dalta data loading.
