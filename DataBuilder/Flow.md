@@ -12,17 +12,17 @@ Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-s
 
 
 > [!IMPORTANT] 
->🚩  **It can load delta data from source BW or S/4 systems.**
+>🚩  **It can be used to load the delta data from source BW or S/4HANA systems.**
 >
-> Based on the 'Source Connection' type Delta option will be enabled in Replication Flow. See [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-replication-flow-delta-functionality/ba-p/13927903).
+> Based on the 'Source Connection' type **Delta** option will be enabled in Replication Flow. See [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-replication-flow-delta-functionality/ba-p/13927903).
 >
-> Either ODP or SLT needs to be configured to enable delta capture. See [details](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd3/README.md).
+> Either ODP or SLT needs to be configured to enable delta capture. See the [details](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd3/README.md).
 
 
 
 # 2. Data Flow 
 
-Load and transform (Join, Union, Projection, Aggregation and **Python** script) the data from the source to the target. It does not support delta (**insert** method). We must truncate the target table before reloading the data.
+Load and transform (Join, Union, Projection, Aggregation and **Python** script) the data from the source to the target. As it does not support delta (it uses the **insert** method), we must truncate the target table before reloading the data.
 
 ![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
 
@@ -36,15 +36,15 @@ It is an ETL process similar to BW transformation, but it uses **VIEW** to trans
 ![alt text](/DataBuilder/images/Flow_TF1.png?raw=true)
 
 > [!IMPORTANT] 
-> - Support **delta** loading (**ONLY** load the changed data in the detla table of the source. It is covered in the databuilder section)  
+> - Support **delta** loading (**ONLY** load the changed data in the detla table of the source. It is also covered in the **Databuilder/Model** and **Roadmap** sections.)  
 > - Easy for troubleshooting if the source contains bad data
-> - Use **upsert** method, which means we don't need to clear the target table
+> - Use **upsert** method, which means we don't need to clear(truncate) the target table first
 
-# 3.1. SQLScript View(Table Function)
+## 3.1. SQLScript View(Table Function)
 
 ![alt text](/DataBuilder/images/Flow_TF2.png?raw=true)
 
-# 3.2. Graphical View
+## 3.2. Graphical View
 
 ![alt text](/DataBuilder/images/Flow_GV1.png?raw=true)
 >  [!TIP]
