@@ -28,13 +28,15 @@ Add the attributes/text to the field. The association will be availabe in creati
 ![alt text](/DataBuilder/images/TableAssociation.png?raw=true)
 
 
-### 1.3. Delta Capture
+### 1.3. Delta Capture 
+
 ![alt text](/DataBuilder/images/TableDelta.png?raw=true)
 
 > [!IMPORTANT] 
 > - Two local tables, the active table and the detla table("Technicalname_Delta"), are generated when the “Delat Capture” flag is turned on. 
 > - Two additional fields, "Change Type" and "Change Datae" are included in the "delta" table. The "Change Type" can have value of "I"(initial), "D"(delete) and "U"(update) after specific activities are applied to the record.
 
+It will be explained in details again in **Roadmap** section.
 
 ## 2. Views
 There are two types of views, SQL View and Graphical View, in datasphere. Both are virtual objects. <BR/>
