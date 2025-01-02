@@ -23,7 +23,7 @@ You can create the local tables, generate a local table by importing CSV file, o
 > -	**Dimension/Text/Hierarchy**: master data and are used in the association of fact, view or other dimension tables 
 
 ### 1.2. Association
-Add the attributes/text to the field. The association will be availabe in creating the model.
+Add the attributes/text to the field. The association will be availabe in creating the Analytic Model.
 
 ![alt text](/DataBuilder/images/TableAssociation.png?raw=true)
 
