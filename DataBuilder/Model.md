@@ -60,7 +60,7 @@ It is similar to the HANA Calculation View. Graphical View is optimized and has 
 >-  Data preview is available in each node.
 
 #### 2.2.1. Association
-Create a new GV using the previously GV and add the associations (as in the local table)
+Create a new GV using the previously GV and add the associations (as in the local table). It can be used in creating Aanlytic Model.
 
 ![alt text](/DataBuilder/images/NewGV_Asso.png?raw=true)
 
