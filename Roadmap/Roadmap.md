@@ -41,7 +41,10 @@ Below are the approaches and their drawbacks
 
 - BW SAPI Extractor
   - It may not be a long-term solution.
-    
+
+- Tables (SLT)
+  - Remodeling
+
 - CDS View Extractor (ODP)
   - Fewer customers develop the custom CDSView with the delta mechanism. 
   [Example](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd1/README.md)
@@ -50,11 +53,34 @@ Below are the approaches and their drawbacks
   [HowTo](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-ii-delta-handling/ba-p/13425761)
 
   - We need to rebuild the DataSphere **VIEWs** on top of SAP standard CDSViews structures. When we want to make enhancements, are we going to create the custom CDSView by referring to (copying) the SAP standard one?
-  
-- Tables (SLT)
-  - Remodeling
+
+## 1.3. ODP/ODQ (SLT & CDS)
+
+![alt text](/Roadmap/images/ODP1.png?raw=true) 
+
+![alt text](/Roadmap/images/ODP2.png?raw=true) 
+
+
+- **SLT: Need to install SLT server**
+
+
+![alt text](/Roadmap/images/ODP3.png?raw=true) 
+
+- Full extraction and query-type access (direct access)
+  - The following annotations make it possible for an ABAP CDS view to be available for full extraction or for direct access:
+    - @Analytics.dataCategory
+    - @Analytics.dataExtraction.enabled
+
+- Delta Extraction
+  - For delta extraction, the following additional annotations are available:
+    - Analytics.dataExtraction.delta.byElement.name
+    - Analytics.dataExtraction.delta.byElement.maxDelayInSeconds
+    - Analytics.dataExtraction.delta.byElement.detectDeletedRecords
+
+- **Fewer custom-CDS has such a good design to capture the delta**
+![alt text](/Roadmap/images/ODP4.png?raw=true) 
     
-# 2. Greenfield - BW SideCar + SLT
+# 2. Greenfield - BW SideCar + SLT 
 
 I think this approach is better and offers greater flexibility. The effort spent on remodeling is nearly the same as utilizing CDSViews. SLT can replicate the delta data changes of the tables in real-time. We can compare the reports in datasphere side-by-side with the BW system. [Link](https://learning.sap.com/learning-journeys/modernizing-your-data-warehouse-landscape-from-sap-bw-to-sap-datasphere/introducing-the-greenfield-approach)
 
