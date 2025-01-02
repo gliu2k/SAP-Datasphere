@@ -80,7 +80,7 @@ This is a feature that allows to load the snapshot of the view data into the mem
 
 ![alt text](/DataBuilder/images/GV_Analyzer3.png?raw=true)
 
-- In the analysis result, which is available in "Data Integration Monitor", you can find the execution information. 
+- In the above analysis result, which is available in "Data Integration Monitor", we can find the following important execution information. 
 
   -  Run Time
   -  Memory Consumption
