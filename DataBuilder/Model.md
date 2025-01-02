@@ -78,6 +78,8 @@ This is a feature that allows to load the snapshot of the view data into the mem
 
 ![alt text](/DataBuilder/images/GV_Analyzer2.png?raw=true)
 
+![alt text](/DataBuilder/images/GV_Analyzer3.png?raw=true)
+
 - In the analysis result, which is available in "Data Integration Monitor", you can find the execution information. 
 
   -  Run Time
@@ -86,15 +88,13 @@ This is a feature that allows to load the snapshot of the view data into the mem
 
 #### 2.2.4. Linage Analysis
 
-![alt text](/DataBuilder/images/LinageAnalysis.png?raw=true)
-
-![alt text](/DataBuilder/images/LinageAnalysis.png?raw=true)
-
 > [!Note] 
-> "Linage Analysis" is kind like the combination of "displaying the dependencies" in CDSView and "showing the where-used" list in SAP. Don't forget to unfold the '+' on the very right of the last object.
+> "Linage Analysis" is kind like the combination of "displaying the dependencies" in CDSView and "showing the where-used" list in SAP. **Don't forget to unfold the '+' on the very right of the last object.**
 
+![alt text](/DataBuilder/images/LinageAnalysis.png?raw=true)
 
-![image](https://github.com/user-attachments/assets/c4076c2e-afc4-4485-ad96-279ed0244afe)
+![alt text](/DataBuilder/images/WhereUsed.png?raw=true)
+
 
 #### 2.2.5. Data Access Controls
 
@@ -118,7 +118,7 @@ The Analytic Model must be built on the object of **Fact** semantic.
 ![alt text](/DataBuilder/images/NewAM.png?raw=true)
 
 > [!Note]
->- We need to create the association in the fact table/view to bring in the attributes of the dimension.
+>- We need to create the association in the fact table/view and bring in the association, the attributes of the dimension, here.
 >- We can create variables to map to the "input parameter" created in the graphic view.
 
 **This is a good article regarding Analytic Model.**
@@ -127,7 +127,7 @@ The Analytic Model must be built on the object of **Fact** semantic.
 ## 5. Currency Conversion Views
 ![alt text](/DataBuilder/images/Others.png?raw=true)
 
-<pre>🚩 You can find the "HowTo" steps in the below link.</pre>
+<pre>🚩 You can find the "HowTo" in the below link.</pre>
 - [Howto](https://community.sap.com/t5/technology-blogs-by-members/currency-translation-in-sap-datasphere/ba-p/13688008)
 
 ## 6. Data Access Controls
