@@ -9,10 +9,11 @@ The path has been laid out to ensure a smooth migration and protect the investme
 
 [Introducing the Migration from SAP BW to SAP Datasphere, SAP BW Bridge](https://learning.sap.com/learning-journeys/modernizing-your-data-warehouse-landscape-from-sap-bw-to-sap-datasphere/introducing-the-migration-from-sap-bw-to-sap-datasphere-sap-bw-bridge)
 
-SAP recommends moving to BW Bridge first. It operates on SAP HANA Cloud platform but still includes the ABAP stack, enabling a seamless migration of BW objects.
+SAP recommends moving to BW Bridge first. It operates on SAP HANA Cloud platform but still includes the **ABAP stack**, enabling a seamless migration of BW objects.
 
 ![alt text](/Roadmap/images/Path.png?raw=true)
 
+SAP Cloud is on **HANA(XSA) + NODEJS** stack. Python runtime environmant may be different.
 
 ## 1.1. Migrate to BW Bridge
 
@@ -36,7 +37,7 @@ The ADOs tables are replciated from BW bridge and the models are rebuilt in Data
 
 ## 1.2. Load data into DataSphere from the source systems(S/4HANA, ERP)
 
-Below are the methods and their drawbacks
+Below are the approaches and their drawbacks
 
 - BW SAPI Extractor
   - It may not be a long-term solution.
@@ -59,9 +60,9 @@ I think this approach is better and offers greater flexibility. The effort spent
 
 
 # 3. User Management
-We can import the users from *CSV* file in GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455)
+We can import the users from *CSV* file in the GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455) in daily maintenance.
 
-**There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA(or GRC) into Datasphere.**
+**There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA(or GRC) system into Datasphere.**
  
 # 4. Delta Data Loading
 Generally，this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
@@ -116,7 +117,7 @@ Detla can be reset.
   - We can choose "Initial Only" type in the first execution of the Transformation Flow but need to change it to "Initial and Delta" type in the consequential execution. (Why not select "Initial and Delta" from the very beginning.)
 
 ## 4.2 Delta Capture in the source systems
-Refer to **"Replication Flow"** in **"Flow"** section of **DataBuilder**
+Refer to **"Replication Flow"** in the **"Flow"** section of **DataBuilder**
 
 ## 4.3 BW Bridge to DataSphere.
 
