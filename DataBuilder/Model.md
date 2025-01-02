@@ -56,8 +56,8 @@ It is similar to the HANA Calculation View. Graphical View is optimized and has 
 >-	The "attributes" are the same as "columns" defined in HANA view
 >-  The attribute can have "association" too.
 >-	It has "Input Parameter" which is the same as in HANA view. It should be pushed down to the lower node to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
->-  Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes are the same as in HANA Calculation View(Graphical).
->-  Data preview is available in each node.
+>-  **Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes** are the same as in HANA Calculation View(Graphical).
+>-  **Data preview** is available in each node.
 
 ### 2.2.1. Association
 Create a new GV using the previously GV and add the associations (as in the local table). It can be used in creating Aanlytic Model.
