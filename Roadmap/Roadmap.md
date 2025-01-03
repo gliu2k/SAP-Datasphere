@@ -77,7 +77,7 @@ Below are the approaches and their drawbacks
     - Analytics.dataExtraction.delta.byElement.maxDelayInSeconds
     - Analytics.dataExtraction.delta.byElement.detectDeletedRecords
 
-- **Fewer custom-CDS has such a good design to capture the delta**
+- **Fewer custom CDSViedws has such a good design to capture the delta. Some custom CDSViews may have input parameter or may be too complex. **
 ![alt text](/Roadmap/images/ODP4.png?raw=true) 
     
 # 2. Greenfield - BW SideCar + SLT 
