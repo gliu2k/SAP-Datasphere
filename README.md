@@ -51,7 +51,7 @@ To support the business requirements, SAP Datasphere provides the following feat
 
 ### 5. SAC
 - [Monitor](SAC/Report.md)
-- 
+
 ### 6. Roadmap
 - [Roadmap](Roadmap/Roadmap.md)
 
