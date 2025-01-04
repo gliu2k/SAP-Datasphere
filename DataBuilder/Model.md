@@ -13,7 +13,7 @@ You can create the local tables, generate a local table by importing CSV file, o
 
 > [!NOTE]
 > Remote tables are the virtual tables as in SDA(HANA) or the “link” as in **Azure Fabric**, which map to the physical objects locating in the remote system.
-
+> If you have a good understanding of the table's size and expected data growth, it's advisable to decide on partitioning when you create the table from the performance perspective.
 
 ## 1.1. Semantic Usage
 ![alt text](/DataBuilder/images/NewTable.png?raw=true)
