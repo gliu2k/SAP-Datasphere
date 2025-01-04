@@ -59,6 +59,11 @@ It is similar to the HANA Calculation View. Graphical View is optimized and has 
 >-  **Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes** are the same as in HANA Calculation View(Graphical).
 >-  **Data preview** is available in each node.
 
+> [!Tip]
+> Performance tuning
+> - Set the correct join cardinalities for JOIN prune
+> - Use Constant Mapping for UNION prune (no prune setting based on Configuration Table and Column)
+
 ### 2.2.1. Association
 Create a new GV using the previously GV and add the associations (as in the local table). It can be used in creating Aanlytic Model.
 
