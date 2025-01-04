@@ -62,8 +62,8 @@ Below are the approaches and their drawbacks
 ![alt text](/Roadmap/images/ODP2.png?raw=true) 
 
 - **SLT: Need to install SLT server**
-
-**See this [blog](https://community.sap.com/t5/technology-blogs-by-sap/replicating-tables-using-slt-and-replication-flows-rms-in-sap-data/ba-p/13569425) regarding SLT + RMS(Replication Flow) in SDI(Cloud)**
+> [!Note]
+> **See this [blog](https://community.sap.com/t5/technology-blogs-by-sap/replicating-tables-using-slt-and-replication-flows-rms-in-sap-data/ba-p/13569425) regarding SLT + RMS(Replication Flow) in SDI(Cloud)**
 
 ### 1.3.2. CDS
 ![alt text](/Roadmap/images/ODP3.png?raw=true) 
@@ -139,10 +139,11 @@ The same is shown in the log (one record is loaded).
 Detla can be reset.
 ![alt text](/Roadmap/images/ResetWaterMark.png?raw=true)
 
-- **Summary:**
-  - We CANNOT choose "Initial and Detla" type in Transformation Flow if the source table does not support "Detla".
-  - We CANNOT use the Active Table of the source table (if the source table supports "Delta" mode as well) and select "Initial and Delta" type in Transformation Flow. "Initial Only" is the only option.
-  - We can choose "Initial Only" type in the first execution of the Transformation Flow but need to change it to "Initial and Delta" type in the consequential execution. (Why not select "Initial and Delta" from the very beginning.)
+> [!Important]
+> - **Summary:**
+>   - We CANNOT choose "Initial and Detla" type in Transformation Flow if the source table does not support "Detla".
+>   - We CANNOT use the Active Table of the source table (if the source table supports "Delta" mode as well) and select "Initial and Delta" type in Transformation Flow. "Initial Only" is the only option.
+>   - We can choose "Initial Only" type in the first execution of the Transformation Flow but need to change it to "Initial and Delta" type in the consequential execution. (Why not select "Initial and Delta" from the very beginning.)
 
 ## 4.2 Delta Capture in the source systems
 Refer to **"Replication Flow"** in **1.3.1** and in the **"Flow"** section of **DataBuilder**
