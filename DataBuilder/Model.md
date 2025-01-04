@@ -54,7 +54,7 @@ It is similar to the HANA Calculation View. Graphical View is optimized and has 
 > [!IMPORTANT]
 >-	View has "semantic type" as well. And, only the fact view can be used in the Analytic Model.
 >-	The "attributes" are the same as "columns" defined in HANA view
->-  The attribute can have "association". Please note that there is no **"Star Join"** type because this feature is similar to the "Star Join".
+>-  The attribute can have "association". Please note that there is no **"Star Join"** type because this feature is the same as the "Star Join".
 >-	It has "Input Parameter" which is the same as in HANA view. It should be pushed down to the lower node to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
 >-  **Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes** are the same as in HANA Calculation View(Graphical).
 >-  **Data preview** is available in each node.
