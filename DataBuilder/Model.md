@@ -93,10 +93,12 @@ This is a feature that allows to load the snapshot of the view data into the mem
 
 ### 2.2.4. Linage Analysis
 
-> [!Note] 
-> "Linage Analysis" is kind like the combination of "displaying the dependencies" in CDSView and "showing the where-used" list in SAP. **Don't forget to unfold the '+' on the very right of the last object.**
+"Linage Analysis" is kind like the combination of "displaying the dependencies" in CDSView and "showing the where-used" list in SAP.
 
 ![alt text](/DataBuilder/images/LinageAnalysis.png?raw=true)
+
+> [!Note] 
+>  **Don't forget to unfold the '+' on the very right of the last object.** to show the relevant upper objects
 
 ![alt text](/DataBuilder/images/WhereUsed.png?raw=true)
 
