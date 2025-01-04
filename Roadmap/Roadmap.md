@@ -32,7 +32,7 @@ Both the metadata and data are transferred. This is for the scenario where the h
   - No support for the OLAP engine and functionality dependent on the OLAP engine, e.g., analysis authorizations, query as InfoProvider, query execution, calculation of non-cumulative key figures (aka inventory key figures).
   - ....
 
-The ADOs tables are replciated from BW bridge and the models are rebuilt in DataSphere(The architecture of BW Bridge + DWC is similar to Datasphere). See section **4.2**. The new reports are created in SAC.
+The ADOs tables are replciated from BW bridge and the models are rebuilt in DataSphere(DWC = Datasphere). See section **4.2**. The new reports are created in SAC.
 ![alt text](/Roadmap/images/Future.png?raw=true)
 
 ## 1.2. Load data into DataSphere from the source systems(S/4HANA, ERP)
