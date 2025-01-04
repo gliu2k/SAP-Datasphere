@@ -60,7 +60,7 @@ It is similar to the HANA Calculation View. Graphical View is optimized and has 
 >-  **Data preview** is available in each node.
 
 > [!Tip]
-> Performance tuning
+> **Performance tuning**
 > - Set the correct join cardinalities for JOIN prune
 > - Use Constant Mapping for UNION prune (no prune setting based on Configuration Table and Column)
 
