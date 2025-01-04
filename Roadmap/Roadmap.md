@@ -58,12 +58,14 @@ Below are the approaches and their drawbacks
 
 ![alt text](/Roadmap/images/ODP1.png?raw=true) 
 
+### 1.3.1. SLT
 ![alt text](/Roadmap/images/ODP2.png?raw=true) 
-
 
 - **SLT: Need to install SLT server**
 
+**See this [blog](https://community.sap.com/t5/technology-blogs-by-sap/replicating-tables-using-slt-and-replication-flows-rms-in-sap-data/ba-p/13569425) regarding SLT + RMS(Replication Flow) in SDI(Cloud)**
 
+### 1.3.2. CDS
 ![alt text](/Roadmap/images/ODP3.png?raw=true) 
 
 - Full extraction and query-type access (direct access)
