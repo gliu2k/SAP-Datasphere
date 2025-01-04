@@ -56,7 +56,7 @@ It is similar to the HANA Calculation View. Graphical View is optimized and has 
 >-	The "attributes" are the same as "columns" defined in HANA view
 >-  The attribute can have "association" too.
 >-	It has "Input Parameter" which is the same as in HANA view. It should be pushed down to the lower node to get better performance and be mapped to the variable created in the upper layer like Analytic Model.
->-  **Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes** are the same as in HANA Calculation View(Graphical).
+>-  **Join, Union, Filter, Projection(show/hide columns), and Aggregation nodes (no "Star Join")** are the same as in HANA Calculation View(Graphical).
 >-  **Data preview** is available in each node.
 
 ### 2.2.1. Association
@@ -118,7 +118,7 @@ The Analytic Model must be built on the object of **Fact** semantic.
 ![alt text](/DataBuilder/images/NewAM.png?raw=true)
 
 > [!Note]
->- We need to create the association in the fact table/view and bring in the association, the attributes of the dimension, here.
+>- We need to create the association in the fact table/view and bring in the association, the attributes of the dimension, here. In other words, you cannot create JOIN/UNION here.
 >- We can create variables to map to the "input parameter" created in the graphic view.
 
 **This is a good article regarding Analytic Model.**
