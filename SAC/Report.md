@@ -6,7 +6,7 @@ SAP Analystic Cloud is SAP reporting platform on cloud.
 # 0. Data Preview - Analytic Model in DataSphere
 ![alt text](/SAC/images/Preview.png?raw=true)
 
-Jump to SAC from Datasphere
+- **We can simply jump to SAC from Datasphere.**
 
 # 1. Create Connection to Datasphere
 ![alt text](/SAC/images/Connection.png?raw=true)
