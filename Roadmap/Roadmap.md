@@ -166,7 +166,7 @@ Using BW Bridge(ADSOs) heavily relies on the logic built in the BW system.
 Refer to **2.2** 
 
 
-# 5. Limits & Integration
+# 5. Limits & Integration(with non-SAP)
 
 According to my understanding, SAP Datasphere is an integrated data Fabric platform. It should comprise advantage (cloud) services to processes structured, unstructured and realtime data.
 
