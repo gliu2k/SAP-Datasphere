@@ -48,12 +48,6 @@ I think this approach is better and offers greater flexibility. [Link](https://l
 
 Below are the approaches and their drawbacks
 
-- BW SAPI Extractor
-  - It may not be a long-term solution. (Without BW contents, these datasources are useless in datasphere.)
-
-- Tables (ODP/SLT)
-  - Remodeling
-
 - CDS View Extractor (ODP)
   - Fewer customers develop the custom CDSView with the delta mechanism. 
   [Example](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd1/README.md)
@@ -63,7 +57,17 @@ Below are the approaches and their drawbacks
 
   - We need to rebuild the DataSphere **VIEWs** on top of SAP standard CDSViews structures. When we want to make enhancements, are we going to create the custom CDSView by referring to (copying) the SAP standard one?
 
-I think the second approach **Tables (ODP/SLT)** is the best. The effort spent on remodeling is nearly the same as utilizing CDSViews. SLT can replicate the delta data changes of the tables in real-time. We can compare the reports in datasphere side-by-side with the BW system.
+- BW SAPI Extractor
+  - There are no BW contents in Datasphere.
+
+- Tables (ODP/SLT)
+  - Remodeling, without using the Pre-built Business Content for SAP S/4HANA
+
+> [!Important]
+> This is [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)
+> 
+> However I think the second approach **Tables (ODP/SLT)** may be the best.
+
 
 ## 2.2 ODP/ODQ (SLT & CDS View)
 
@@ -97,7 +101,7 @@ I think the second approach **Tables (ODP/SLT)** is the best. The effort spent o
 # 3. User Management
 We can import the users from *CSV* file in the GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455) in daily maintenance.
 
-**There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA(or GRC) system into Datasphere.**
+**There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA system into Datasphere.**
  
 # 4. Delta Data Loading
 Generally，this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
