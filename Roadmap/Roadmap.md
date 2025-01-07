@@ -2,6 +2,11 @@
 
 SAP is encouraging customers to transition to Datasphere. 
 
+![alt text](/Roadmap/images/AsIs.png?raw=true)
+
+
+![alt text](/Roadmap/images/Target.png?raw=true)
+
 
 # 1. Migration
 
