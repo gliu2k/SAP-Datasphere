@@ -55,7 +55,7 @@ Below are the approaches and their drawbacks
   - The doable way is to load the delta data from SAP standard CDSViews. 
   [HowTo](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-ii-delta-handling/ba-p/13425761)
 
-  - We need to rebuild the DataSphere **VIEWs** on top of SAP standard CDSViews structures. When we want to make enhancements, we need to create the custom CDSViews by referring to (copying) the SAP standard ones.
+  - We need to rebuild the DataSphere **VIEWs** on top of SAP standard CDSViews. When we want to make enhancements(to the CDSViews), we need to create the custom CDSViews by referring to the SAP standard ones.
 
 - BW SAPI Extractor
   - There are no BW contents in Datasphere.
@@ -65,8 +65,6 @@ Below are the approaches and their drawbacks
 
 > [!Important]
 > The first approach is [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)
-> 
-> However I think the third approach **Tables (ODP/SLT)** may be the best. The effort spent on remodeling is nearly the same as utilizing CDSViews. SLT can replicate the delta data changes of the tables in real-time. We can compare the reports in datasphere side-by-side with the BW system.
 
 
 ## 2.2 ODP/ODQ (SLT & CDS View)
