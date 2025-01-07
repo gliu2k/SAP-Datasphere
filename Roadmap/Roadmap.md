@@ -163,7 +163,8 @@ Using BW Bridge(ADSOs) heavily relies on the logic built in the BW system.
 ## 4.2 Delta Capture in the Source Systems (Greenfield)
 Refer to **2.2** 
 
-# 5. Limits
+
+# 5. Limits & Integration
 
 According to my understanding, SAP Datasphere is an integrated data Fabric platform. It should comprise advantage (cloud) services to processes structured, unstructured and realtime data.
 
