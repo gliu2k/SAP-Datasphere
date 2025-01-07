@@ -40,7 +40,7 @@ The ADOs tables are replciated from BW bridge and the models are rebuilt in Data
 Below are the approaches and their drawbacks
 
 - BW SAPI Extractor
-  - It may not be a long-term solution.
+  - It may not be a long-term solution. (Without BW contents, these datasources are useless in datasphere.)
 
 - Tables (ODP/SLT)
   - Remodeling
@@ -54,7 +54,7 @@ Below are the approaches and their drawbacks
 
   - We need to rebuild the DataSphere **VIEWs** on top of SAP standard CDSViews structures. When we want to make enhancements, are we going to create the custom CDSView by referring to (copying) the SAP standard one?
 
-## 1.3. ODP/ODQ (SLT & CDS)
+## 1.3. ODP/ODQ (SLT & CDS View as in 1.2)
 
 ![alt text](/Roadmap/images/ODP1.png?raw=true) 
 
