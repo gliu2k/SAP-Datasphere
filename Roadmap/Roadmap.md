@@ -40,7 +40,7 @@ Both the metadata and data are transferred. This is for the scenario where the h
 The ADOs tables are replciated from BW bridge and the models are rebuilt in DataSphere(DWC = Datasphere). See section **4.2**. The new reports are created in SAC.
 ![alt text](/Roadmap/images/Future.png?raw=true)
 
-# 2. Greenfield (BW SideCar)
+# 2. Greenfield 
 
 I think this approach is better and offers greater flexibility. [Link](https://learning.sap.com/learning-journeys/modernizing-your-data-warehouse-landscape-from-sap-bw-to-sap-datasphere/introducing-the-greenfield-approach)
 
