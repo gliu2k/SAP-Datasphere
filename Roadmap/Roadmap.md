@@ -153,7 +153,7 @@ Detla can be reset.
 >   - We can choose "Initial Only" type in the first execution of the Transformation Flow but need to change it to "Initial and Delta" type in the consequential execution. (Why not select "Initial and Delta" from the very beginning.)
 
 ## 4.2 Delta Capture in the source systems
-Refer to **#2.2** 
+Refer to **2.2** 
 
 ## 4.3 BW Bridge to DataSphere.
 
