@@ -160,7 +160,7 @@ You can find the details in this [blog](https://community.sap.com/t5/technology-
 
 Using BW Bridge(ADSOs) heavily relies on the logic built in the BW system. 
 
-## 4.2 Delta Capture in the Source Systems (Greenfield)
+## 4.3 Delta Capture in the Source Systems (Greenfield)
 Refer to **2.2** 
 
 
