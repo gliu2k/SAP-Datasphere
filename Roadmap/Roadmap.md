@@ -63,7 +63,7 @@ Below are the approaches and their drawbacks
 
   - We need to rebuild the DataSphere **VIEWs** on top of SAP standard CDSViews structures. When we want to make enhancements, are we going to create the custom CDSView by referring to (copying) the SAP standard one?
 
-I think the 2nd approach **Tables (ODP/SLT)** is the best. The effort spent on remodeling is nearly the same as utilizing CDSViews. SLT can replicate the delta data changes of the tables in real-time. We can compare the reports in datasphere side-by-side with the BW system.
+I think the second approach **Tables (ODP/SLT)** is the best. The effort spent on remodeling is nearly the same as utilizing CDSViews. SLT can replicate the delta data changes of the tables in real-time. We can compare the reports in datasphere side-by-side with the BW system.
 
 ## 2.2 ODP/ODQ (SLT & CDS View)
 
