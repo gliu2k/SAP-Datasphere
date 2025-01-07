@@ -40,7 +40,11 @@ Both the metadata and data are transferred. This is for the scenario where the h
 The ADOs tables are replciated from BW bridge and the models are rebuilt in DataSphere(DWC = Datasphere). See section **4.2**. The new reports are created in SAC.
 ![alt text](/Roadmap/images/Future.png?raw=true)
 
-## 1.2. Load data into DataSphere from the source systems(S/4HANA, ERP)
+# 2. Greenfield (BW SideCar)
+
+I think this approach is better and offers greater flexibility. [Link](https://learning.sap.com/learning-journeys/modernizing-your-data-warehouse-landscape-from-sap-bw-to-sap-datasphere/introducing-the-greenfield-approach)
+
+## 2.1. Load data into DataSphere from the source systems(S/4HANA, ERP)
 
 Below are the approaches and their drawbacks
 
@@ -59,18 +63,20 @@ Below are the approaches and their drawbacks
 
   - We need to rebuild the DataSphere **VIEWs** on top of SAP standard CDSViews structures. When we want to make enhancements, are we going to create the custom CDSView by referring to (copying) the SAP standard one?
 
-## 1.3. ODP/ODQ (SLT & CDS View as in 1.2)
+I think the 2nd approach **Tables (ODP/SLT)** is the best. The effort spent on remodeling is nearly the same as utilizing CDSViews. SLT can replicate the delta data changes of the tables in real-time. We can compare the reports in datasphere side-by-side with the BW system.
+
+## 2.2 ODP/ODQ (SLT & CDS View)
 
 ![alt text](/Roadmap/images/ODP1.png?raw=true) 
 
-### 1.3.1. SLT
+### 2.2.1. SLT
 ![alt text](/Roadmap/images/ODP2.png?raw=true) 
 
 - **SLT: Need to install SLT server**
 > [!Note]
-> **See this [blog](https://community.sap.com/t5/technology-blogs-by-sap/replicating-tables-using-slt-and-replication-flows-rms-in-sap-data/ba-p/13569425) regarding SLT + RMS(Replication Flow) in SDI(Cloud)**
+> **See this [blog](https://community.sap.com/t5/technology-blogs-by-sap/replicating-tables-using-slt-and-replication-flows-rms-in-sap-data/ba-p/13569425) regarding SLT + RMS(Replication Flow) in SDI(DPA)**
 
-### 1.3.2. CDS
+### 2.2.2. CDS
 ![alt text](/Roadmap/images/ODP3.png?raw=true) 
 
 - Full extraction and query-type access (direct access)
@@ -87,10 +93,6 @@ Below are the approaches and their drawbacks
 - **Fewer custom CDSViedws has such a good design to capture the delta. Some custom CDSViews may have input parameter or may be too complex.**
 ![alt text](/Roadmap/images/ODP4.png?raw=true) 
     
-# 2. Greenfield - BW SideCar + SLT 
-
-I think this approach is better and offers greater flexibility. The effort spent on remodeling is nearly the same as utilizing CDSViews. SLT can replicate the delta data changes of the tables in real-time. We can compare the reports in datasphere side-by-side with the BW system. [Link](https://learning.sap.com/learning-journeys/modernizing-your-data-warehouse-landscape-from-sap-bw-to-sap-datasphere/introducing-the-greenfield-approach)
-
 
 # 3. User Management
 We can import the users from *CSV* file in the GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455) in daily maintenance.
