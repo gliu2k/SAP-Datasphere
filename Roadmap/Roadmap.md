@@ -104,7 +104,7 @@ We can import the users from *CSV* file in the GoLive. And, we can synchronize t
 # 4. Delta Data Loading
 Generally，this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
 
-Let's take a quick at the **Delta** within Datasphere. We have talked about delta in the Flow and Model in DataBuilder section. We need to turn on "delta capture" in 
+Let's take a quick at the **Delta** within Datasphere. We have talked about the settings in the "Model" and "Flow" in DataBuilder section. We need to turn on "delta capture" in 
 local table and use Transformation Flow to do dalta data loading.
 
 ## 4.1. Delta in DataSphere 
