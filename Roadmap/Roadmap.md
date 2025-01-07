@@ -69,14 +69,14 @@ I think the second approach **Tables (ODP/SLT)** is the best. The effort spent o
 
 ![alt text](/Roadmap/images/ODP1.png?raw=true) 
 
-### 2.2.1. SLT
+### 2.2.1. ODP/SLT
 ![alt text](/Roadmap/images/ODP2.png?raw=true) 
 
 - **SLT: Need to install SLT server**
 > [!Note]
 > **See this [blog](https://community.sap.com/t5/technology-blogs-by-sap/replicating-tables-using-slt-and-replication-flows-rms-in-sap-data/ba-p/13569425) regarding SLT + RMS(Replication Flow in Datasphere) in SDI(DPA)**
 
-### 2.2.2. CDS
+### 2.2.2. ODP/CDS View
 ![alt text](/Roadmap/images/ODP3.png?raw=true) 
 
 - Full extraction and query-type access (direct access)
