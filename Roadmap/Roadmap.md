@@ -68,7 +68,6 @@ Below are the approaches and their drawbacks
 >
 > In the real world, it depends on how much you rely on [SAP Business Content](https://help.sap.com/docs/SAP_DATASPHERE/6eb1eff34e4c4b1f90adfbfba1334240/a88098ce6bfc1014a79e69594ccc91ad.html)
 
-
 ## 2.2 ODP/ODQ (SLT & CDS View)
 
 ![alt text](/Roadmap/images/ODP1.png?raw=true) 
@@ -97,11 +96,23 @@ Below are the approaches and their drawbacks
 - **Fewer custom CDSViedws has such a good design to capture the delta. Some custom CDSViews may have input parameter or may be too complex.**
 ![alt text](/Roadmap/images/ODP4.png?raw=true) 
     
+# 3. Business Content in Datasphere
 
-# 3. User Management
-We can import the users from *CSV* file in the GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455) in daily maintenance.
+This is SAP Business Content developed in Datasphere, which is similar to SAP BW Content. They are corresponding to the CDSViews, the datasources, in S/4HANA system.
 
-**There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA system into Datasphere. If we can synchronize tables for SAP roles and users, we won't need to assign roles to users manually in Datasphere. SAP GRC can automate the process.**
+![alt text](/Roadmap/images/BC1.png?raw=true)
+
+They can be imported into the space.
+![alt text](/Roadmap/images/BC2.png?raw=true)
+
+The SAP Business Content imported into my space.
+![alt text](/Roadmap/images/BC3.png?raw=true)
+
+- Transaction Data CDSView: **C_SalesDocumentItemDEX_1**
+![alt text](/Roadmap/images/CDS1.png?raw=true)
+
+- Master Data CDSView: **I_Customer** [SAP Help](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/a11849401368469fb9e7dfb34f44e9c7.html)
+
  
 # 4. Delta Data Loading
 Generally，this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
@@ -166,7 +177,13 @@ Using BW Bridge(ADSOs) heavily relies on the logic built in the BW system.
 Refer to **2.2** 
 
 
-# 5. Limits & Integration(with non-SAP)
+# 5. User Management
+We can import the users from *CSV* file in the GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455) in daily maintenance.
+
+**There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA system into Datasphere. If we can synchronize tables for SAP roles and users, we won't need to assign roles to users manually in Datasphere. SAP GRC can automate the process.**
+
+
+# 6. Limits & Integration(with non-SAP)
 
 According to my understanding, SAP Datasphere is an integrated data Fabric platform. It should comprise advantage (cloud) services to processes structured, unstructured and realtime data.
 
