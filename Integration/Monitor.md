@@ -26,7 +26,7 @@ Method **insert** is used in Data Flow.
 
 ![alt text](/Integration/images/TF_log.png?raw=true)
 
-Method **insert** is used in Transformation Flow.
+Method **upsert** is used in Transformation Flow.
 
 ![alt text](/Integration/images/UPSERT.png?raw=true)
 
