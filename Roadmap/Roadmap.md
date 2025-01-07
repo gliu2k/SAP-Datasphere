@@ -74,7 +74,7 @@ I think the 2nd approach **Tables (ODP/SLT)** is the best. The effort spent on r
 
 - **SLT: Need to install SLT server**
 > [!Note]
-> **See this [blog](https://community.sap.com/t5/technology-blogs-by-sap/replicating-tables-using-slt-and-replication-flows-rms-in-sap-data/ba-p/13569425) regarding SLT + RMS(Replication Flow) in SDI(DPA)**
+> **See this [blog](https://community.sap.com/t5/technology-blogs-by-sap/replicating-tables-using-slt-and-replication-flows-rms-in-sap-data/ba-p/13569425) regarding SLT + RMS(Replication Flow in Datasphere) in SDI(DPA)**
 
 ### 2.2.2. CDS
 ![alt text](/Roadmap/images/ODP3.png?raw=true) 
