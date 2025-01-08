@@ -125,7 +125,7 @@ The Analytic Model must be built on the object of **Fact** semantic.
 ![alt text](/DataBuilder/images/NewAM.png?raw=true)
 
 > [!Note]
->- We need to create the association in the fact table/view and bring in the association, the attributes of the dimension, here. In other words, you cannot create JOIN/UNION/Association here.
+>- We need to create the association in the fact table/view and bring in the association, the attributes of the dimension, here. In other words, you cannot create JOIN/UNION/Association in Analytic Model.
 >- We can create variables to map to the "input parameter" created in the graphic view.
 
 **This is a good article regarding Analytic Model.**
