@@ -23,6 +23,11 @@ See [details](https://community.sap.com/t5/technology-blogs-by-members/sap-datas
 ## 4. Connections
 It is not avaible in the trial version. You can find many resources by searching Google. This is a good [series](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-connectivity-series/ba-p/13598537)
 
+[Data Provisioning Agent(SDI)](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-sap-data-provisioning-agent-upgrade/ba-p/13569884) and [SAP HANA Cloud Connector](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-cloud-connector-setup/ba-p/13550570) are needed to conenct to the on-premise systems.
+
+![alt text](/Admin/images/SDA.png)
+
+
 ## 5. Transport
 It is not avaible in the trial version. You can find many resources by searching Google. This is a good [blog](https://community.sap.com/t5/technology-blogs-by-members/life-cycle-management-in-sap-datasphere-transporting-content-between/ba-p/13576990)
 
