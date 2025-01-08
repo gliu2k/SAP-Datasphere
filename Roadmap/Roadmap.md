@@ -123,9 +123,9 @@ local table and use Transformation Flow to do dalta data loading.
 ## 4.1. Delta in DataSphere 
 ### 4.1.1. Full Data Loading 
 
-Source Table - Non Delta
+Local Source Table - Non Delta
 
-Target Table - Delta
+Local Target Table - Delta
 
 Transformation flow - We can only choose "Initial Only" in "load type"
 
@@ -143,9 +143,9 @@ The same is shown in the log(three records are loaded).
 
 ### 4.1.2 Delta Data Loading 
 
-Source Table - Delta
+Local Source Table - Delta
 
-Target Table - Detla
+Local Target Table - Detla
 
 Transformation Flow - select "Delta Table" of the source and "Initial and Delta" type
 
