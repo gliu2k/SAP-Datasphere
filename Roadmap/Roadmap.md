@@ -180,7 +180,7 @@ Refer to **2.2**
 # 5. User Management
 We can import the users from *CSV* file in the GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455) in daily maintenance.
 
-**There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA system into Datasphere. If we can synchronize the tables of SAP roles and users, we won't need to assign roles to users manually in Datasphere. SAP GRC can automate the process.**
+**There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA system into Datasphere. If we can synchronize the tables of SAP roles and users in S/4HANA, we won't need to assign some roles to the users manually in Datasphere. SAP GRC can automate the process.**
 
 
 # 6. Limits & Integration(with non-SAP)
