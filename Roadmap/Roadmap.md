@@ -57,8 +57,8 @@ Below are the approaches and their drawbacks
 
   - We need to rebuild the DataSphere **VIEWs** on top of SAP standard CDSViews. When we want to make enhancements(to the CDSViews), we need to create the custom CDSViews by referring to the SAP standard ones.
 
-- BW SAPI Extractor
-  - There are no BW contents in Datasphere.
+- BW SAPI Extractor(ODP)
+  - The new Business Contents in Datasphere are based on CDS Views in S/4HANA.
 
 - Tables (ODP/SLT)
   - Remodeling, without using the Pre-built Business Content for SAP S/4HANA
