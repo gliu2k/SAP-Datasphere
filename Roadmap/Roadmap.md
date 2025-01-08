@@ -98,7 +98,7 @@ Below are the approaches and their drawbacks
     
 # 3. Business Content in Datasphere
 
-This is SAP Business Content developed in Datasphere, which is similar to SAP BW Content. They are corresponding to the CDSViews, the datasources, in S/4HANA system.
+This is SAP Business Content in Datasphere, which is similar to SAP BW Content. They are corresponding to the CDSViews, the datasources, in S/4HANA system.
 
 ![alt text](/Roadmap/images/BC1.png?raw=true)
 
