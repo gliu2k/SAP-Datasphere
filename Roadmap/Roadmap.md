@@ -171,7 +171,7 @@ Detla can be reset.
 
 You can find the details in this [blog](https://community.sap.com/t5/technology-blogs-by-sap/delta-extraction-of-adso-from-sap-bw-bridge-into-sap-datasphere-via/ba-p/13651788) about how to load the delta data from the changelog table of ADSO in BW bridge. However, it does not include the case when 0RecordMode = 'A'. 
 
-Using BW Bridge(ADSOs) heavily relies on the logic built in the BW system. 
+Using BW Bridge(ADSOs) will heavily rely on the logic and models built in the BW system in the long term.
 
 ## 4.3 Delta Capture in the Source Systems (Greenfield)
 Refer to **2.2** 
