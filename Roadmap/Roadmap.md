@@ -8,7 +8,7 @@ SAP is encouraging customers to transition to Datasphere from BW.
 ![alt text](/Roadmap/images/Target.png?raw=true)
 
 > [!Note]
-> But if there is BW-BPC, replace it with the embeded BPC in S/4HANA or achieve it in SAC?
+> But if there is BW-BPC, replace the **consolidation** part with the embeded BPC in S/4HANA and achieve the **planning** part in SAC?
 
 
 # 1. Migration
