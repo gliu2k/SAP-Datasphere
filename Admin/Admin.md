@@ -20,7 +20,14 @@ It is a very useful tool that provides access to the underlying HANA Cloud.
 
 See [details](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-how-to-integrate-open-sql-procedures-in-a-task-chain/ba-p/13860628)
 
+## 4. Connections
 
+[Data Provisioning Agent(SDI)](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-sap-data-provisioning-agent-upgrade/ba-p/13569884) and [SAP Cloud Connector](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-cloud-connector-setup/ba-p/13550570) are needed in the setup of the connection from Datasphere to the on-premise systems.
+
+![alt text](/Admin/images/SDA.png)
+
+The Cloud Connector establishes a secure connection between the cloud and on-premise systems. See this [course](
+https://learning.sap.com/learning-journeys/connecting-sap-btp-and-on-premise-systems-using-the-cloud-connector/defining-the-cloud-connector_c7fa42b9-0cb1-46ae-aede-f30bc13e94ae)
 
 ## 5. Transport
 It is not avaible in the trial version. You can find many resources by searching Google. This is a good [blog](https://community.sap.com/t5/technology-blogs-by-members/life-cycle-management-in-sap-datasphere-transporting-content-between/ba-p/13576990)
