@@ -61,7 +61,7 @@ Below are the approaches and their drawbacks
   - We need to rebuild the DataSphere **VIEWS** on top of local tables which have the same structures of SAP standard CDSViews. When we want to make enhancements(to the CDSViews), we need to create the custom CDSViews by referring to the SAP standard ones.
 
 - BW SAPI Extractor(ODP)
-  - The new Business Contents in Datasphere are based on CDS Views in S/4HANA. The only reason to use this method is that you want to keep the current BW architecture, using the **View** in Datashere to replace the old logic - BW models and processes in the BW Bridge system before getting rid it.
+  - The new Business Contents in Datasphere are based on CDS Views, the new datasources, in S/4HANA. The only reason to use this method is that you want to keep using the current BW architecture, using the **View** in Datashere to replace the old objects and logics - BW models and processes in the BW Bridge system before getting rid it.
 
 - Tables (ODP/SLT)
   - Remodeling, without using the Pre-built Business Content for SAP S/4HANA
