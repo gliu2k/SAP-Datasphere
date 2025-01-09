@@ -27,7 +27,10 @@ See [details](https://community.sap.com/t5/technology-blogs-by-members/sap-datas
 ![alt text](/Admin/images/SDA.png)
 
 The Cloud Connector establishes a secure connection between the cloud and on-premise systems. See this [course](
-https://learning.sap.com/learning-journeys/connecting-sap-btp-and-on-premise-systems-using-the-cloud-connector/defining-the-cloud-connector_c7fa42b9-0cb1-46ae-aede-f30bc13e94ae)
+https://learning.sap.com/learning-journeys/connecting-sap-btp-and-on-premise-systems-using-the-cloud-connector/defining-the-cloud-connector_c7fa42b9-0cb1-46ae-aede-f30bc13e94ae) 
+
+-BW Bridge
+In this [article](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-sap-bw-bridge-and-cloud-connector-configuration/ba-p/13580094), it explains the details about how to connect Datasphere, BW modeling tool, on-promise system to BW Bridge system.
 
 ## 5. Transport
 It is not avaible in the trial version. You can find many resources by searching Google. This is a good [blog](https://community.sap.com/t5/technology-blogs-by-members/life-cycle-management-in-sap-datasphere-transporting-content-between/ba-p/13576990)
