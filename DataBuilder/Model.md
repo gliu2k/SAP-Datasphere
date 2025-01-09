@@ -62,7 +62,7 @@ It is similar to the HANA Calculation View. Graphical View is optimized and has 
 > [!Tip]
 > **Performance tuning**
 > - Set the correct join cardinalities for JOIN prune
-> - There is no UNION prune as in SAP HANA Views.
+> - There is no UNION prune as in SAP HANA Views
 
 ### 2.2.1. Association
 Create a new GV using the previously GV and add the associations (as in the local table). It can be used in creating Aanlytic Model.
