@@ -37,8 +37,11 @@ Both the metadata and data are transferred. This is for the scenario where the h
   - No support for the OLAP engine and functionality dependent on the OLAP engine, e.g., analysis authorizations, query as InfoProvider, query execution, calculation of non-cumulative key figures (aka inventory key figures).
   - ....
 
-The ADOs tables are replciated from BW bridge and the models are rebuilt in DataSphere(DWC = Datasphere). See section **4.2**. The new reports are created in SAC.
-![alt text](/Roadmap/images/Future.png?raw=true)
+The ADOs tables are replciated from BW bridge and the models are rebuilt in DataSphere(DWC = Datasphere). See section  **2.1** and **4.2**. The new reports are created in SAC.
+![alt text](/Roadmap/images/Future.png?raw=true) 
+
+> [!Note]
+> **BW Bridge** is a tempoary solution. 
 
 # 2. Greenfield 
 
@@ -55,10 +58,10 @@ Below are the approaches and their drawbacks
   - The doable way is to load the delta data from SAP standard CDSViews. 
   [HowTo](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-ii-delta-handling/ba-p/13425761)
 
-  - We need to rebuild the DataSphere **VIEWs** on top of SAP standard CDSViews. When we want to make enhancements(to the CDSViews), we need to create the custom CDSViews by referring to the SAP standard ones.
+  - We need to rebuild the DataSphere **VIEWS** on top of local tables which have the same structures of SAP standard CDSViews. When we want to make enhancements(to the CDSViews), we need to create the custom CDSViews by referring to the SAP standard ones.
 
 - BW SAPI Extractor(ODP)
-  - The new Business Contents in Datasphere are based on CDS Views in S/4HANA.
+  - The new Business Contents in Datasphere are based on CDS Views in S/4HANA. The only reason to use this method is that you want to keep the current BW architecture, using the **View** in Datashere to replace the old logic - BW models and processes in the BW Bridge system before getting rid it.
 
 - Tables (ODP/SLT)
   - Remodeling, without using the Pre-built Business Content for SAP S/4HANA
@@ -171,7 +174,9 @@ Detla can be reset.
 
 You can find the details in this [blog](https://community.sap.com/t5/technology-blogs-by-sap/delta-extraction-of-adso-from-sap-bw-bridge-into-sap-datasphere-via/ba-p/13651788) about how to load the delta data from the changelog table of ADSO in BW bridge. However, it does not include the case when 0RecordMode = 'A'. 
 
-Using BW Bridge(ADSOs) will heavily rely on the logic and models built in the BW system in the long term.
+Alternatively, you can use openHub and delta-DTP to do the same thing.
+
+Using BW Bridge(ADSOs) will heavily rely on the models and processes built in the BW system.
 
 ## 4.3 Delta Capture in the Source Systems (Greenfield)
 Refer to **2.2** 
