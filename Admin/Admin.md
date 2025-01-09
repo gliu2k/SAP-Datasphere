@@ -24,6 +24,8 @@ See [details](https://community.sap.com/t5/technology-blogs-by-members/sap-datas
 
 [Data Provisioning Agent(SDI)](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-sap-data-provisioning-agent-upgrade/ba-p/13569884) and [SAP Cloud Connector](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-cloud-connector-setup/ba-p/13550570) are needed in the setup of the connection from Datasphere to the on-premise systems.
 
+What is SDI? Simply input, it is an ETL tool to load data from external systems into HANA Database. Like SAP Data Service(BODS), it has the adapter to access to the ABAP objects.
+
 ![alt text](/Admin/images/SDA.png)
 
 The Cloud Connector establishes a secure connection between the cloud and on-premise systems. See this [course](
