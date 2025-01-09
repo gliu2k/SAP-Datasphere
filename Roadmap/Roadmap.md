@@ -1,11 +1,14 @@
 # Roadmap to SAP Datasphere
 
-SAP is encouraging customers to transition to Datasphere. 
+SAP is encouraging customers to transition to Datasphere from BW. 
 
 ![alt text](/Roadmap/images/AsIs.png?raw=true)
 
 
 ![alt text](/Roadmap/images/Target.png?raw=true)
+
+> [!Note]
+> But if there is BW-BPC, replace it with the embeded BPC in S/4HANA or achieve it in SAC?
 
 
 # 1. Migration
