@@ -1,7 +1,8 @@
 # SAP Analystic Cloud
 
-SAC is SAP reporting platform on cloud.
+SAC is SAP reporting platform on cloud. 
 
+**You need to push the logic from the BW Bex queries to the data model or look for the new methods in SAC. Some features, like structure and cell, are not supported.**
 
 # 0. Data Preview in Analytic Model in DataSphere
 ![alt text](/SAC/images/Preview.png?raw=true)
@@ -19,3 +20,4 @@ SAC is SAP reporting platform on cloud.
 
 # 4. SAP Analytics Cloud Add-In
 Different from "Analysis for Office", it can consume the data exposed from the Analytic Model in Datasphere through the LiveConnection.
+
