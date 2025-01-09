@@ -58,10 +58,9 @@ Below are the approaches and their drawbacks
   - Fewer customers develop the custom CDSView with the delta mechanism. 
   [Example](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd1/README.md)
 
-  - The doable way is to load the delta data from SAP standard CDSViews. 
-  [HowTo](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-ii-delta-handling/ba-p/13425761)
-
-  - We need to rebuild the DataSphere **VIEWS** on top of local tables which have the same structures of SAP standard CDSViews. When we want to make enhancements(to the CDSViews), we need to create the custom CDSViews by referring to the SAP standard ones.
+  - The doable way is to load the init/delta data from SAP standard CDSViews into the local tables in Datasphere, which can be imported from the Datashere Contents.
+  [HowTo](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-ii-delta-handling/ba-p/13425761)  And then, we build the DataSphere **VIEWS** on top of these local tables, which have the same structures of SAP standard CDSViews.
+  - When we want to make enhancements(to the CDSViews- the datasource in S/4HANA), we need to create the custom CDSViews by referring(copying) to the SAP standard ones.
 
 - BW SAPI Extractor(ODP)
   - The new Business Contents in Datasphere are based on CDS Views, the new datasources, in S/4HANA. The only reason to use this method is that you want to keep  the current BW architecture, using the **View** in Datashere to replace the old objects and logics - BW models and processes in the BW Bridge system before getting rid it.
