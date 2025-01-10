@@ -6,29 +6,34 @@ In fact, it contains not only the model components but also the ETL elements. In
 
 
 # 1. Tables
+## 1.1. Import a Table 
+
+You can create the local tables, generate a **local** table by importing CSV file, or import remote tables. 
 
 ![alt text](/DataBuilder/images/Tables.png?raw=true)
-
-You can create the local tables, generate a local table by importing CSV file, or import remote tables. 
 
 > [!NOTE]
 > Remote tables are the virtual tables as in SDA(HANA) or the “link” as in **Azure Fabric**, which map to the physical objects locating in the remote system.
 > If you have a good understanding of the table's size and expected data growth, it's advisable to decide on partitioning when you create the table from the performance perspective.
 
-## 1.1. Semantic Usage
+## 1.1.1. Import a remote Table (from CDS of promise S/4HANA)
+
+
+## 1.2. Create a new local Table (Datashpere) 
+### 1.2.1. Semantic Usage
 ![alt text](/DataBuilder/images/NewTable.png?raw=true)
 
 > [!IMPORTANT] 
 > -	**Fact**: Transaction Data and the only type can be used in creating Analytic Model
 > -	**Dimension/Text/Hierarchy**: master data and are used in the association of fact, view or other dimension tables 
 
-## 1.2. Association
+### 1.2.2. Association
 Add the attributes/text to the field. The association will be availabe in creating the Analytic Model.
 
 ![alt text](/DataBuilder/images/TableAssociation.png?raw=true)
 
 
-## 1.3. Delta Capture 
+### 1.2.3. Delta Capture 
 
 ![alt text](/DataBuilder/images/TableDelta.png?raw=true)
 
