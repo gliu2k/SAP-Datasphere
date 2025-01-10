@@ -6,18 +6,30 @@ In fact, it contains not only the model components but also the ETL elements. In
 
 
 # 1. Tables
-## 1.1. Import a Table 
 
-You can create the local tables, generate a **local** table by importing CSV file, or import remote tables. 
+You can create a local table, generate a **local** table by importing CSV file, or import remote tables. 
 
 ![alt text](/DataBuilder/images/Tables.png?raw=true)
 
+## 1.1. Import Remote Tables (from S/4HANA)
+
+## 1.1.1. Import CDS Views from on-premise S/4HANA
+
+**Data Provisioning Agent(SDI)** must be installed and configured.
+![alt text](/DataBuilder/images/Import1.png?raw=true)
+
+![alt text](/DataBuilder/images/Import2.png?raw=true)
+![alt text](/DataBuilder/images/Import3.png?raw=true)
+CDSView is imported and delployed.
+![alt text](/DataBuilder/images/Import4.png?raw=true)
+The data can be displayed. 
+![alt text](/DataBuilder/images/Import5.png?raw=true)
+
+
 > [!NOTE]
-> Remote tables are the virtual tables as in SDA(HANA) or the “link” as in **Azure Fabric**, which map to the physical objects locating in the remote system.
-> If you have a good understanding of the table's size and expected data growth, it's advisable to decide on partitioning when you create the table from the performance perspective.
-
-## 1.1.1. Import a remote Table (from CDS of promise S/4HANA)
-
+> Remote tables are the virtual  as in SDA(HANA) or the “link” as in Azure Fabric, which map to the physical objects locating in the remote system. 
+> The object and its data are stored in the remote system, which is  on-premise S/4HANA in this case. The perforancee is very slow if the source system is on-premise and target system is on-cloud. (It is also slow when both systems are on-premise). Thus, it is highly recommended to replicate the source object and its data to a local table in Datasphere when you want to create furuther logic(model) (join/union) on top of it.
+> 
 
 ## 1.2. Create a new local Table (Datashpere) 
 ### 1.2.1. Semantic Usage
