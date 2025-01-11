@@ -117,7 +117,7 @@ Below are the approaches and their drawbacks
 
 ![alt text](/Roadmap/images/CDC2.png?raw=true)
 
-#### 2.2.2.2. Change Data Capture Delta
+#### 2.2.2.2. Change Data Capture Delta (CDC = delta.changeDataCapture)
 
 ![alt text](/Roadmap/images/CDC3.png?raw=true)
 
@@ -181,20 +181,25 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
     key SalesDocumentItem.SalesDocumentItem,
 ```
 
-#### 2.2.2.3. Hierarchy & Testing
+#### 2.2.2.3. Hierarchy & Others
 
 Please refer to this good blog(https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-iii-miscellaneous/ba-p/13452148)
 
-Below is how **Currency** improted from S/4HANA
-![alt text](/Roadmap/images/CURR1.png?raw=true)
+The followings show how **Currency** improted from S/4HANA
 
-Remote Tables, DF, Local Tables, Views for are imported. DF load the data from Remote Tables into Local Tables and we use the Views in the model(Views) design.
-![alt text](/Roadmap/images/CURR2.png?raw=true)
+![alt text](/Roadmap/images/Curr1.png?raw=true)
 
+The currency related Remote Tables, DataFlow, Local Tables, Views for are imported. 
 
-![alt text](/Roadmap/images/CDS_EX1.png?raw=true)
+DataFlow load the data from Remote Tables into Local Tables and we use the Views in the model(Views) design.
+
+![alt text](/Roadmap/images/Curr2.png?raw=true)
+
 > [!Tip]
 > Check the CDS Extractor in SE16 and make it is released as **C1** (**CDS can be inserted as a dataSource into Analysis for Office**)
+
+![alt text](/Roadmap/images/CDS_EX1.png?raw=true)
+
 
 
 # 3. Business Content in Datasphere
