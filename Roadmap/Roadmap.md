@@ -99,8 +99,65 @@ Below are the approaches and their drawbacks
     - Analytics.dataExtraction.delta.byElement.detectDeletedRecords
 
 - **Fewer custom CDSView has such a good design to capture the delta. Some custom CDSViews may have input parameter or may be too complex.**
-![alt text](/Roadmap/images/ODP4.png?raw=true) 
-    
+
+This is a SAP standard cdsview **C_SalesDocumentItemDEX_1** for the data extraction of the header and line-item of S/4HANA sales documents.
+
+![alt text](/Roadmap/images/ODP4.png?raw=true)
+
+```
+@AbapCatalog.sqlViewName: 'CSDSLSDOCITMDX1'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl:{
+    authorizationCheck: #CHECK,
+    personalData.blocking: #('TRANSACTIONAL_DATA')
+}
+@EndUserText.label: 'Data Extraction for Sales Document Item'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.dataClass: #TRANSACTIONAL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.representativeKey: 'SalesDocumentItem'
+@VDM.viewType: #CONSUMPTION
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #NONE
+@ObjectModel.supportedCapabilities:  [ #EXTRACTION_DATA_SOURCE ]
+
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+            mapping:[
+                {
+                    table: 'vbap', role: #MAIN,
+                    viewElement: ['SalesDocument', 'SalesDocumentItem'],
+                    tableElement: ['vbeln', 'posnr']
+                },
+                {
+                    table: 'vbak', role: #LEFT_OUTER_TO_ONE_JOIN,
+                    viewElement: ['SalesDocument'],
+                    tableElement: ['vbeln']}
+            ]
+        }
+    }
+ }
+
+define view C_SalesDocumentItemDEX_1 (See **Business Content** in **Roadmap** section)
+as select from I_SalesDocumentItem as SalesDocumentItem
+left outer to one join I_SalesDocument              as SalesDocument          on SalesDocumentItem.SalesDocument = SalesDocument.SalesDocument
+left outer to one join I_CompanyCode                as CompanyCode            on  SalesDocument.BillingCompanyCode = CompanyCode.CompanyCode
+//Extensibility
+association [0..1] to E_SalesDocumentItemBasic      as _ExtensionItem         on  $projection.SalesDocument     = _ExtensionItem.SalesDocument
+                                                                              and $projection.SalesDocumentItem = _ExtensionItem.SalesDocumentItem
+association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on  $projection.SalesDocument     = _ExtensionHeader.SalesDocument
+{
+    // Key
+    @ObjectModel.foreignKey.association: '_SalesDocument'
+    key SalesDocumentItem.SalesDocument,
+    key SalesDocumentItem.SalesDocumentItem,
+```
+
 # 3. Business Content in Datasphere
 
 This is SAP Business Content in Datasphere, which is similar to SAP BW Content. They are corresponding to the CDSViews, the datasources, in S/4HANA system.
