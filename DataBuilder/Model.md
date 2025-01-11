@@ -54,13 +54,13 @@ If you have a good understanding of the table's size and expected data growth, i
 > -	**Fact**: Transaction Data and the only type can be used in creating Analytic Model
 > -	**Dimension/Text/Hierarchy**: master data and are used in the association of fact, view or other dimension tables 
 
-### 1.3.2. Association
+### 1.3.3. Association
 Add the attributes/text to the field. The association will be availabe in creating the Analytic Model.
 
 ![alt text](/DataBuilder/images/TableAssociation.png?raw=true)
 
 
-### 1.3.3. Delta Capture 
+### 1.3.4. Delta Capture 
 
 ![alt text](/DataBuilder/images/TableDelta.png?raw=true)
 
