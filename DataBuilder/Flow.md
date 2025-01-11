@@ -18,20 +18,94 @@ Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-s
 >
 > Either ODP or SLT needs to be configured to enable delta capture. See the [details](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd3/README.md).
 
-Below is a senairo of loading data from a SAP standard CDSView with "ex enable + dleta " in on-premise S/4HANA system into the loacal table imported from SAP Busienss content. 
+- Below is the scenario of loading the data from a SAP standard CDS View with **Analytics.dataExtraction.enabled + Delta** in on-premise S/4HANA system into the local table imported from Datasphere Business Content. 
 
-Code: CDSVi
+Soruce CDSView:
 
-![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
+```
+@AbapCatalog.sqlViewName: 'CSDSLSDOCITMDX1'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl:{
+    authorizationCheck: #CHECK,
+    personalData.blocking: #('TRANSACTIONAL_DATA')
+}
+@EndUserText.label: 'Data Extraction for Sales Document Item'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.dataClass: #TRANSACTIONAL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.representativeKey: 'SalesDocumentItem'
+@VDM.viewType: #CONSUMPTION
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #NONE
+@ObjectModel.supportedCapabilities:  [ #EXTRACTION_DATA_SOURCE ]
 
-![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+            mapping:[
+                {
+                    table: 'vbap', role: #MAIN,
+                    viewElement: ['SalesDocument', 'SalesDocumentItem'],
+                    tableElement: ['vbeln', 'posnr']
+                },
+                {
+                    table: 'vbak', role: #LEFT_OUTER_TO_ONE_JOIN,
+                    viewElement: ['SalesDocument'],
+                    tableElement: ['vbeln']}
+            ]
+        }
+    }
+ }
 
-![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
+define view C_SalesDocumentItemDEX_1
 
-![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
+as select from I_SalesDocumentItem as SalesDocumentItem
+
+
+left outer to one join I_SalesDocument              as SalesDocument          on SalesDocumentItem.SalesDocument = SalesDocument.SalesDocument
+left outer to one join I_CompanyCode                as CompanyCode            on  SalesDocument.BillingCompanyCode = CompanyCode.CompanyCode
+
+//Extensibility
+association [0..1] to E_SalesDocumentItemBasic      as _ExtensionItem         on  $projection.SalesDocument     = _ExtensionItem.SalesDocument
+                                                                              and $projection.SalesDocumentItem = _ExtensionItem.SalesDocumentItem
+
+association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on  $projection.SalesDocument     = _ExtensionHeader.SalesDocument
+
+{
+    // Key
+    @ObjectModel.foreignKey.association: '_SalesDocument'
+    key SalesDocumentItem.SalesDocument,
+    key SalesDocumentItem.SalesDocumentItem,
+```
+    
+Target local Table: 
+
+Select Source Connection - S/4HANA (ABAP)
+![alt text](/DataBuilder/images/RF1.png?raw=true)
+Select Source Container - CDS_Extraction(ODP)
+![alt text](/DataBuilder/images/RF2.png?raw=true)
+Add Source Object
+![alt text](/DataBuilder/images/RF3.png?raw=true)
+Select CDS View
+![alt text](/DataBuilder/images/RF4.png?raw=true)
+Select Target Connection - Datasphere (Local Repository)
+![alt text](/DataBuilder/images/RF5.png?raw=true)
+Select Target - Local Table
+![alt text](/DataBuilder/images/RF6.png?raw=true)
+Map to existing Target Object
+![alt text](/DataBuilder/images/RF7.png?raw=true)
+Set load type (Iniital and Delta) The target, local table, must support "Delta" mode
+![alt text](/DataBuilder/images/RF8.png?raw=true)
+Set the frequency to 1 time per hour for the dalta data loading
+![alt text](/DataBuilder/images/RF9.png?raw=true)
+Save and Deploy the Replication Flow 
 
 > [!Note] 
-> I got an error in deploying the Replication Flow due to the differetn type dinition in the same filed included in the source and target system. So, I make the change in the target table ( As In BW development, we usually copy the object in the BI Conetnat and make enhancment on the copied z-object.)
+> I got an error in deploying the Replication Flow due to the different types defined for the same field included in the source and target systems. So, I made the change in the target table as we used to do BW development. In BW implmentation, we usually copy the BI Content and make the enhancement to the copied Z-object.
 >
 
 ![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
