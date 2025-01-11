@@ -56,7 +56,7 @@ Copy the data from one or multiple (remote) source systems into datasphere(local
     }
  }
 
-define view C_SalesDocumentItemDEX_1 (See **Business Content** in **Roadmap** section)
+define view C_SalesDocumentItemDEX_1
 as select from I_SalesDocumentItem as SalesDocumentItem
 left outer to one join I_SalesDocument              as SalesDocument          on SalesDocumentItem.SalesDocument = SalesDocument.SalesDocument
 left outer to one join I_CompanyCode                as CompanyCode            on  SalesDocument.BillingCompanyCode = CompanyCode.CompanyCode
