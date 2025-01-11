@@ -181,10 +181,10 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
     key SalesDocumentItem.SalesDocumentItem,
 ```
 
-> [!Tip]
-> Check the CDS Extractor in SE16 and make it is released as C1 (**CDS can be inserted as a dataSource into Analysis for Office**)
 
 ![alt text](/Roadmap/images/CDS_EX1.png?raw=true)
+> [!Tip]
+> Check the CDS Extractor in SE16 and make it is released as **C1** (**CDS can be inserted as a dataSource into Analysis for Office**)
 
 
 # 3. Business Content in Datasphere
