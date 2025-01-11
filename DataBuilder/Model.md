@@ -32,6 +32,7 @@ The data can be displayed.
 
 > [!IMPORTANT]
 > **All** the CDSViews(and ABAP tables/views) in S/4HANA can be used(mapped) as the remote tables in Datasphere.
+> 
 > However, only the CDS Views with **Analytics.dataExtraction.enabled** can be loaded to Datasphere via the **Flow**. See **Flow** section.
 
 ## 1.2. Import Entities (from BW)
