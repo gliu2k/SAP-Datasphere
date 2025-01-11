@@ -196,7 +196,7 @@ DataFlow load the data from Remote Tables into Local Tables and we use the Views
 ![alt text](/Roadmap/images/Curr2.png?raw=true)
 
 > [!Tip]
-> Check the CDS Extractor in SE16 and make it is released as **C1** (**CDS can be inserted as a dataSource into Analysis for Office**)
+> Check the CDS Extractor in SE16 and make it is released as **C1** (**BTW, we need to release the Cube or Query CDSView so that they can be inserted into Analysis for Office as a dataSource**)
 
 ![alt text](/Roadmap/images/CDS_EX1.png?raw=true)
 
