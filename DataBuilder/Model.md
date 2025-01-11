@@ -7,7 +7,7 @@ In fact, it contains not only the model components but also the ETL elements. In
 
 # 1. Tables
 
-You can create a local table, generate a **local** table by importing CSV file, or import remote tables. 
+You can create a local table, generate a **local** table by importing CSV file, or import remote tables or CSN/JSON file which is for all objects like View or Analytic Model.
 
 ![alt text](/DataBuilder/images/Tables.png?raw=true)
 
@@ -33,21 +33,27 @@ The data can be displayed.
 > [!IMPORTANT]
 > All the CDSViews in S/4HANA can be used(mapped) as the remote tables in Datasphere. However, only the CDSViews with **Analytics.dataExtraction.enabled** can be used in the **Flow** ETLs. See **Flow** section.
 
-## 1.2. Create a new local Table (Datashpere) 
-### 1.2.1. Semantic Usage
+## 1.2. Import Remote Entities (from BW Bridge)
+
+It is possible to use the models in BW system as the remote tables(virtual objects).
+
+![alt text](/DataBuilder/images/RemoteEntity.png?raw=true)
+
+## 1.3. Create a new local Table (Datashpere) 
+### 1.3.1. Semantic Usage
 ![alt text](/DataBuilder/images/NewTable.png?raw=true)
 
 > [!IMPORTANT] 
 > -	**Fact**: Transaction Data and the only type can be used in creating Analytic Model
 > -	**Dimension/Text/Hierarchy**: master data and are used in the association of fact, view or other dimension tables 
 
-### 1.2.2. Association
+### 1.3.2. Association
 Add the attributes/text to the field. The association will be availabe in creating the Analytic Model.
 
 ![alt text](/DataBuilder/images/TableAssociation.png?raw=true)
 
 
-### 1.2.3. Delta Capture 
+### 1.3.3. Delta Capture 
 
 ![alt text](/DataBuilder/images/TableDelta.png?raw=true)
 
