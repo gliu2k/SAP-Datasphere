@@ -31,9 +31,9 @@ The data can be displayed.
 > The object and its data are stored in the remote system, which is on-premise S/4HANA in this case. It also means that you can get the real-time data. However, the performance can be slow if the source system is on-premise and target system is on-cloud. (It is slow even when both systems are on-premise in SDA). Thus, it is highly recommended to replicate the source object and its data to a local table in the Datasphere when you want to create further logic(model) like join/union and etc. on top of it.
 
 > [!IMPORTANT]
-> **All** the CDSViews(and ABAP tables/views) in S/4HANA can be used(mapped) as the remote tables in Datasphere.
+> **All** the CDSViews(and ABAP tables/views) in S/4HANA can be used(mapped) as the remote tables in Datasphere. They are the real-time data. When you have an enhancement, it is easier to expose the new fields (I suggest to copy the standard SAP CDSViews to Z-CDSViews.).
 > 
-> However, only the CDS Views with **Analytics.dataExtraction.enabled** can be loaded to Datasphere via the **Flow**. See **Flow** section.
+> However, only the CDS Views with **Analytics.dataExtraction.enabled** can be loaded to Datasphere via the **Flow**. See **Flow** section. It is good for performance. But, when you want to add or expose new fields in the datasource CDSViews you must **reload** all the data into the local table in Datasphere.
 
 ## 1.2. Import Entities (from BW)
 
