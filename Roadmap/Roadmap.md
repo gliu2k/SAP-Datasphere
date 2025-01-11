@@ -196,7 +196,6 @@ According to my understanding, SAP Datasphere is an integrated data Fabric platf
 
 So far, compared to Azure Fabric product, I think it has the following limits.
 
-- No unique file format. While in Azure Fabric, it is Apache **Parquet** which is supported by SQL(serverless SQL) and python. 
 - No specific service for stream data(like KQL in Azure)
 - No vector DB 
 - No ML and AI services. Datasphere does not support python notebook. Don't know why not inetgrate SAP [AICore Services](https://github.com/SAP-samples/azure-openai-aicore-cap-api/blob/main/documentation/01-ai-core-azure-openai-proxy/01-ai-sap-getting-started.md) from SAP **BTP** into DataSphere.
@@ -205,6 +204,9 @@ So far, compared to Azure Fabric product, I think it has the following limits.
   
 ![alt text](/Roadmap/images/Arch.png?raw=true)
 
-In the landscape, it shows that the **Integration** is only at the **DATA** level not at the Application(service) level. Maybe Datasphere is a data mesh that relies on other services in the **SAP BTP** cloud platform. But the file format becomes a critical issue. Will the mainstream tools support HANA file format? And it is painful to calculate the data(I mean big volume of data like a table of 500k*200 size) that are not loaded into the memory.
+In the landscape, it shows that the **Integration** is only at the **DATA** level not at the Application(service) level. Maybe Datasphere is a data mesh that relies on other services in the **SAP BTP** cloud platform. And it is painful to calculate the data(I mean big volume of data like a table of 500k*200 size) that are not loaded into the memory.
 
 The **Integration** on the **DATA** level is also very important. We may need to use the machine learning or AI services in Microsoft Azure and we don't want to copy all the tables from Datashphere and build similar models in LakeHouse. Odata is an option. It can be used for PowerBI to consume data from the **Analytic Models**. But it is not good at the distribution of large volumes of data. [Azure Data Factory + ODBC](https://community.sap.com/t5/technology-blogs-by-members/consuming-data-from-datasphere-to-azure-data-factory-via-odbc/ba-p/13869551) is another option. Or, we can leverage the **"Replication Flow"** in Datasphere to load the data from Datashare to Azure. This [blog](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-replication-flow-from-s-4hana-to-azure-data-lake/ba-p/13585656) is about how to use "Replication Flow" to load the data from S/4HANA to Azure. However **"Replication Flow"** only supports tables. We need to use **Data Flow** to export data from **View** to a new local **Table** first.
+
+Below is from "Replication Flow". Need to confirm with SAP if Apache **Parquet** file format is used in Dataphere instead of HANA data file.
+![alt text](/Roadmap/images/Parquet.png?raw=true)
