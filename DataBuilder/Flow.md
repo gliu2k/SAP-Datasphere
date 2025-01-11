@@ -75,7 +75,7 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
     key SalesDocumentItem.SalesDocumentItem,
 ```
     
-Target local Table: SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1 
+Target local Table: SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1 (Its "Delta Capture" is ON)
 
 Select Source Connection - S/4HANA (ABAP)
 ![alt text](/DataBuilder/images/RF1.png?raw=true)
@@ -91,7 +91,7 @@ Select Target - Local Table
 ![alt text](/DataBuilder/images/RF6.png?raw=true)
 Map to existing Target Object
 ![alt text](/DataBuilder/images/RF7.png?raw=true)
-Set load type (Iniital and Delta) The target, local table, must support "Delta" mode
+Set load type (Iniital and Delta) 
 ![alt text](/DataBuilder/images/RF8.png?raw=true)
 Set the frequency to 1 time per hour for the dalta data loading
 ![alt text](/DataBuilder/images/RF9.png?raw=true)
