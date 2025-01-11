@@ -19,7 +19,7 @@ Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-s
 
 - Below is the scenario of loading the data from a SAP standard CDS View with **Analytics.dataExtraction.enabled + Delta** of the on-premise S/4HANA system into the local table imported from Datasphere Business Content. 
 
-Soruce CDSView:
+Source SAP Standard CDS View: C_SalesDocumentItemDEX_1
 
 ```
 @AbapCatalog.sqlViewName: 'CSDSLSDOCITMDX1'
