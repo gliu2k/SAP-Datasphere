@@ -10,7 +10,6 @@ It is used to copy the data first in a limited time window.
 
 Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-series-part-1-overview/ba-p/13581472) on Replication Flow.
 
-
 > [!IMPORTANT] 
 >🚩  **It can be used to load the delta data from source BW or S/4HANA systems.**
 >
@@ -18,7 +17,7 @@ Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-s
 >
 > Either ODP or SLT needs to be configured to enable delta capture. See the [details](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd3/README.md).
 
-- Below is the scenario of loading the data from a SAP standard CDS View with **Analytics.dataExtraction.enabled + Delta** in on-premise S/4HANA system into the local table imported from Datasphere Business Content. 
+- Below is the scenario of loading the data from a SAP standard CDS View with **Analytics.dataExtraction.enabled + Delta** of the on-premise S/4HANA system into the local table imported from Datasphere Business Content. 
 
 Soruce CDSView:
 
@@ -61,20 +60,14 @@ Soruce CDSView:
     }
  }
 
-define view C_SalesDocumentItemDEX_1
-
+define view C_SalesDocumentItemDEX_1 (See **Business Content** in **Roadmap** section)
 as select from I_SalesDocumentItem as SalesDocumentItem
-
-
 left outer to one join I_SalesDocument              as SalesDocument          on SalesDocumentItem.SalesDocument = SalesDocument.SalesDocument
 left outer to one join I_CompanyCode                as CompanyCode            on  SalesDocument.BillingCompanyCode = CompanyCode.CompanyCode
-
 //Extensibility
 association [0..1] to E_SalesDocumentItemBasic      as _ExtensionItem         on  $projection.SalesDocument     = _ExtensionItem.SalesDocument
                                                                               and $projection.SalesDocumentItem = _ExtensionItem.SalesDocumentItem
-
 association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on  $projection.SalesDocument     = _ExtensionHeader.SalesDocument
-
 {
     // Key
     @ObjectModel.foreignKey.association: '_SalesDocument'
@@ -82,7 +75,7 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
     key SalesDocumentItem.SalesDocumentItem,
 ```
     
-Target local Table: 
+Target local Table: SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1 
 
 Select Source Connection - S/4HANA (ABAP)
 ![alt text](/DataBuilder/images/RF1.png?raw=true)
@@ -103,14 +96,11 @@ Set load type (Iniital and Delta) The target, local table, must support "Delta" 
 Set the frequency to 1 time per hour for the dalta data loading
 ![alt text](/DataBuilder/images/RF9.png?raw=true)
 Save and Deploy the Replication Flow 
-
+![alt text](/DataBuilder/images/Deploy_Error.png?raw=true)
 > [!Note] 
 > I got an error in deploying the Replication Flow due to the different types defined for the same field included in the source and target systems. So, I made the change in the target table as we used to do BW development. In BW implmentation, we usually copy the BI Content and make the enhancement to the copied Z-object.
->
 
 ![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
-
-
 
 
 # 2. Data Flow 
@@ -122,6 +112,10 @@ Load and transform (Join, Union, Projection, Aggregation and **Python** script) 
 > [!CAUTION]
 > The above DF job failed because I did not truncate the target table before reloading the data. The deteails are explained in the **Data Integration Monitor** section.
 
+![alt text](/DataBuilder/images/DF_CDS.png?raw=true)
+> [!Note]
+> The CDS Views as the datasources in the on-premise S/4HANA system are **Analytics.dataExtraction.enabled**.
+ 
 # 3. Transformation Flow 
 
 It is an ETL process similar to BW transformation, but it uses **VIEW** to transform the data.
