@@ -18,6 +18,25 @@ Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-s
 >
 > Either ODP or SLT needs to be configured to enable delta capture. See the [details](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd3/README.md).
 
+Below is a senairo of loading data from a SAP standard CDSView with "ex enable + dleta " in on-premise S/4HANA system into the loacal table imported from SAP Busienss content. 
+
+Code: CDSVi
+
+![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
+
+![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
+
+![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
+
+![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
+
+> [!Note] 
+> I got an error in deploying the Replication Flow due to the differetn type dinition in the same filed included in the source and target system. So, I make the change in the target table ( As In BW development, we usually copy the object in the BI Conetnat and make enhancment on the copied z-object.)
+>
+
+![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
+
+
 
 
 # 2. Data Flow 
