@@ -158,6 +158,10 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
     key SalesDocumentItem.SalesDocumentItem,
 ```
 
+Check the CDS Extractor in SE16 and make it is released as C1 (**CDS can be inserted as a dataSource into Analysis for Office**)
+![alt text](/Roadmap/images/CDS_EX1.png?raw=true)
+
+
 # 3. Business Content in Datasphere
 
 This is SAP Business Content in Datasphere, which is similar to SAP BW Content. They are corresponding to the CDSViews, the datasources, in S/4HANA system.
@@ -170,8 +174,7 @@ They can be imported into the space.
 These are the parts of SAP Business Content imported into my space. The data in the local tables are from the CDSViews in S/4HANA.
 ![alt text](/Roadmap/images/BC3.png?raw=true)
 
-- Transaction Data CDSView: **C_SalesDocumentItemDEX_1**
-![alt text](/Roadmap/images/CDS1.png?raw=true)
+- Transaction Data CDSView: **C_SalesDocumentItemDEX_1** - mentioned above
 
 - Master Data CDSView: **I_Customer** [SAP Help](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/a11849401368469fb9e7dfb34f44e9c7.html)
 
