@@ -183,9 +183,9 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
 
 #### 2.2.2.3. Hierarchy & Others
 
-Please refer to this good blog(https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-iii-miscellaneous/ba-p/13452148)
+Please refer to this good [blog](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-iii-miscellaneous/ba-p/13452148).
 
-The followings show how **Currency** improted from S/4HANA
+The followings show how the **Currency** tables are improted from S/4HANA.
 
 ![alt text](/Roadmap/images/Curr1.png?raw=true)
 
