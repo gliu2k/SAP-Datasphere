@@ -185,13 +185,15 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
 
 Please refer to this good [blog](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-iii-miscellaneous/ba-p/13452148).
 
+Leverage CONVERT_UNIT to do [Unit Conversion](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-unit-conversion/ba-p/13567259)
+
 The followings show how the **Currency** tables are improted from S/4HANA.
 
 ![alt text](/Roadmap/images/Curr1.png?raw=true)
 
 The currency related Remote Tables, DataFlow, Local Tables, Views for are imported. 
 
-DataFlow load the data from Remote Tables into Local Tables and we use the Views in the model(Views) design.
+DataFlow load the data from Remote Tables into Local Tables and we use these currency Views in the model(Views) design.
 
 ![alt text](/Roadmap/images/Curr2.png?raw=true)
 
