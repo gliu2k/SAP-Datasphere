@@ -40,7 +40,14 @@ It is possible to import the objects in BW system as the remote tables(virtual o
 ![alt text](/DataBuilder/images/RemoteEntity.png?raw=true)
 
 ## 1.3. Create a new local Table (Datashpere) 
-### 1.3.1. Semantic Usage
+
+### 1.3.1. Table Partition
+
+If you have a good understanding of the table's size and expected data growth, it's advisable to decide on partitioning when you create the table from the performance perspective.
+
+![alt text](/DataBuilder/images/Partition.png?raw=true)
+
+### 1.3.2. Semantic Usage
 ![alt text](/DataBuilder/images/NewTable.png?raw=true)
 
 > [!IMPORTANT] 
