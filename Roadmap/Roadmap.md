@@ -181,6 +181,16 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
     key SalesDocumentItem.SalesDocumentItem,
 ```
 
+#### 2.2.2.3. Hierarchy & Testing
+
+Please refer to this good blog(https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-iii-miscellaneous/ba-p/13452148)
+
+Below is how **Currency** improted from S/4HANA
+![alt text](/Roadmap/images/CURR1.png?raw=true)
+
+Remote Tables, DF, Local Tables, Views for are imported. DF load the data from Remote Tables into Local Tables and we use the Views in the model(Views) design.
+![alt text](/Roadmap/images/CURR2.png?raw=true)
+
 
 ![alt text](/Roadmap/images/CDS_EX1.png?raw=true)
 > [!Tip]
