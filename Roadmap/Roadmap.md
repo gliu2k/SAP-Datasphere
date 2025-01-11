@@ -81,8 +81,6 @@ Below are the approaches and their drawbacks
 ![alt text](/Roadmap/images/ODP2.png?raw=true) 
 
 - **SLT: Need to install SLT server**
-> [!Note]
-> **See this [blog](https://community.sap.com/t5/technology-blogs-by-sap/replicating-tables-using-slt-and-replication-flows-rms-in-sap-data/ba-p/13569425) regarding SLT + RMS(Replication Flow in Datasphere) in SDI(DPA)**
 
 ### 2.2.2. ODP/CDS View
 
@@ -99,7 +97,7 @@ Below are the approaches and their drawbacks
 
 - **Fewer custom CDSView has such a good design to capture the delta. Some custom CDSViews may have input parameter or may be too complex.**
 
-#### 2.2.2.1 Generic Date/Timestamp Delta
+#### 2.2.2.1. Generic Date/Timestamp Delta
 
 ![alt text](/Roadmap/images/CDC1.png?raw=true) 
 
@@ -115,15 +113,19 @@ Below are the approaches and their drawbacks
 	}
 }
 ```
-The ODP frame work stores key data and hashes of all records belonging to the safety interval for finding changed records.
+**The ODP frame work stores key data and hashes of all records belonging to the safety interval for finding changed records.**
 
 ![alt text](/Roadmap/images/CDC2.png?raw=true)
 
-#### 2.2.2.1 Generic Date/Timestamp Delta
-
-This is a SAP standard cdsview **C_SalesDocumentItemDEX_1** for the data extraction of the header and line-item of S/4HANA sales documents.
+#### 2.2.2.2. Change Data Capture Delta
 
 ![alt text](/Roadmap/images/CDC3.png?raw=true)
+
+This is a SAP standard CDS View **C_SalesDocumentItemDEX_1** for the data extraction of the header and line-item of S/4HANA sales documents.
+
+![alt text](/Roadmap/images/CDC4.png?raw=true)
+
+Whenever a record is inserted, updated or deleted in the underlying table, a record with the respective table key is stored in a generated logging table. Based on this info the scheduled job selects the data record from the CDS view and pushes it into the ODQ.
 
 ```
 @AbapCatalog.sqlViewName: 'CSDSLSDOCITMDX1'
@@ -179,11 +181,11 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
     key SalesDocumentItem.SalesDocumentItem,
 ```
 
-Check the CDS Extractor in SE16 and make it is released as C1 (**CDS can be inserted as a dataSource into Analysis for Office**)
+> [!Tip]
+> Check the CDS Extractor in SE16 and make it is released as C1 (**CDS can be inserted as a dataSource into Analysis for Office**)
+
 ![alt text](/Roadmap/images/CDS_EX1.png?raw=true)
 
-> [Tips]
-> As opposed to transaction RSA3 , which is not available to test CDS-based extractors, the report RODPS_REPL_TEST is used to test ODP replication
 
 # 3. Business Content in Datasphere
 
