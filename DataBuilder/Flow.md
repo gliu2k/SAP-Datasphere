@@ -96,9 +96,6 @@ Save and Deploy the Replication Flow
 > [!Note] 
 > I got an error in deploying the Replication Flow due to the different types defined for the same field included in the source and target systems. So, I made the change in the target table as we used to do BW development. In BW implmentation, we usually copy the BI Content and make the enhancement to the copied Z-object.
 
-![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
-
-
 # 2. Data Flow 
 
 Load and transform (Join, Union, Projection, Aggregation and **Python** script) the data from the source to the target. As it does not support delta (it uses the **insert** method), we must truncate the target table before reloading the data.
