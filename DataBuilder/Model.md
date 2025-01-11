@@ -15,20 +15,20 @@ You can create a local table, generate a **local** table by importing CSV file, 
 
 ## 1.1.1. Import CDS Views from on-premise S/4HANA
 
-**Data Provisioning Agent(SDI)** must be installed and configured.
+**Data Provisioning Agent(SDI)** must be installed and configured(ABAP Adapter).
 ![alt text](/DataBuilder/images/Import1.png?raw=true)
-
+All the CDSViews(SQLViews) are in the list. 
 ![alt text](/DataBuilder/images/Import2.png?raw=true)
 ![alt text](/DataBuilder/images/Import3.png?raw=true)
-CDSView is imported and delployed.
+The selected CDSView is imported and delployed. Its type is "Remote Table".
 ![alt text](/DataBuilder/images/Import4.png?raw=true)
 The data can be displayed. 
 ![alt text](/DataBuilder/images/Import5.png?raw=true)
 
 
 > [!NOTE]
-> Remote tables are the virtual  as in SDA(HANA) or the “link” as in Azure Fabric, which map to the physical objects locating in the remote system. 
-> The object and its data are stored in the remote system, which is  on-premise S/4HANA in this case. The perforancee is very slow if the source system is on-premise and target system is on-cloud. (It is also slow when both systems are on-premise). Thus, it is highly recommended to replicate the source object and its data to a local table in Datasphere when you want to create furuther logic(model) (join/union) on top of it.
+> Remote tables are the virtual as in SDA(HANA) or the “link” as in Azure Fabric, which map to the physical objects locating in the remote system. 
+> The object and its data are stored in the remote system, which is on-premise S/4HANA in this case. The performance can be slow if the source system is on-premise and target system is on-cloud. (It is also slow when both systems are on-premise). Thus, it is highly recommended to replicate the source object and its data to a local table in the Datasphere when you want to create further logic(model) like join/union and etc. on top of it.
 
 > [!IMPORTANT]
 > All the CDSViews in S/4HANA can be used(mapped) as the remote tables in Datasphere. However, only the CDSViews with **Analytics.dataExtraction.enabled** can be used in the **Flow** ETLs. See **Flow** section.
