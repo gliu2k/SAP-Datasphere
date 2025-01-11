@@ -15,7 +15,7 @@ Copy the data from one or multiple (remote) source systems into datasphere(local
 
 **Below** is the scenario of loading the data from a SAP standard CDS View with **Analytics.dataExtraction.enabled + Delta** of the on-premise S/4HANA system into the local table imported from Datasphere Business Content.
 
-**Source SAP Standard CDS View:** C_SalesDocumentItemDEX_1
+**Source SAP Standard CDS View:** C_SalesDocumentItemDEX_1 (dataCategory: #FACT)
 
 ```
 @AbapCatalog.sqlViewName: 'CSDSLSDOCITMDX1'
