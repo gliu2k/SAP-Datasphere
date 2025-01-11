@@ -33,7 +33,7 @@ The data can be displayed.
 > [!IMPORTANT]
 > **All** the CDSViews(and ABAP tables/views) in S/4HANA can be used(mapped) as the remote tables in Datasphere. They are the real-time data. When you have an enhancement, it is easier to expose the new fields (I suggest to copy the standard SAP CDSViews to Z-CDSViews.).
 > 
-> However, only the CDS Views with **Analytics.dataExtraction.enabled** can be loaded to Datasphere via the **Flow**. See **Flow** section. It is good for performance. But, when you want to add or expose new fields in the datasource CDSViews, not only you need to add the fields in the local table (and change the **Views** and **Analytic Models** on the top) of the Datasphere but you must **reload** all the data into the local table.
+> However, only the CDS Views with **Analytics.dataExtraction.enabled** can be loaded to Datasphere via the **Flow**. See **Flow** section. It is good for performance. But, when you want to add or expose new fields in the datasource CDSViews, not only you need to add the fields in the local table (and change the **Views** and **Analytic Models** on the top) of the Datasphere but you must **reload all** the data into the local table.
 
 ## 1.2. Import Entities (from BW)
 
