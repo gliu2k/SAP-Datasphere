@@ -95,6 +95,8 @@ Save and Deploy the Replication Flow
 ![alt text](/DataBuilder/images/Deploy_Error.png?raw=true)
 > [!Note] 
 > I got an error in deploying the Replication Flow due to the different types defined for the same field included in the source and target systems. So, I made the change in the target table as we used to do BW development. In BW implmentation, we usually copy the BI Content and make the enhancement to the copied Z-object.
+>
+> You can find the pros and cons of using the virtual table and data loading(ETL) in "Model" of the **DataBuilder** section. 
 
 # 2. Data Flow 
 
