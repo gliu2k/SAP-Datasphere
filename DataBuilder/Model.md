@@ -33,9 +33,9 @@ The data can be displayed.
 > [!IMPORTANT]
 > All the CDSViews in S/4HANA can be used(mapped) as the remote tables in Datasphere. However, only the CDSViews with **Analytics.dataExtraction.enabled** can be used in the **Flow** ETLs. See **Flow** section.
 
-## 1.2. Import Remote Entities (from BW Bridge)
+## 1.2. Import Entities (from BW)
 
-It is possible to use the models in BW system as the remote tables(virtual objects).
+It is possible to import the objects in BW system as the remote tables(virtual objects) in Datasphere.
 
 ![alt text](/DataBuilder/images/RemoteEntity.png?raw=true)
 
