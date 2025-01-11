@@ -191,11 +191,11 @@ The followings show how the **Currency** tables are improted from S/4HANA.
 
 ![alt text](/Roadmap/images/Curr1.png?raw=true)
 
-The currency related Remote Tables, DataFlow, Local Tables, Views for are imported. 
-
-DataFlow load the data from Remote Tables into Local Tables and we use these currency Views in the model(Views) design.
+The currency related Remote Tables, DataFlow, Local Tables, Views for are imported. [Blog](https://community.sap.com/t5/technology-blogs-by-members/currency-translation-in-sap-datasphere/ba-p/13688008)
 
 ![alt text](/Roadmap/images/Curr2.png?raw=true)
+
+</BR></BR>
 
 > [!Tip]
 > Check the CDS Extractor in SE16 and make it is released as **C1** (**BTW, in the embedded analsyis, we need to release the Cube or Query CDSViews so that they can be inserted into the "Analysis for Office" or "PowerBI" as a dataSource**)
