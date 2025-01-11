@@ -6,20 +6,16 @@
 
 Copy the data from one or multiple (remote) source systems into datasphere(local). There is no transformation.
 
-It is used to copy the data first in a limited time window.
-
-Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-series-part-1-overview/ba-p/13581472) on Replication Flow.
-
 > [!IMPORTANT] 
 >🚩  **It can be used to load the delta data from source BW or S/4HANA systems.**
+> 
+> Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-series-part-1-overview/ba-p/13581472) on Replication Flow and also this [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-replication-flow-delta-functionality/ba-p/13927903).
 >
-> Based on the 'Source Connection' type **Delta** option will be enabled in Replication Flow. See [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-replication-flow-delta-functionality/ba-p/13927903).
->
-> Either ODP or SLT needs to be configured to enable delta capture. See the [details](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd3/README.md).
+> Find more information in **Roadmap* section.
 
-- Below is the scenario of loading the data from a SAP standard CDS View with **Analytics.dataExtraction.enabled + Delta** of the on-premise S/4HANA system into the local table imported from Datasphere Business Content. 
+**Below** is the scenario of loading the data from a SAP standard CDS View with **Analytics.dataExtraction.enabled + Delta** of the on-premise S/4HANA system into the local table imported from Datasphere Business Content.
 
-Source SAP Standard CDS View: C_SalesDocumentItemDEX_1
+**Source SAP Standard CDS View:** C_SalesDocumentItemDEX_1
 
 ```
 @AbapCatalog.sqlViewName: 'CSDSLSDOCITMDX1'
@@ -75,7 +71,7 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
     key SalesDocumentItem.SalesDocumentItem,
 ```
     
-Target local Table: SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1 (Its "Delta Capture" is ON)
+**Target local Table:** SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1 (Its "Delta Capture" is ON)
 
 Select Source Connection - S/4HANA (ABAP)
 ![alt text](/DataBuilder/images/RF1.png?raw=true)
