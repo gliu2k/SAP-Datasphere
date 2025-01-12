@@ -301,7 +301,6 @@ So far, compared to Azure Fabric product, I think it has the following limits.
 - No vector DB 
 - No ML and AI services. Datasphere does not support python notebook. Don't know why not inetgrate SAP [AICore Services](https://github.com/SAP-samples/azure-openai-aicore-cap-api/blob/main/documentation/01-ai-core-azure-openai-proxy/01-ai-sap-getting-started.md) from SAP **BTP** into DataSphere.
 - No embedded 3rd party services such as "Databricks", "Chatgpt", "Huggling Face" and etc. They are embedded in [Generative AI Hub](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/generative-ai-hub-in-sap-ai-core) of SAP **BTP**.
-- No SDK (there is Command Line interface though)
   
 ![alt text](/Roadmap/images/Arch.png?raw=true)
 
