@@ -7,11 +7,11 @@
 Copy the data from one or multiple source systems into datasphere(local). There is no transformation.
 
 > [!IMPORTANT] 
->🚩  **It can be used to load the delta data from source BW or S/4HANA systems.**
+>🚩  **It can be used to load the data from source BW or S/4HANA systems and reversly.**
 > 
 > Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-series-part-1-overview/ba-p/13581472) on Replication Flow and also this [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-replication-flow-delta-functionality/ba-p/13927903).
 >
-> Find more information in **Roadmap* section.
+> It supports ODP(DataSource - CDSViews/SAPI) and SLT(Table/CDSViews). Find more information in **Roadmap* section.
 
 **Below** is the scenario of loading the data from a SAP standard CDS View with **Analytics.dataExtraction.enabled + Delta** of the on-premise S/4HANA system into the local table imported from Datasphere Business Content.
 
@@ -96,20 +96,25 @@ Save and Deploy the Replication Flow
 > [!Note] 
 > I got an error in deploying the Replication Flow due to the different types defined for the same field included in the source and target systems. So, I made the change in the target table as we used to do BW development. In BW implmentation, we usually copy the BI Content and make the enhancement to the copied Z-object.
 >
-> You can find the pros and cons of using the virtual table and data loading(ETL) in "Model" of the **DataBuilder** section. In daily work, it is very common for the business teams to require for new fields to the data model.
 
 # 2. Data Flow 
 
 Load and transform (Join, Union, Projection, Aggregation and **Python** script) the data from the source to the target. As it does not support delta (it uses the **insert** method), we must truncate the target table before reloading the data.
 
+![alt text](/DataBuilder/images/DF_CDS.png?raw=true)
+
+> [!IMPORTANT]
+> It supports ODP(DataSource - CDSViews/SAPI) and SLT(Table/CDSViews). In the above, the CDSViews Extractors as the datasources in the on-premise S/4HANA system are **Analytics.dataExtraction.enabled**.
+> 
+> It does not support delta data loading.
+>
+> It can be used within Datasphere.
+
+
 ![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
 
 > [!CAUTION]
 > The above DF job failed because I did not truncate the target table before reloading the data. The deteails are explained in the **Data Integration Monitor** section.
-
-![alt text](/DataBuilder/images/DF_CDS.png?raw=true)
-> [!Note]
-> The CDS Views as the datasources in the on-premise S/4HANA system are **Analytics.dataExtraction.enabled**.
  
 # 3. Transformation Flow 
 
