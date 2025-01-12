@@ -24,6 +24,9 @@ It is active to replicate the delta data from remote table(CDS View) **IFIGLACCT
   - No logs are generated when data is replicated in real-time mode. The displayed logs relate to previous actions.
   - Remote object needs to be a table of type "COLUMN TABLE" (other table types like Row Tables or Virtual Tables not supported)
 
+> [!Note]
+> It does not support **Generic Date/Timestamp Delta** datasources which are in **"PULL"** mode. We still need to use **"Replication Flow"** to load the data.
+
 ## 2. Views
 
 Monitor the jobs of loading the **View** persistence data into memory
