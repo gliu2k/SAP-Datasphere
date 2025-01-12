@@ -245,7 +245,7 @@ Local Source Table - Non Delta
 Local Target Table - Delta
 
 Transformation flow - We can only choose "Initial Only" in "load type"
-![alt text](/Roadmap/images/Type_Error.png?raw=true)
+![alt text](/Roadmap/images/LoadType_Error.png?raw=true)
 
 In the first execution of **Transformation Flow**, three records are loaded into target.
 
