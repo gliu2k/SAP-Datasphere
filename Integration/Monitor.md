@@ -20,6 +20,8 @@ The initialization data are loaded. It took 70min to load 21M records.
 It is active to replicate the delta data from remote table(CDS View) **IFIGLACCTLIR**.
 ![alt text](/Integration/images/RD4.png?raw=true)
 
+IFIGLACCTLIR is FI extractor, which is using **Timestamp Delta** and **PULL** mode. Strickly speaking, it does not support CDC. How can **RealTime(Delta) Data Replciation** work for it?
+
 ## 2. Views
 
 Monitor the jobs of loading the **View** persistence data into memory
