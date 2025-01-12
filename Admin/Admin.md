@@ -1,5 +1,7 @@
 # Administration
 
+**First and foremost, I highly recommend this SAP Datasphere Expert [Content](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4181116697.html). It's an outstanding resource packed with valuable information, clear concept explanations, and practical tips.Very Helpful** 
+
 ## 1. Create Tenant
 - **Tenant** is the environment within the SAP Business Technology Platform (BTP) where you can manage data and resources.
 it is a common practice to create separate tenants for development (DEV), quality assurance (QAS), and production (PROD) environments in SAP Datasphere.
