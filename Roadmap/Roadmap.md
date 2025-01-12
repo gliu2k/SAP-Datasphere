@@ -44,7 +44,7 @@ The ADOs tables are replciated from BW bridge and the models are rebuilt in Data
 ![alt text](/Roadmap/images/Future.png?raw=true) 
 
 
-## 1.2 BW Bridge to DataSphere (Migration)
+## 1.2. Load data from BW Bridge to DataSphere
 
 You can find the details in this [blog](https://community.sap.com/t5/technology-blogs-by-sap/delta-extraction-of-adso-from-sap-bw-bridge-into-sap-datasphere-via/ba-p/13651788) about how to load the delta data from the changelog table of ADSO in BW bridge. However, it does not include the case when 0RecordMode = 'A'. 
 
@@ -62,9 +62,18 @@ I think this approach is better and offers greater flexibility. [Link](https://l
 
 ## 2.1. Load data into DataSphere from the source systems(S/4HANA, ERP)
 
-Below are the approaches and their drawbacks
+Below are the approaches(**containers**) and their drawbacks
 
-- CDS View Extractor (ODP)
+- Tables (ODP/ODQ/SLT)
+  - Remodeling, without using the Pre-built Business Content in both Datashphere and SAP S/4HANA systems.
+  - 
+- ABAP Tables
+  - No delta capture in the source and used for Full Data (Init Only) load
+
+- ABAP CDS Vieww
+  - No delta capture in the source and used for Full Data (Init Only) load
+    
+- ABAP CDS View Extractor (ODP/ODQ)
   - Fewer customers develop the custom CDSView with the delta mechanism. 
   [Example](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd1/README.md)
 
@@ -75,11 +84,12 @@ Below are the approaches and their drawbacks
 - BW SAPI Extractor(ODP)
   - The new Business Contents in Datasphere are based on CDS Views, the new datasources, in S/4HANA. The only reason to use this method is that you want to keep  the current BW architecture, using the **View** in Datashere to replace the old objects and logics - BW models and processes in the BW Bridge system before getting rid of it.
 
-- Tables (ODP/SLT)
-  - Remodeling, without using the Pre-built Business Content in both Datashphere and SAP S/4HANA systems.
-
 > [!Important]
-> **The first approach is [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)**
+> **The ABAP CDS View approaches, the third and fourth, are [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)**
+>
+> **ABAP CDS Views** are mainly used in full data loading for master data. They don't need to have @Analytics.dataExtraction.enabled.
+>
+> **ABAP CDS Views(ODP/ODQ)** are mainly used in delta data loading for transactional data.
 >
 > In the real world, it depends on how much you rely on [SAP Business Content](https://help.sap.com/docs/SAP_DATASPHERE/6eb1eff34e4c4b1f90adfbfba1334240/a88098ce6bfc1014a79e69594ccc91ad.html)
 
@@ -92,10 +102,10 @@ Below are the approaches and their drawbacks
 
 - **SLT: Need to install SLT server**
 
-### 2.2.2. ODP/CDS View
+### 2.2.2. ODP/ABAP CDS View
 
 - Full extraction and query-type access (direct access)
-  - The following annotations make it possible for an ABAP CDS view to be available for full extraction or for direct access:
+  - The following annotations make it possible for an ABAP CDS view to be available for full/init extraction or for direct access:
     - @Analytics.dataCategory
     - @Analytics.dataExtraction.enabled
 
@@ -243,6 +253,7 @@ Local Source Table - Non Delta
 Local Target Table - Delta
 
 Transformation flow - We can only choose "Initial Only" in "load type"
+![alt text](/Roadmap/images/Type_Error.png?raw=true)
 
 In the first execution of **Transformation Flow**, three records are loaded into target.
 
@@ -283,14 +294,13 @@ Detla can be reset.
 >   - We can choose "Initial Only" type in the first execution of the Transformation Flow but need to change it to "Initial and Delta" type in the consequential execution. (Why not select "Initial and Delta" from the very beginning.)
 
 
-
-# 6. User Management
+# 5. User Management
 We can import the users from *CSV* file in the GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455) in daily maintenance.
 
 **There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA system into Datasphere. If we can synchronize the tables of SAP roles and users in S/4HANA, we won't need to assign some roles to the users manually in Datasphere. SAP GRC system can automate the process.**
 
 
-# 7. Limits & Integration(with non-SAP)
+# 6. Limits & Integration(with non-SAP)
 
 According to my understanding, SAP Datasphere is an integrated data Fabric platform. It should comprise advantage (cloud) services to processes structured, unstructured and realtime data.
 
