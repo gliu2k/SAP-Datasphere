@@ -20,7 +20,7 @@ It is a very useful tool that provides the access to the underlying HANA Cloud. 
 
 See [details](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-how-to-integrate-open-sql-procedures-in-a-task-chain/ba-p/13860628)
 
-<pre>🚩 Since this is a trial version, I will omit the details of transport.</pre>
+<pre>🚩 Since this is a trial version, I have to omit this part as well.</pre>
 
 ## 4. Connections
 
