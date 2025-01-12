@@ -37,7 +37,7 @@ The data, which have not yet been replciated, can be displayed via SDA.
 > The details can be found in [SAP Help](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4723641935.html)
 
 > [!IMPORTANT]
-> **All** the CDSViews(and ABAP tables/views) in S/4HANA can be used(mapped) as the remote tables in Datasphere. They don't have to have the **Analytics.dataExtraction.enabled** setting except for the realtime replication. And when you get an enhancement requirement, it is easier to expose the new added fields in the CDSViews and don't need to add these fields into the local table as well.
+> **All** the CDSViews(and ABAP tables/views) in S/4HANA can be used(mapped) as the remote tables in Datasphere. They don't have to have the **Analytics.dataExtraction.enabled+Delta** setting except for the realtime replication. And when you get an enhancement requirement, it is easier to expose the new added fields in the CDSViews and don't need to add these fields into the local table as well.
 
 ## 1.2. Import Entities (from BW)
 
