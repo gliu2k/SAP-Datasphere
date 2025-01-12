@@ -3,18 +3,18 @@
 Manage, monitor and track the process of integrating data among the objects and systems.
 
 ## 1. Remote Tables
-## 1.1 Full Data Replciation
+## 1.1. Full Data Replciation
 
 Snapshot data are loaded.
 ![alt text](/Integration/images/RD1.png?raw=true)
 
 ![alt text](/Integration/images/RD2.png?raw=true)
 
-## 1.1 RealTime(Delta) Data Replciation
+## 1.2. RealTime(Delta) Data Replciation
 
 It is only avaialbe for the datasource that supports CDC.
 
-Initialization Data are loaded. It took 70min to load 20M records.
+The initialization data are loaded. It took 70min to load 21M records.
 ![alt text](/Integration/images/RD3.png?raw=true)
 
 It is active to replicate the delta data from remote table(CDS View) **IFIGLACCTLIR**.
