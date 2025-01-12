@@ -199,7 +199,7 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
     key SalesDocumentItem.SalesDocumentItem,
 ```
 
-#### 2.2.2.3. Hierarchy & Others
+## 2.3. Hierarchy & Others
 
 Please refer to this good [blog](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-iii-miscellaneous/ba-p/13452148).
 
