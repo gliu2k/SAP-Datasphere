@@ -15,8 +15,8 @@ it is a common practice to create separate tenants for development (DEV), qualit
 > SAP recommends creating multiple spaces for dedicated functions. We may need to create a dedicated space for administration. It it better to create a dedicated space to manage the virtual tables.
 
 
-## 3. SQL EndPoint
-It is a very useful tool that provides access to the underlying HANA Cloud.
+## 3. SQL EndPoint (SQL Console or Database Explorer)
+It is a very useful tool that provides the access to the underlying HANA Cloud. You can turn on the trace, analyze the execution plan, and do all the troubleshooting at the HANA DB level.
 
 See [details](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-how-to-integrate-open-sql-procedures-in-a-task-chain/ba-p/13860628)
 
