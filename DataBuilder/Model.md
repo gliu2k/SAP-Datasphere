@@ -28,12 +28,14 @@ The data can be displayed.
 
 > [!NOTE]
 > Remote tables are the virtual as in SDA(HANA) or the “link” as in Azure Fabric, which map to the physical objects locating in the remote system. 
-> The object and its data are stored in the remote system, which is on-premise S/4HANA in this case. It also means that you can get the real-time data. However, the performance can be slow if the source system is on-premise and target system is on-cloud. (It is slow even when both systems are on-premise in SDA). Thus, it is highly recommended to replicate the source object and its data to a local table in the Datasphere when you want to create further logic(model) like join/union and etc. on top of it.
+> The object and its data are stored in the remote system, which is on-premise S/4HANA in this case. It also means that you can get the real-time data. However, the performance can be slow if the source system is on-premise and target system is on-cloud. (It is slow even when both systems are on-premise in SDA).
+>
+> You can either replicate the data into the snapshot (See section **Integration**) or replicate the source object and its data to a local table in the Datasphere when you want to create further logic(model) like join/union and etc. on top of it.
 
 > [!IMPORTANT]
 > **All** the CDSViews(and ABAP tables/views) in S/4HANA can be used(mapped) as the remote tables in Datasphere. They are the real-time data. When you have an enhancement, it is easier to expose the new fields (I suggest to copy the standard SAP CDSViews to Z-CDSViews.).
 > 
-> However, only the CDS Views with **Analytics.dataExtraction.enabled** can be loaded to Datasphere via the **Flow**. See **Flow** section. It is good for performance. But, when you want to add or expose new fields in the datasource CDSViews, not only you need to add the fields in the local table (and change the **Views** and **Analytic Models** on the top) of the Datasphere but you must **reload all** the data into the local table.
+> However, only the data in the CDS Views with **Analytics.dataExtraction.enabled** can be loaded into Datasphere via the **Flow**. See **Flow** section. It is good for performance. But, when you want to add or expose new fields in the datasource CDSViews, not only you need to add the fields in the local table (and change the **Views** and **Analytic Models** on the top) of the Datasphere but you must **reload all** the data into the local table.
 
 ## 1.2. Import Entities (from BW)
 
