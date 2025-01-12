@@ -27,7 +27,7 @@ It is active to replicate the delta data from remote table(CDS View) **IFIGLACCT
 > [!Note]
 > It does not support **Generic Date/Timestamp Delta** datasources which are in **"PULL"** mode. We still need to use **"Replication Flow"** to load the data.
 >
-> You can find other details in the **Flow** section or [SAP Help](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4723641935.html)
+> You can find other details in the **Flow** section or in [Datasphere Expert Content](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4723641935.html)
 
 ## 2. Views
 
