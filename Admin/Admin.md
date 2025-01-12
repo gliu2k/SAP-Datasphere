@@ -25,9 +25,9 @@ See [details](https://community.sap.com/t5/technology-blogs-by-members/sap-datas
 [Data Provisioning Agent(SDI)](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-sap-data-provisioning-agent-upgrade/ba-p/13569884) and [SAP Cloud Connector](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-cloud-connector-setup/ba-p/13550570) are needed in the setup of the connection from Datasphere to the on-premise systems.
 
 > [!IMPORTANT]
-> The **Replication Flow** is using SAP Cloud Connector and the **Remote Table** needs SDI/RDA. This can be one of the factors make you decide on using **Remote Table** or **Local Table** to build your models(VIEWs).
+> The **Replication Flow** is using SAP Cloud Connector and the **Remote Table** needs SDI(SDA). This can be one of the factors make you decide on using **Remote Table** or **Local Table** to build your models(VIEWs).
 
-What is SDI? Simply put, it is an ETL tool to load data from external systems into HANA Database. Just like SAP Data Service(BODS), it has the adapters, like ABAP, ODBC to access to differnet source systems.
+What is SDI? Simply put, it is an ETL tool to access or load the data from external systems into HANA Database. It is like SAP Data Service(BODS), which is using the adapters, like ABAP, ODBC adpaters, to access to differnet source systems.
 
 ![alt text](/Admin/images/SDA.png)
 
