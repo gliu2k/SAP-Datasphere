@@ -43,8 +43,18 @@ Both the metadata and data are transferred. This is for the scenario where the h
 The ADOs tables are replciated from BW bridge and the models are rebuilt in DataSphere(DWC = Datasphere). See section  **2.1** and **4.2**. The new reports are created in SAC.
 ![alt text](/Roadmap/images/Future.png?raw=true) 
 
+
+## 1.2 BW Bridge to DataSphere (Migration)
+
+You can find the details in this [blog](https://community.sap.com/t5/technology-blogs-by-sap/delta-extraction-of-adso-from-sap-bw-bridge-into-sap-datasphere-via/ba-p/13651788) about how to load the delta data from the changelog table of ADSO in BW bridge. However, it does not include the case when 0RecordMode = 'A'. 
+
+Alternatively, you can use openHub and delta-DTP to do the same thing.
+
+Using BW Bridge(ADSOs) will heavily rely on the models and processes built in the BW system.
+
 > [!Note]
-> **BW Bridge** is a tempoary solution. 
+> **BW Bridge** is a tempoary solution.
+
 
 # 2. Greenfield 
 
@@ -220,14 +230,13 @@ These are the parts of SAP Business Content imported into my space. The data in 
 - Master Data CDSView: **I_Customer** [SAP Help](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/a11849401368469fb9e7dfb34f44e9c7.html)
 
  
-# 4. Delta Data Loading
+# 4. Delta Data Loading Within DataSphere
 Generally，this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
 
 Let's take a quick at the **Delta** within Datasphere. We have talked about the settings in the "Model" and "Flow" in DataBuilder section. We need to turn on "delta capture" in 
 local table and use Transformation Flow to do dalta data loading.
 
-## 4.1. Delta in DataSphere 
-### 4.1.1. Full Data Loading 
+### 4.1. Full Data Loading 
 
 Local Source Table - Non Delta
 
@@ -247,7 +256,7 @@ The same is shown in the log(three records are loaded).
 ![alt text](/Roadmap/images/log.png?raw=true)
 
 
-### 4.1.2 Delta Data Loading 
+### 4.2. Delta Data Loading 
 
 Local Source Table - Delta
 
@@ -273,25 +282,15 @@ Detla can be reset.
 >   - We CANNOT use the Active Table of the source table (if the source table supports "Delta" mode as well) and select "Initial and Delta" type in Transformation Flow. "Initial Only" is the only option.
 >   - We can choose "Initial Only" type in the first execution of the Transformation Flow but need to change it to "Initial and Delta" type in the consequential execution. (Why not select "Initial and Delta" from the very beginning.)
 
-## 4.2 BW Bridge to DataSphere (Migration)
-
-You can find the details in this [blog](https://community.sap.com/t5/technology-blogs-by-sap/delta-extraction-of-adso-from-sap-bw-bridge-into-sap-datasphere-via/ba-p/13651788) about how to load the delta data from the changelog table of ADSO in BW bridge. However, it does not include the case when 0RecordMode = 'A'. 
-
-Alternatively, you can use openHub and delta-DTP to do the same thing.
-
-Using BW Bridge(ADSOs) will heavily rely on the models and processes built in the BW system.
-
-## 4.3 Delta Capture in the Source Systems (Greenfield)
-Refer to **2.2** 
 
 
-# 5. User Management
+# 6. User Management
 We can import the users from *CSV* file in the GoLive. And, we can synchronize the users and achieve the SSO via SAML. See [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455) in daily maintenance.
 
 **There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA system into Datasphere. If we can synchronize the tables of SAP roles and users in S/4HANA, we won't need to assign some roles to the users manually in Datasphere. SAP GRC system can automate the process.**
 
 
-# 6. Limits & Integration(with non-SAP)
+# 7. Limits & Integration(with non-SAP)
 
 According to my understanding, SAP Datasphere is an integrated data Fabric platform. It should comprise advantage (cloud) services to processes structured, unstructured and realtime data.
 
