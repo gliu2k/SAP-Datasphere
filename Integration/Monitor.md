@@ -24,8 +24,6 @@ It is active to replicate the delta data from remote table(CDS View) **IFIGLACCT
   - No logs are generated when data is replicated in real-time mode. The displayed logs relate to previous actions.
   - Remote object needs to be a table of type "COLUMN TABLE" (other table types like Row Tables or Virtual Tables not supported)
 
-IFIGLACCTLIR is FI extractor, which is using **Timestamp Delta** and **PULL** mode. Strickly speaking, it does not support CDC. How can **RealTime(Delta) Data Replciation** work for it?
-
 ## 2. Views
 
 Monitor the jobs of loading the **View** persistence data into memory
