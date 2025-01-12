@@ -29,8 +29,14 @@ It is a very useful tool that provides the access to the underlying HANA Cloud. 
 
 ![alt text](/Admin/images/S4HC.png)
 
+This is the connection to S/4HANA on-premise system.
+
 > [!IMPORTANT]
-> The **Replication Flow** is using SAP Cloud Connector and the **Remote Table** needs SDI(SDA). This can be one of the factors make you decide on using **Remote Table** or **Local Table** to build your models(VIEWs).
+> The **Replication Flow** and **Data Flow** are using SAP Cloud Connector.
+>
+> The **Remote Table** is using SDI(SDA).
+>
+> This can be one of the factors make you decide on using **Remote Table** or **Local Table** to build your models(VIEWs).
 
 What is SDI? Simply put, it is an ETL tool to access or load the data from external systems into HANA Database. It is like SAP Data Service(BODS), which is using the adapters, like ABAP, ODBC adpaters, to access to differnet source systems.
 
