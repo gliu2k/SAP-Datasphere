@@ -22,7 +22,7 @@ All the CDSViews(SQLViews) are in the list.
 ![alt text](/DataBuilder/images/Import3.png?raw=true)
 The selected CDSView is imported and delployed. Its type is "Remote Table".
 ![alt text](/DataBuilder/images/Import4.png?raw=true)
-The data can be displayed. 
+The data, which have not yet been replciated, can be displayed via SDA.
 ![alt text](/DataBuilder/images/Import5.png?raw=true)
 
 > [!NOTE]
