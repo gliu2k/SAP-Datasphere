@@ -71,7 +71,7 @@ Below are the approaches(**containers**) and their drawbacks
 - 
   ![alt text](/Roadmap/images/CDSV_DPAgent.png?raw=true)
 
-  All the CDSViews are seemed as **Extractors** in DP Agent (**Remote Table** import)
+**Above is excerpted from "First Guide: SAP Data Integratoin for ABAP Source System", DWC = Datasphere**. So all the CDSViews are seemed as **Extractors** in DP Agent (**Remote Table** import)
   
 - ABAP CDS View Extractor (ODP/ODQ)
   - Fewer customers develop the custom CDSView with the delta mechanism. 
