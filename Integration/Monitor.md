@@ -6,19 +6,19 @@ Manage, monitor and track the process of integrating data among the objects and 
 ## 1.1 Full Data Replciation
 
 Snapshot data are loaded.
-![alt text](/Integration/images/RD1_View.png?raw=true)
+![alt text](/Integration/images/RD1.png?raw=true)
 
-![alt text](/Integration/images/RD2_View.png?raw=true)
+![alt text](/Integration/images/RD2.png?raw=true)
 
 ## 1.1 RealTime(Delta) Data Replciation
 
 It is only avaialbe for the datasource that supports CDC. 
 
 Initialization Data are loaded.
-![alt text](/Integration/images/RD3_View.png?raw=true)
+![alt text](/Integration/images/RD3.png?raw=true)
 
 It is active to replicate the delta data.
-![alt text](/Integration/images/RD4_View.png?raw=true)
+![alt text](/Integration/images/RD4.png?raw=true)
 
 ## 2. Views
 
