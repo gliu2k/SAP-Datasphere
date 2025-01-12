@@ -27,6 +27,8 @@ It is a very useful tool that provides the access to the underlying HANA Cloud. 
 
 [Data Provisioning Agent(SDI)](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-sap-data-provisioning-agent-upgrade/ba-p/13569884) and [SAP Cloud Connector](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-cloud-connector-setup/ba-p/13550570) are needed in the setup of the connection from Datasphere to the on-premise systems.
 
+![alt text](/Admin/images/S4HC.png)
+
 > [!IMPORTANT]
 > The **Replication Flow** is using SAP Cloud Connector and the **Remote Table** needs SDI(SDA). This can be one of the factors make you decide on using **Remote Table** or **Local Table** to build your models(VIEWs).
 
