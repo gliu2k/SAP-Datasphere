@@ -79,9 +79,9 @@ Below are the approaches(**containers**) and their drawbacks
   - The new Business Contents in Datasphere are based on CDS Views, the new datasources, in S/4HANA. The only reason to use this method is that you want to keep  the current BW architecture, using the **View** in Datashere to replace the old objects and logics - BW models and processes in the BW Bridge system before getting rid of it.
 
 > [!Important]
-> **The ABAP CDS View, the second approach, is [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)**. It is mainly used in the delta data loading for transaction data.
+> **The ABAP CDS View, the second approach, is [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)**. It is mainly used in the init/delta data loading for the transaction data.
 >
-> **Remoet Tables**, mapping to **ABAP CDS Views**, are mainly used in the full data loading for master data. These CDSViews don't need to have **@Analytics.dataExtraction.enabled**.
+> **Remoet Tables**, mapping to **ABAP CDS Views**, are mainly used in the full data loading for the master data. These CDSViews don't need to have **@Analytics.dataExtraction.enabled**.
 >
 > In the real world, it depends on how much you rely on [SAP Business Content](https://help.sap.com/docs/SAP_DATASPHERE/6eb1eff34e4c4b1f90adfbfba1334240/a88098ce6bfc1014a79e69594ccc91ad.html)
 
