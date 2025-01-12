@@ -78,9 +78,6 @@ It will be explained in details again in the **Roadmap** section.
 
 # 2. Views
 
-You can directly select and deploy the remoet table as the source.
-![alt text](/DataBuilder/images/RT.png?raw=true)
-
 There are two types of views, SQL View and Graphical View, in datasphere. Both are virtual objects. <BR/>
 
 ![alt text](/DataBuilder/images/Views.png?raw=true)
@@ -89,6 +86,11 @@ There are two types of views, SQL View and Graphical View, in datasphere. Both a
 It supports SQL and SQLScript(**table function**). The latter is the same as the table function used in AMDP or ABAP CDS View.
 
 ## 2.2. Graphical View
+
+You can directly select and deploy the remote table as the source.
+
+![alt text](/DataBuilder/images/RT.png?raw=true)
+
 It is similar to the HANA Calculation View. Graphical View is optimized and has better performance.
 
 ![alt text](/DataBuilder/images/NewGV.png?raw=true)
