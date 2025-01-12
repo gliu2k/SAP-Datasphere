@@ -120,6 +120,8 @@ Load and transform (Join, Union, Projection, Aggregation and **Python** script) 
 
 It is an ETL process similar to BW transformation, but it uses **VIEW** to transform the data.
 
+It is the only **flow** that is used within DataSphere.
+
 ![alt text](/DataBuilder/images/Flow_TF1.png?raw=true)
 
 > [!IMPORTANT] 
