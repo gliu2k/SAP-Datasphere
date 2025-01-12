@@ -20,7 +20,7 @@ The initialization data are loaded. It took 70min to load 21M records.
 It is active to replicate the delta data from remote table(CDS View) **IFIGLACCTLIR**.
 ![alt text](/Integration/images/RD4.png?raw=true)
 
-- [Details](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/441d327ead5c49d580d8600301735c83.html): 
+- Details - [SAP Help](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/441d327ead5c49d580d8600301735c83.html)
   - No logs are generated when data is replicated in real-time mode. The displayed logs relate to previous actions.
   - Remote object needs to be a table of type "COLUMN TABLE" (other table types like Row Tables or Virtual Tables not supported)
 
