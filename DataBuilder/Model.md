@@ -87,7 +87,7 @@ It supports SQL and SQLScript(**table function**). The latter is the same as the
 
 ## 2.2. Graphical View
 
-You can directly select and deploy the remote table as the source.
+You can directly select the table from the source system and deploy it as the remote table, and then use it as the data source of the view.
 
 ![alt text](/DataBuilder/images/RT.png?raw=true)
 
