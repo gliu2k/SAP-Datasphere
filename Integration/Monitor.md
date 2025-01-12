@@ -12,12 +12,12 @@ Snapshot data are loaded.
 
 ## 1.1 RealTime(Delta) Data Replciation
 
-It is only avaialbe for the datasource that supports CDC. 
+It is only avaialbe for the datasource that supports CDC.
 
-Initialization Data are loaded.
+Initialization Data are loaded. It took 70min to load 20M records.
 ![alt text](/Integration/images/RD3.png?raw=true)
 
-It is active to replicate the delta data.
+It is active to replicate the delta data from remote table(CDS View) **IFIGLACCTLIR**.
 ![alt text](/Integration/images/RD4.png?raw=true)
 
 ## 2. Views
