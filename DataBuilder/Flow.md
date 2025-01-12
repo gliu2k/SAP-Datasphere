@@ -4,7 +4,7 @@
 
 # 1. Replication Flow 
 
-Copy the data from one or multiple (remote) source systems into datasphere(local). There is no transformation.
+Copy the data from one or multiple source systems into datasphere(local). There is no transformation.
 
 > [!IMPORTANT] 
 >🚩  **It can be used to load the delta data from source BW or S/4HANA systems.**
