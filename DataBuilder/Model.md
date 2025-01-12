@@ -31,15 +31,16 @@ The data, which have not yet been replciated, can be displayed via SDA.
 >
 > You can replicate the data into the snapshot and do realtime (See section **Integration**).
 
-- Remote Table VS Local Table (Using Replication Flow)
+- **Remote Table vs Local Table (Using Replication Flow)**
+  
 > [!NOTE]
 > The details can be found in [SAP Help](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4723641935.html)
 
 
 > [!IMPORTANT]
-> **All** the CDSViews(and ABAP tables/views) in S/4HANA can be used(mapped) as the remote tables in Datasphere. They are the real-time data. And when you have an enhancement, it is easier to expose the new fields (I suggest to copy the standard SAP CDSViews to Z-CDSViews.). And you can load the data into the snapshot of Datasphere. They don't have to have the **Analytics.dataExtraction.enabled** setting.
+> **All** the CDSViews(and ABAP tables/views) in S/4HANA can be used(mapped) as the remote tables in Datasphere. They don't have to have the **Analytics.dataExtraction.enabled** setting. They are the real-time data. And when you have an enhancement, it is easier to expose the new added fields (I suggest to copy the standard SAP CDSViews to Z-CDSViews.). And you can replicate the data, the snapshot, into Datasphere. 
 > 
-> However, only the data in the CDS Views with **Analytics.dataExtraction.enabled** can be loaded into Datasphere via the **Flow**. See **Flow** section. It is good for performance. But, when you want to add or expose new fields in the datasource CDSViews, not only you need to add the fields in the local table (and change the **Views** and **Analytic Models** on the top) of the Datasphere but you must **reload all** the data into the local table.
+> However, only the data in the CDS Views with **Analytics.dataExtraction.enabled** can be loaded into Datasphere via the **Flow**. See **Flow** section. When you want to add and expose new fields in the datasource CDSViews, you need to add these fields in the local table as well.
 
 ## 1.2. Import Entities (from BW)
 
