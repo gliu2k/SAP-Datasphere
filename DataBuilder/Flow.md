@@ -108,7 +108,7 @@ Load and transform (Join, Union, Projection, Aggregation and **Python** script) 
 > 
 > It does not support delta data loading.
 >
-> It can be used within Datasphere.
+> It can be used to load the data within Datasphere.
 
 
 ![alt text](/DataBuilder/images/Flow_DF.png?raw=true)
