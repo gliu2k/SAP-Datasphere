@@ -205,7 +205,7 @@ association [0..1] to E_SalesDocumentBasic          as  _ExtensionHeader      on
 
 ## 2.3. Hierarchy & Others
 
-Please refer to this good [blog](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-iii-miscellaneous/ba-p/13452148).
+Please refer to this good [blog](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-based-data-extraction-part-iii-miscellaneous/ba-p/13452148) for hierarchy extraction.
 
 Leverage CONVERT_UNIT to do [Unit Conversion](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-unit-conversion/ba-p/13567259)
 
