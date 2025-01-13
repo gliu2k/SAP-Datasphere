@@ -7,7 +7,7 @@
 Copy the data from one or multiple source systems into datasphere(local). There is no transformation.
 
 > [!IMPORTANT] 
->🚩  **It can be used to load the data from source BW or S/4HANA systems and reversly.**
+>🚩  **It can be used to load the data from source BW or S/4HANA systems and reversely.**
 > 
 > Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-series-part-1-overview/ba-p/13581472) on Replication Flow and also this [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-replication-flow-delta-functionality/ba-p/13927903).
 >
