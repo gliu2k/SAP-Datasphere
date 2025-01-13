@@ -69,7 +69,7 @@ Below are the approaches(**containers**) and their drawbacks
 
 - ABAP CDSViews (SDI/DP Aent-ABAP)
   
-  **Below is excerpted from "First Guide: SAP Data Integratoin for ABAP Source System", DWC = Datasphere**. So all the CDSViews are seemed as **Extractors** in DP Agent (**Remote Table** import). This method is not flexible in maintenance and troubleshooting.
+  **Below is excerpted from "First Guide: SAP Data Integratoin for ABAP Source System", DWC = Datasphere**. All the CDSViews are seemed as **Extractors** in DP Agent (**Remote Table** import). This method is not flexible in maintenance and troubleshooting.
   
   ![alt text](/Roadmap/images/CDSV_DPAgent.png?raw=true)
 
