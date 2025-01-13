@@ -25,7 +25,8 @@ It is active to replicate the delta data from remote table(CDS View) **IFIGLACCT
   - Remote object needs to be a table of type "COLUMN TABLE" (other table types like Row Tables or Virtual Tables not supported)
 
 > [!Note]
-> It does not support **Generic Date/Timestamp Delta** datasources which are in **"PULL"** mode. We still need to use **"Replication Flow"** to load the data.
+> For the Realtime Data Replication(Delta Data Loading), these CDSViews are leveraging on ODP. So they need to have @Analytics.dataExtraction.enabled + CDC(delta.changeDataCapture). And,
+> it does not support the CDSViews with **Generic Date/Timestamp Delta** which is using the **"PULL"** mode. We still need to use **"Replication Flow"** to do the delta data loading.
 >
 > You can find the details in the **Flow** section or in [Datasphere Expert Content](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4723641935.html)
 
