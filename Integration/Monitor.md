@@ -3,14 +3,14 @@
 Manage, monitor and track the process of integrating data among the objects and systems.
 
 ## 1. Remote Tables
-## 1.1. Full Data Replciation
+## 1.1. Full Data Replication
 
 Snapshot data are loaded.
 ![alt text](/Integration/images/RD1.png?raw=true)
 
 ![alt text](/Integration/images/RD2.png?raw=true)
 
-## 1.2. RealTime(Delta) Data Replciation
+## 1.2. RealTime(Delta) Data Replication
 
 It is only avaialbe for the datasource that supports CDC.
 
