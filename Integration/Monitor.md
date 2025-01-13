@@ -18,6 +18,7 @@ The initialization data are loaded. It took 70min to load 21M records.
 ![alt text](/Integration/images/RD3.png?raw=true)
 
 It is active to replicate the delta data from remote table(CDS View) **IFIGLACCTLIR**.
+See the memory and disk used storage (All the loaded data are stored on the disk)
 ![alt text](/Integration/images/RD4.png?raw=true)
 
 - Details - [SAP Help](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/441d327ead5c49d580d8600301735c83.html)
