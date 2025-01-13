@@ -68,11 +68,11 @@ Below are the approaches(**containers**) and their drawbacks
   - Remodeling, without using the Pre-built Business Content in both Datashphere and SAP S/4HANA systems.
 
 - ABAP CDSViews (DP Aent)
-- 
+  
+  **Below is excerpted from "First Guide: SAP Data Integratoin for ABAP Source System", DWC = Datasphere**. So all the CDSViews are seemed as **Extractors** in DP Agent (**Remote Table** import). This method is not flexible in maintenance and troubleshooting.
+  
   ![alt text](/Roadmap/images/CDSV_DPAgent.png?raw=true)
 
-**Above is excerpted from "First Guide: SAP Data Integratoin for ABAP Source System", DWC = Datasphere**. So all the CDSViews are seemed as **Extractors** in DP Agent (**Remote Table** import)
-  
 - ABAP CDS View Extractor (ODP/ODQ)
   - Fewer customers develop the custom CDSView with the delta mechanism. 
   [Example](https://github.com/SAP-samples/teched2022-DA281/blob/main/exercises/dd1/README.md)
@@ -85,10 +85,15 @@ Below are the approaches(**containers**) and their drawbacks
   - The new Business Contents in Datasphere are based on CDS Views, the new datasources, in S/4HANA. The only reason to use this method is that you want to keep  the current BW architecture, using the **View** in Datashere to replace the old objects and logics - BW models and processes in the BW Bridge system before getting rid of it.
 
 > [!Important]
-> **The ABAP CDS Views, the second and third approach, are [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)**. It is mainly used in the init/delta data loading for the transaction data(fact).
+> **The ABAP CDS Views, the second and third approach, are [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)**.
 >
-> **Remoet Tables**, mapping to the **ABAP Tables** or **ABAP CDS Views**, are mainly used in the full data loading for the master data(dimension/text/hierarchy). These CDSViews don't need to have **@Analytics.dataExtraction.enabled**.
 >
+> **Replication Flow**: is mainly used to do the init/delta data loading of the transaction data through **ABAP CDS View Extractor (ODP/ODQ )** with **@Analytics.dataExtraction.enabled**
+>
+> **Remoet Tables** (mapping to the **ABAP Tables** or **ABAP CDS Views**): is mainly used do the full data loading of the master data(dimension/text/hierarchy). These CDSViews are treated as extractor by default without **@Analytics.dataExtraction.enabled** and **Delta(RealTime)** is support for those having CDC(delta.changeDataCapture). Thus, they can also be used to load the transaction data.
+>
+> You can find the comparison of using **Replication Flow** and **Remoet Tables** in SAP Datasphere Expert [Content](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4181116697.html).
+> 
 > In the real world, it depends on how much you rely on [SAP Business Content](https://help.sap.com/docs/SAP_DATASPHERE/6eb1eff34e4c4b1f90adfbfba1334240/a88098ce6bfc1014a79e69594ccc91ad.html)
 
 ## 2.2 ODP/ODQ (SLT & CDS View)
