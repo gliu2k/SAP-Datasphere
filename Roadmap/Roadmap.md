@@ -317,5 +317,5 @@ So far, compared to Azure Fabric product, I think it has the following limits.
 
 In the current landscape, it shows that the **Integration** is only at the **DATA** level not at the Application(service) level. However, it says SAP will integrate the services from **SAP Data Intelligence Cloud** into **Datasphere**. According to this [Roadmap](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-and-sap-data-intelligence-cloud-what-does-this-mean-for-me/ba-p/13603947), **Datashpere** will become SAP's Data Fabric as **Azure Data Faric** for **Microsoft** in the future.
 
-**Interesting!** There are embedded Data Intelligence cloud services in the DataSphere to archieve some functionalities like "Replication Flow". Below screenshot is from the "Replication Flow". Need to confirm with SAP if Apache **Parquet** file format is used in Dataphere instead of HANA data file.
+**Interesting!** There are already embedded Data Intelligence cloud services in the DataSphere to achieve some functionalities in "Replication Flow". Below screenshot is from the "Replication Flow". Need to confirm with SAP if Apache **Parquet** file format is used in Dataphere instead of HANA data file.
 ![alt text](/Roadmap/images/Parquet.png?raw=true)
