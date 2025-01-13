@@ -67,7 +67,7 @@ Below are the approaches(**containers**) and their drawbacks
 - ABAP Tables (SLT)
   - Remodeling, without using the Pre-built Business Content in both Datashphere and SAP S/4HANA systems.
 
-- ABAP CDSViews (DP Aent)
+- ABAP CDSViews (SDI/DP Aent-ABAP)
   
   **Below is excerpted from "First Guide: SAP Data Integratoin for ABAP Source System", DWC = Datasphere**. So all the CDSViews are seemed as **Extractors** in DP Agent (**Remote Table** import). This method is not flexible in maintenance and troubleshooting.
   
@@ -87,10 +87,9 @@ Below are the approaches(**containers**) and their drawbacks
 > [!Important]
 > **The ABAP CDS Views, the second and third approach, are [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)**.
 >
+> **Remoet Tables** (mapping to the **ABAP Tables** or **ABAP CDS Views** via DPAgent): is mainly used do the full data loading of the master data(dimension/text/hierarchy). These CDSViews are treated as extractor by default without **@Analytics.dataExtraction.enabled** and **Delta(RealTime)** is support for those having CDC(delta.changeDataCapture). Thus, they can also be used to load the transaction data.
 >
-> **Replication Flow**: is mainly used to do the init/delta data loading of the transaction data through **ABAP CDS View Extractor (ODP/ODQ )** with **@Analytics.dataExtraction.enabled**
->
-> **Remoet Tables** (mapping to the **ABAP Tables** or **ABAP CDS Views**): is mainly used do the full data loading of the master data(dimension/text/hierarchy). These CDSViews are treated as extractor by default without **@Analytics.dataExtraction.enabled** and **Delta(RealTime)** is support for those having CDC(delta.changeDataCapture). Thus, they can also be used to load the transaction data.
+> **Replication Flow**: is mainly used to do the init/delta data loading of the transaction data through **ABAP CDS View Extractor (ODP/ODQ )** with **@Analytics.dataExtraction.enabled**.
 >
 > You can find the comparison of using **Replication Flow** and **Remoet Tables** in SAP Datasphere Expert [Content](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4181116697.html).
 > 
