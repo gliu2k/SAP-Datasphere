@@ -12,6 +12,10 @@ Copy the data from one or multiple source systems into datasphere(local). There 
 > Here is an excellent [series](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-series-part-1-overview/ba-p/13581472) on Replication Flow and also this [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-replication-flow-delta-functionality/ba-p/13927903).
 >
 > It supports ODP(DataSource - CDSViews/SAPI) and SLT(Table/CDSViews). Find more information in **Roadmap* section.
+>
+> It is included in SAP Datasphere Business Contents, which means it is better than **Remote Table** replication. The latter can only replicate one table and it may have performance issue or take too much memory.
+> 
+> It can be used to replicate the data from S/4HANA to Azure. [Link](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-replication-flow-from-s-4hana-to-azure-data-lake/ba-p/13585656)
 
 **Below** is the scenario of loading the data from a SAP standard CDS View with **Analytics.dataExtraction.enabled + Delta** of the on-premise S/4HANA system into the local table imported from Datasphere Business Content.
 
