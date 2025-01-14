@@ -243,7 +243,7 @@ These are the parts of SAP Business Content imported into my space. The data in 
 
 ![alt text](/Roadmap/images/BC4.png?raw=true)
 
-**If the design of the reports is aligned with or very close to SAP's best practice, it is better to leverage the Datasphere Business Content to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed all the objects in both Datasphere and S/4HANA(CDSViews) systems.**
+**It is highiy recommendeded to leverage the Datasphere Business Content(and CDSViews) to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed almost all the objects in both Datasphere and S/4HANA(CDSViews) systems, which is the best practise. We don't need to worry about table relationship, data redundant and record duplication**
 
 > [!Note]
 > SAP use the **Replication Flows** to replicate both master and transaction data from S/4(CDSViews) to **Local Tables**.
