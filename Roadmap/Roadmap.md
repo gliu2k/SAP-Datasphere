@@ -243,7 +243,7 @@ These are the parts of SAP Business Content imported into my space. The data in 
 
 ![alt text](/Roadmap/images/BC4.png?raw=true)
 
-**If the design of the reports is aligned with or very close to SAP's best practice, it is better to leverage the Datasphere Business Content to alienate the workload in the implementation future maintenance. SAP has desgined and developed all the objects in both Datasphere and S/4HANA(CDSViews)**
+**If the design of the reports is aligned with or very close to SAP's best practice, it is better to leverage the Datasphere Business Content to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed all the objects in both Datasphere and S/4HANA(CDSViews) systems.**
 
 
 # 4. Delta Data Loading Within DataSphere
