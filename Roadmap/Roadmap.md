@@ -241,6 +241,10 @@ These are the parts of SAP Business Content imported into my space. The data in 
 
 - Master Data CDSView: **I_Customer** [SAP Help](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/a11849401368469fb9e7dfb34f44e9c7.html)
 
+![alt text](/Roadmap/images/BC4.png?raw=true)
+
+**If the design of the reports is aligned with SAP's best practice, it is better to leverage the Business Content to alienate the workload in implementation future maintenance.**
+
  
 # 4. Delta Data Loading Within DataSphere
 Generally，this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
