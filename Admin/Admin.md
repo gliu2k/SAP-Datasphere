@@ -34,7 +34,7 @@ This is the connection to S/4HANA on-premise system.
 > [!IMPORTANT]
 > The **Replication Flow** and **Data Flow** are using SAP Cloud Connector.
 >
-> The **Remote Table** is using SDI(SDA).
+> The **Remote Table** is using SDI(DP-Agent).
 >
 > This can be one of the factors make you decide on using **Remote Table** or **Local Table** to build your models(VIEWs).
 
