@@ -197,7 +197,7 @@ There are 3 types of DAC.
 
 The details can be found in this [blog](https://community.sap.com/t5/technology-blogs-by-members/data-access-control-in-sap-datasphere-single-value-dac/ba-p/13705980)
   
-**This is SAP Best Practice of [DAC](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**
+**This is SAP Best Practice of [DAC](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**. It says using USERID instead Email in DAC. And, it seems that there is no access control to data model in Datasphere.
 
 ------------------------------------------------------------------------------------------------------------------------------------
 Datasphere is a Data Mesh, using differnt **Spaces** for different business branches.
