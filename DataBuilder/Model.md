@@ -189,7 +189,7 @@ There are 3 types of DAC.
 - Hierarchy DAC
 
 **How to create a single value DAC:**
-1. Create a new **local table** with a field, as the filter(control on the values) of the same field in **View**
+1. Create a new **local table** with a field as the filter(control on the values) of the same field in **View**
 
 2. Create a Data Access Control(DAC) and define the DAC artifact by using the lcoal time above
 
