@@ -8,7 +8,11 @@ SAP is encouraging customers to transition to Datasphere from BW.
 ![alt text](/Roadmap/images/Target.png?raw=true)
 
 > [!Note]
-> But if there is BW-BPC, replace the **consolidation** part with the embeded BPC in S/4HANA and achieve the **planning** part in SAC?
+> **Impacts**:
+> 
+> 1. BW-BPC: Use S/4HANA embedded BPC or the **planning** function in SAP SAC
+> 
+> 2. Bex Query: Gone
 
 
 # 1. Migration
@@ -227,7 +231,7 @@ The currency related Remote Tables, DataFlow, Local Tables, Views for are import
 
 # 3. Business Content in Datasphere
 
-This is SAP Business Content in Datasphere, which is similar to SAP BW Content in BW system. Theire data are loaded from the corresponding CDSViews, the datasources, in S/4HANA system. The CDSView name is part of the name of the local table.
+This is SAP Business Content in Datasphere, which is similar to SAP BW Content in BW system. Their data are loaded from the corresponding CDSViews, the datasources, in S/4HANA system. The CDSView name is part of the name of the local table.
 
 ![alt text](/Roadmap/images/BC1.png?raw=true)
 
@@ -237,13 +241,18 @@ They can be imported into the space.
 These are the parts of SAP Business Content imported into my space. The data in the local tables are loaded from the CDSViews in S/4HANA.
 ![alt text](/Roadmap/images/BC3.png?raw=true)
 
-- Transaction Data CDSView: **C_SalesDocumentItemDEX_1** - mentioned above
+- Transaction Data:
+	- Datashphere Local Table: **SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1**
+ 	- S/4HANA CDSView: **C_SalesDocumentItemDEX_1**
 
-- Master Data CDSView: **I_Customer** [SAP Help](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/a11849401368469fb9e7dfb34f44e9c7.html)
+- Master Data:
+ 	- Datashphere Local Table: **SAP_LO_IL_SAP_LO_IL_I_CUSTOMER**
+ 	- S/4HANA CDSView: **I_Customer** [SAP Help](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/a11849401368469fb9e7dfb34f44e9c7.html)
 
 ![alt text](/Roadmap/images/BC4.png?raw=true)
 
-**It is highiy recommendeded to leverage the Datasphere Business Content(and CDSViews) to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed a comprehensive suite of standard objects in both Datasphere and S/4HANA(CDSViews) systems for reuse. We should follow the best practise so that we don't need to worry about table relationship, data redundant, record duplication and the issues in the future upgrade.** 
+> [!Important]
+> **It is highiy recommendeded to leverage the Datasphere Business Content(and CDSViews) to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed a comprehensive suite of standard objects in both Datasphere and S/4HANA(CDSViews) systems for reuse. We should follow the best practise so that we don't need to worry about table relationship, data redundant, record duplication and the issues in the future upgrade.** 
 
 > [!Note]
 > SAP use the **Replication Flows** to replicate both master and transaction data from S/4(CDSViews) to **Local Tables**.
