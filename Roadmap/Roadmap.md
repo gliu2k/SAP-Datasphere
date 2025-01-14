@@ -85,15 +85,15 @@ Below are the approaches(**containers**) and their drawbacks
   - The new Business Contents in Datasphere are based on CDS Views, the new datasources, in S/4HANA. The only reason to use this method is that you want to keep  the current BW architecture, using the **View** in Datashere to replace the old objects and logics - BW models and processes in the BW Bridge system before getting rid of it.
 
 > [!Important]
-> **The ABAP CDS Views, the second and third approach, are [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)**.
+> **The ABAP CDS Views, the second and the third approach, are [SAP Best Practice](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-s-4hana-your-guide-to-seamless-data-integration/ba-p/13662817)**.
 >
-> **Remoet Tables** (mapping to the **ABAP Tables** or **ABAP CDS Views** via DPAgent): is mainly used do the full data loading of the master data(dimension/text/hierarchy). These CDSViews are treated as extractor by default without **@Analytics.dataExtraction.enabled**. But if you want to do the delta loading(realtime replication), these CDSViews still need to have **@Analytics.dataExtraction.enabled** + **CDC**(delta.changeDataCapture). Thus, they can also be used to load the transaction data. For those CDSViews that use **Generic Date/Timestamp Delta**, delta data loading is not supported. **CDC = PUSH; TIMESTAMP = PULL** because the delta changes cannot be pushed to the target.
+> **Remoet Tables** vs **Replication Flow**:
+> 
+> **Remoet Tables** (mapping to the **ABAP Tables** or **ABAP CDS Views** via DPAgent): can replicate the snapshot of the master data(dimension/text/hierarchy) and do realtime replication(delta loading) of the transaction data. Only the CDSViews with **@Analytics.dataExtraction.enabled** + **CDC**(delta.changeDataCapture) are supported for the realtime replication. But for those CDSViews that use **Generic Date/Timestamp Delta**, delta data loading is not supported because the delta changes cannot be pushed to the target(**CDC = PUSH; TIMESTAMP = PULL**).
 >
-> **Replication Flow**: is mainly used to do the init/delta data loading of the transaction data through **ABAP CDS View Extractor (ODP/ODQ )** with **@Analytics.dataExtraction.enabled**.
+> **Replication Flow**: is mainly used to replicate the master data and the transaction data through **ABAP CDS View Extractor (ODP/ODQ )** with **@Analytics.dataExtraction.enabled**. SAP also use **Replication Flow** in the Datasphere Business Contents. See section **3**.
 >
 > You can find the comparison of using **Replication Flow** and **Remoet Tables** in SAP Datasphere Expert [Content](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4181116697.html).
-> 
-> In the real world, it depends on how much you rely on [SAP Business Content](https://help.sap.com/docs/SAP_DATASPHERE/6eb1eff34e4c4b1f90adfbfba1334240/a88098ce6bfc1014a79e69594ccc91ad.html)
 
 ## 2.2 ODP/ODQ (SLT & CDS View)
 
