@@ -27,6 +27,7 @@ It is a very useful tool that provides the access to the underlying HANA Cloud. 
 
 [Data Provisioning Agent(SDI)](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-sap-data-provisioning-agent-upgrade/ba-p/13569884) and [SAP Cloud Connector](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-sap-cloud-connector-setup/ba-p/13550570) are needed in the setup of the connection from Datasphere to the on-premise systems.
 
+You can check the status by clicking the **Validate** button or open the setting.
 ![alt text](/Admin/images/S4HC.png)
 
 This is the connection to S/4HANA on-premise system.
