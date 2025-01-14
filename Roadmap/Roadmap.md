@@ -227,14 +227,14 @@ The currency related Remote Tables, DataFlow, Local Tables, Views for are import
 
 # 3. Business Content in Datasphere
 
-This is SAP Business Content in Datasphere, which is similar to SAP BW Content. They are corresponding to the CDSViews, the datasources, in S/4HANA system.
+This is SAP Business Content in Datasphere, which is similar to SAP BW Content in BW system. Theire data are loaded from the corresponding CDSViews, the datasources, in S/4HANA system. The CDSView name is part of the name of the local table.
 
 ![alt text](/Roadmap/images/BC1.png?raw=true)
 
 They can be imported into the space.
 ![alt text](/Roadmap/images/BC2.png?raw=true)
 
-These are the parts of SAP Business Content imported into my space. The data in the local tables are from the CDSViews in S/4HANA.
+These are the parts of SAP Business Content imported into my space. The data in the local tables are loaded from the CDSViews in S/4HANA.
 ![alt text](/Roadmap/images/BC3.png?raw=true)
 
 - Transaction Data CDSView: **C_SalesDocumentItemDEX_1** - mentioned above
@@ -243,7 +243,7 @@ These are the parts of SAP Business Content imported into my space. The data in 
 
 ![alt text](/Roadmap/images/BC4.png?raw=true)
 
-**It is highiy recommendeded to leverage the Datasphere Business Content(and CDSViews) to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed almost all the objects in both Datasphere and S/4HANA(CDSViews) systems, which is the best practise. We don't need to worry about table relationship, data redundant and record duplication**
+**It is highiy recommendeded to leverage the Datasphere Business Content(and CDSViews) to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed a comprehensive suite of standard objects in both Datasphere and S/4HANA(CDSViews) systems for reuse. We should follow the best practise so that we don't need to worry about table relationship, data redundant, record duplication and the issues in the future upgrade.** 
 
 > [!Note]
 > SAP use the **Replication Flows** to replicate both master and transaction data from S/4(CDSViews) to **Local Tables**.
