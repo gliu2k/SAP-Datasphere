@@ -199,10 +199,10 @@ The details can be found in this [blog](https://community.sap.com/t5/technology-
   
 **This is SAP Best Practice of [DAC](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**. It says using USERID instead Email in DAC. 
 
-And, it seems that there is no access control to the **View** or **Analytic Model** or tables(like schema in HANA) in Datasphere. How to decdie who can select or modify data in the local tables, via database user?
-
 ------------------------------------------------------------------------------------------------------------------------------------
 Datasphere is a Data Mesh, using differnt **Spaces** for different business branches.
+
+It seems that there is no access control to the **View**, the **Analytic Model** or the tables(like schema in HANA) in Datasphere. How to control who can select or modify data in the local tables, via database user?
 
 **The below link is about the architecture and security concept in Datashphere.** 
 - [Concept](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-architecture-and-security-concept/ba-p/13702030)
