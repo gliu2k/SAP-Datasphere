@@ -182,8 +182,31 @@ The Analytic Model must be built on the object of **Fact** semantic.
 - [Howto](https://community.sap.com/t5/technology-blogs-by-members/currency-translation-in-sap-datasphere/ba-p/13688008)
 
 # 6. Data Access Controls
-<pre>🚩 This feature is not available in the trial version. You can find the detailed information in the below link.</pre>
-- [Data Access Controls](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)
+
+There are 3 types of DAC. 
+- Single value DAC
+- Operator and values DAC
+- Hierarchy DAC
+
+**How to create a single value DAC:**
+1. Create a new **local table** with a field, as the filter(control on the values) of the same field in **View**
+
+2. Create a Data Access Control(DAC) and define the DAC artifact by using the lcoal time above
+
+3. Add the DAC into **View**
+
+The details can be found in this [blog](https://community.sap.com/t5/technology-blogs-by-members/data-access-control-in-sap-datasphere-single-value-dac/ba-p/13705980)
+  
+**This is SAP Best Practice of [DAC](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**
+
+------------------------------------------------------------------------------------------------------------------------------------
+Datasphere is a Data Mesh, using differnt **Spaces** for different business branches.
+
+**The below link is about the architecture and security concept in Datashphere.** 
+- [Concept](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-architecture-and-security-concept/ba-p/13702030)
+
 
 **The below link is the guide of the access control to the datasphere objects.**
 - [Privileges and Permissions](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/d7350c6823a14733a7a5727bad8371aa.html)
+
+
