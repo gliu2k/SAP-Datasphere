@@ -67,7 +67,7 @@ This [link](https://community.sap.com/t5/technology-blogs-by-members/sap-datasph
 
 This is the [administration guide](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/2d8b7d04dcae402f911d119437ce0a74.html).
 
-E.g.You can find out the role that contains the **update** privilege of the local table.
+**E.g.** You can find out the role that contains the **update** privilege of the local table.
 ![alt text](/Admin/images/Roles.png)
 
 **SAP Best Practice - [link](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**
