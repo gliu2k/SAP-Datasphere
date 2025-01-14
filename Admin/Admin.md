@@ -63,4 +63,15 @@ We can import the users from *CSV* file in the GoLive. And, we can synchronize t
 
 ## 7.2 Role Management
 
+**The below link is about the architecture and security concept in Datashphere.** 
+- [Concept](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-architecture-and-security-concept/ba-p/13702030)
+
+This is the [administration guide](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/2d8b7d04dcae402f911d119437ce0a74.html).
+
+This is about how to update the content of local table
+![alt text](/Admin/images/Roles.png)
+
+**This is SAP Best Practice of [DAC](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**. It says using USERID instead Email in DAC. 
+
+
 
