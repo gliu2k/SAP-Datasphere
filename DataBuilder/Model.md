@@ -196,6 +196,8 @@ There are 3 types of DAC.
 3. Add the DAC into **View**
 
 The details can be found in this [blog](https://community.sap.com/t5/technology-blogs-by-members/data-access-control-in-sap-datasphere-single-value-dac/ba-p/13705980)
+
+This DAC or the **local table** can be used in other **Views** which need the filter on the same users, fields and values.
   
 **This is SAP Best Practice for [DAC](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**. It says using USERID instead of Email in DAC. 
 
