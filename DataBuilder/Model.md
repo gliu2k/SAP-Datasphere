@@ -175,7 +175,10 @@ The Analytic Model must be built on the object of **Fact** semantic.
 **This is a good article regarding Analytic Model.**
 - [Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
 
-# 6. Data Access Controls
+# 5. Data Access Controls
+
+DAC(Data Access Control) is used to control the access on the data(row) level. E.g. You want to allow specfic users to see the data of certain companycode.
+
 ![alt text](/DataBuilder/images/DAC.png?raw=true)
 
 There are three types of DAC. 
@@ -199,7 +202,7 @@ The details can be found in this [blog](https://community.sap.com/t5/technology-
 
 **There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA system into Datasphere DAC via table replication. We can use SAP GRC system to automate the process.**
 
-# 5. Currency Conversion Views
+# 6. Currency Conversion Views
 ![alt text](/DataBuilder/images/CC.png?raw=true)
 
 <pre>🚩 You can find the "HowTo" in the below link.</pre>
