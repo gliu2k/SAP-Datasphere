@@ -196,7 +196,7 @@ There are three types of DAC.
 The details can be found in this [blog](https://community.sap.com/t5/technology-blogs-by-members/data-access-control-in-sap-datasphere-single-value-dac/ba-p/13705980)
 
 > [!Note]
-> Either **DAC** or **local table** can be shared in other **Views** or **DACs**, if they have the same restriction on users, fields and values.
+> Either **DAC** or **local table** can be shared in other **Views** or **DACs** if they have the same restriction on users, fields and values.
   
 **This is SAP Best Practice for [DAC](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**. It says using USERID instead of Email in DAC. 
 
