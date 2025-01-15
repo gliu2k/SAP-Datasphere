@@ -229,34 +229,34 @@ The currency related Remote Tables, DataFlow, Local Tables, Views for are import
 ![alt text](/Roadmap/images/CDS_EX1.png?raw=true)
 
 
-# 3. Business Content in Datasphere
+# 3. Business Content in Datasphere (IMPORTANT)
 
-This is SAP Business Content in Datasphere, which is similar to SAP BW Content in BW system. Their data are loaded from the corresponding CDSViews, the datasources, in S/4HANA system. The CDSView name is part of the name of the local table.
+This is SAP Business Content in Datasphere, which is similar to SAP BW Content in BW system. Their data are loaded from the corresponding CDSViews, the datasources, in S/4HANA system. The CDSView name is part of the name of the local table in the business content.
 
 ![alt text](/Roadmap/images/BC1.png?raw=true)
 
 They can be imported into the space.
 ![alt text](/Roadmap/images/BC2.png?raw=true)
 
-These are the parts of SAP Business Content imported into my space. The data in the local tables are loaded from the CDSViews in S/4HANA.
+These are the parts of SAP Business Content imported into the space of my trial Datasphere environemnt. The data in the local tables are loaded from the CDSViews in the on-premise S/4HANA system.
 ![alt text](/Roadmap/images/BC3.png?raw=true)
 
 - Transaction Data:
-	- Datashphere Local Table: **SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1**
+	- Datashphere Local Table: SAP_SD_IL_**C_SALESDOCUMENTITEMDEX_1**
  	- S/4HANA CDSView: **C_SalesDocumentItemDEX_1**
 
 - Master Data:
- 	- Datashphere Local Table: **SAP_LO_IL_SAP_LO_IL_I_CUSTOMER**
+ 	- Datashphere Local Table: SAP_LO_IL_**I_CUSTOMER**
  	- S/4HANA CDSView: **I_Customer** [SAP Help](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/a11849401368469fb9e7dfb34f44e9c7.html)
+
+> [!Note]
+> From the Busienss Content, you can see that SAP use the **Replication Flows** to replicate both master and transaction data from S/4(CDSViews) to **Local Tables**.
 
 ![alt text](/Roadmap/images/BC4.png?raw=true)
 
+
 > [!Important]
-> **It is highiy recommendeded to leverage the Datasphere Business Content(and CDSViews) to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed a comprehensive suite of standard objects in both Datasphere and S/4HANA(CDSViews) systems for reuse. We should follow the best practise so that we don't need to worry about table relationship, data redundant, record duplication and the issues in the future upgrade.** 
-
-> [!Note]
-> SAP use the **Replication Flows** to replicate both master and transaction data from S/4(CDSViews) to **Local Tables**.
-
+> **It is highiy recommendeded to leverage the Datasphere Business Content(and CDSViews) to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed a comprehensive suite of standard objects in both Datasphere and S/4HANA(CDSViews) systems for reuse. We should follow the best practise so that we don't need to worry about table relationship, data redundant, record duplication and the issues in the future system upgrade.** 
 
 # 4. Delta Data Loading Within DataSphere
 Generally，this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
@@ -326,5 +326,6 @@ So far, compared to Azure Fabric product, I think it has the following limits.
 
 In the current landscape, it shows that the **Integration** is only at the **DATA** level not at the Application(service) level. However, it says SAP will integrate the services from **SAP Data Intelligence Cloud** into **Datasphere**. According to this [Roadmap](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-and-sap-data-intelligence-cloud-what-does-this-mean-for-me/ba-p/13603947), **Datashpere** will become SAP's Data Fabric as **Azure Data Faric** for **Microsoft** in the future.
 
-**Interesting!** There are already embedded Data Intelligence cloud services in the DataSphere to achieve some functionalities in "Replication Flow". Below screenshot is from the "Replication Flow". Need to confirm with SAP if Apache **Parquet** file format is used in Dataphere instead of HANA data file.
+There are already embedded Data Intelligence cloud services in the DataSphere to achieve some functionalities in "Replication Flow". Below screenshot is from the "Replication Flow". Apache **Parquet** file format is used in Dataphere instead of HANA data file. It will be easier to integarte services like park, Databrick for Machine Learning.
+
 ![alt text](/Roadmap/images/Parquet.png?raw=true)
