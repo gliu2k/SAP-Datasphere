@@ -171,6 +171,7 @@ The Analytic Model must be built on the object of **Fact** semantic.
 > [!Note]
 >- We need to create the association in the fact table/view and bring in the association, the attributes of the dimension, here. In other words, you cannot create JOIN/UNION/Association in Analytic Model.
 >- We can create variables to map to the "input parameter" created in the graphic view.
+>- We can change a measure to **Exception Aggregation** only in **Analytic Model**.
 
 **This is a good article regarding Analytic Model.**
 - [Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
