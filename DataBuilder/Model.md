@@ -199,3 +199,5 @@ The details can be found in this [blog](https://community.sap.com/t5/technology-
   
 **This is SAP Best Practice for [DAC](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**. It says using USERID instead of Email in DAC. 
 
+**There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA system into Datasphere DAC via table replication. We can use SAP GRC system to automate the process.**
+
