@@ -143,6 +143,8 @@ Below are the approaches(**containers**) and their drawbacks
 
 ![alt text](/Roadmap/images/CDC2.png?raw=true)
 
+It uses the **"PULL"** method.
+
 #### 2.2.2.2. Change Data Capture Delta (CDC = delta.changeDataCapture)
 
 ![alt text](/Roadmap/images/CDC3.png?raw=true)
@@ -151,7 +153,7 @@ This is a SAP standard CDS View **C_SalesDocumentItemDEX_1** for the data extrac
 
 ![alt text](/Roadmap/images/CDC4.png?raw=true)
 
-Whenever a record is inserted, updated or deleted in the underlying table, a record with the respective table key is stored in a generated logging table. Based on this info the scheduled job selects the data record from the CDS view and pushes it into the ODQ.
+Whenever a record is inserted, updated or deleted in the underlying table, a record with the respective table key is stored in a generated logging table. Based on this info the scheduled job selects the data record from the CDS view and pushes it into the ODQ. It uses the **"PUSH"** method.
 
 ```
 @AbapCatalog.sqlViewName: 'CSDSLSDOCITMDX1'
@@ -224,7 +226,7 @@ The currency related Remote Tables, DataFlow, Local Tables, Views for are import
 </BR></BR>
 
 > [!Tip]
-> Check the CDS Extractor in SE16 and make sure it is released as **C1** (**BTW, in the embedded analsyis, we need to release the Cube or Query CDSViews so that they can be inserted into the "Analysis for Office" or "PowerBI" as a dataSource**)
+> Check the CDS Extractor in this table/SE16 and make sure the CDSView is released as **C1** (**BTW, in the embedded analsyis, we need to release the Cube or Query CDSViews so that they can be inserted into the "Analysis for Office" or "PowerBI" as a dataSource**)
 
 ![alt text](/Roadmap/images/CDS_EX1.png?raw=true)
 
