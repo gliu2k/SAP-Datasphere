@@ -175,13 +175,8 @@ The Analytic Model must be built on the object of **Fact** semantic.
 **This is a good article regarding Analytic Model.**
 - [Introducing the Analytic Model in SAP Datasphere](https://community.sap.com/t5/technology-blogs-by-sap/introducing-the-analytic-model-in-sap-datasphere/ba-p/13568591)
 
-# 5. Currency Conversion Views
-![alt text](/DataBuilder/images/Others.png?raw=true)
-
-<pre>🚩 You can find the "HowTo" in the below link.</pre>
-- [Howto](https://community.sap.com/t5/technology-blogs-by-members/currency-translation-in-sap-datasphere/ba-p/13688008)
-
 # 6. Data Access Controls
+![alt text](/DataBuilder/images/DAC.png?raw=true)
 
 There are three types of DAC. 
 - Single value DAC
@@ -204,3 +199,8 @@ The details can be found in this [blog](https://community.sap.com/t5/technology-
 
 **There is a [blog](https://community.sap.com/t5/technology-blogs-by-sap/integrate-sap-s-4hana-authorizations-into-sap-datasphere/ba-p/13644117 ) about how to integrate the authoriztions defined in S/4HANA system into Datasphere DAC via table replication. We can use SAP GRC system to automate the process.**
 
+# 5. Currency Conversion Views
+![alt text](/DataBuilder/images/CC.png?raw=true)
+
+<pre>🚩 You can find the "HowTo" in the below link.</pre>
+- [Howto](https://community.sap.com/t5/technology-blogs-by-members/currency-translation-in-sap-datasphere/ba-p/13688008)
