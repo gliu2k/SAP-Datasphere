@@ -1,6 +1,6 @@
 # Modeling
 
-There are four types of models in SAC. It is used for stories(read) and planning(read/write).
+There are four types of models in SAC. They are used in stories(read) and planning(read/write).
 
 # 1. Datasets
 
