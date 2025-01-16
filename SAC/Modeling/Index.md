@@ -30,7 +30,7 @@ These types dimension tables are mainly used for **Planning**.
 
 The **conversions** is for the currency conversion tables created manually or imported from BPC.
 
-## 2.1 Creating Models by importing Data
+## 2.1. Creating Models by importing Data
 
 ![alt text](/SAC/Modeling/images/NM2.png)
 We can import the data from differetn data sources. 
