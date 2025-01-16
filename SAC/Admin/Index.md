@@ -6,6 +6,7 @@ As in **Datasphere**, we need to create the tenant and the workspaces for differ
 
 If it is in the same tenatn with **Datasphere**, we can switch between **SAC** and **Datasphere** easily.
 
+![alt text](/SAC/Admin/images/SAC_DS.png)
 
 # 2. Connections
 
