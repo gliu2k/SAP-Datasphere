@@ -23,8 +23,13 @@ You can get 30days free trial version of SAP Datasphere from [here](https://www.
 ## 4. Stories
 - [Dashboard](/SAC/Reporting/DB_Index.md)
 
-## 5. Planning
+## 5. SAP Analytics Cloud Add-In
+We need to download and install this Add-in. It will show up in the office toolbar like **Analysis for Office**.
+I am not able to connect to SAC trial version. To be added...
+ 
+## 6. Planning
 - [Planning](/SAC/Planning/Index.md)
   
-## 6. Others
+## 7. Others
+To be added...
 
