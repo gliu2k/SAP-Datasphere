@@ -1,26 +1,30 @@
-
 # SAP Analytics Cloud (SAC)
 
-We know SAP has many reporting tools and Business Objects platforms. SAC is the reporting platform in the cloud. It can connect to BW, S/4HANA, Datasphere, BOBJ and other clouds like Azure, Amazon.
+SAP offers a variety of reporting tools and BusinessObjects platforms. SAP Analytics Cloud (SAC) is a cloud-based reporting platform. SAC seamlessly connects to SAP BW, S/4HANA, Datasphere, BusinessObjects(BOBJ), and non-SAP cloud platform like Azure and Amazon.
 
 # Description
-I first encountered SAP SAC in 2017. I engaged in a project to build the stories to consume the data in S/4HANA Cloud through CDSView Queires.
-I have touched it on and off in the past 3 years and noticed it has been keeping evovling. And, I'd like to pick it up as I wnat to study its planning features.
-Thus, I will highlight the main funcaitines of some areas but will focus on the planning part.
+I first encountered SAP Analytics Cloud (SAC) in 2017 when I worked on a project to build stories that consumed data from S/4HANA Cloud through CDS View Queries. Over the past three years, I've intermittently engaged with SAC and observed its continuous evolution. In this project, I will highlight the main functionalities of various areas, with a particular focus on the planning aspect.
 
 # Requirements
+
+![alt text](/SAC/images/Overview.png)
+
 You can get 30days free trial version of SAP Datasphere from [here](https://www.sap.com/products/technology-platform/cloud-analytics/trial-basic.html).
 
-## 1. [Admin]()
+## 1. Administration
+- [Admin](/SAC/Admin/Index.md)
+ 
+## 2. Model
+- [Modeling](/SAC/Modeling/Index.md)
 
-## 2. [Modeling]()
+## 3. Data Analyzer
+- [Report](/SAC/Reporting/DA_Index.md)
 
-## 3. [Reporting/Story]()
+## 4. Stories
+- [Dashboard](/SAC/Reporting/DB_Index.md)
 
-## 4. [Planning]()
-
-## 5. Digital Boardroom 
-His 
-
-## 6. Predictive nalaysis
+## 5. Planning
+- [Planning](/SAC/Planning/Index.md)
+  
+## 6. Others
 
