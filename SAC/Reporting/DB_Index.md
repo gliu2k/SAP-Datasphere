@@ -1,3 +1,4 @@
+# Story 
 
 It is similar to PowerBI, including dashboard and data modeling 
 
