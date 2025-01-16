@@ -4,7 +4,7 @@
 
 As in **Datasphere**, we need to create the tenant and the workspaces for different business branches. [Blog](https://community.sap.com/t5/technology-blogs-by-members/sap-analytics-cloud-workspaces/ba-p/13531009)
 
-If it is in the same tenatn with **Datasphere**, we can switch **SAC** and **Datasphere** easily.
+If it is in the same tenatn with **Datasphere**, we can switch between **SAC** and **Datasphere** easily.
 
 
 # 2. Connections
