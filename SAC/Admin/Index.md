@@ -25,6 +25,8 @@ Please find the details in this [blog](https://community.sap.com/t5/technology-b
 
 The data of CDSView queries(embedded analytics) are loaded into **SAC** via the **OData** service in S/4HANA.
 
+OData is used to import the data from **Datasphere** into SAC as well. See this [article](https://www.seaparkconsultancy.com/single-post/uniting-sap-datasphere-with-sap-analytics-cloud-for-data-harmony-revolutionize-your-data-strategy-2).  
+
 ## 2.2. Cloud system
 
 ![alt text](/SAC/Admin/images/CC.png)
