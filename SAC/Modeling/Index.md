@@ -4,7 +4,7 @@ There are four types of models in SAC. They are used in stories(read) and planni
 
 # 1. Datasets
 
-They represent the simple tables with semantic.
+They represent the simple tables without semantic.
 
 See the difference in this [link](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/05280d13b16e40f3be37165e9755d84b.html)
 
