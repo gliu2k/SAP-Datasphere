@@ -18,9 +18,9 @@ You can create Model and then create public dimesion tables inside the model or 
 The dimension table is different from dimension(attribute) as in SAP BW. There are special types dimensions and "generic" type dimenions, which is like the text attribute as in SAP BW.
 
 > [!IMPORTANT]
->  We have different concept in SAC.
+>  Different concepts in SAC.
 > 
-> Dimension(SAC) = Field(Table)
+> Dimension(SAC) = Field(Table) + Property
 > 
 > Member(SAC) = Value(Table)
 
