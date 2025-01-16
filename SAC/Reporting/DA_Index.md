@@ -1,23 +1,13 @@
+# Data Analyzer
 
-It is similar to PowerBI, including dashboard and data modeling 
+![alt text](/SAC/Reporting/images/DA1.png)
 
-# 1. Story 
+The connection to SAP HANA/BW does not work in **From a Data Source**
 
-# 1.1 Cavos 
+![alt text](/SAC/Reporting/images/DA2.png)
 
-# 1.1 Dispaly 
-Prompt Filer 
-Export (job)
-# 1.2 Other fucntions 
+Use the connection to Datasphere and connect to an existing Analytic Model.
 
-# 2. Data Analyzer
+It looks like a web version of Analyis for Office.
 
 
-# 3. Digital Boardroom
-It requires three dispalys for you can show differnt stoies to analyze the data from different perfectives.
-
-
-# 4. SAP Analytics Cloud Add-In
-Different from "Analysis for Office", it can consume the data exposed from the Analytic Model in Datasphere through the LiveConnection.
-
-It is like the ##Data Analyzer## in office.
