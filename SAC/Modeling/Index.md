@@ -45,10 +45,10 @@ We can view the data and modify the data by using the formulas.
 We can also convert the field(dimension) to the property of other dimension like text or hierarchy.
 
 ![alt text](/SAC/Modeling/images/DE.png)
-We can browse the data of the model in **Data Analyzer**.
+Everything is done. We can now explore the data of the model in **Data Analyzer**.
 
 ## 2.2. Creating Empty Models 
-We can aslo create an empty model and then import the data.  It will be covered in the **Planning** section.
+We can create an empty model and then import the data.  It will be covered in the **Planning** section.
 
 > [!Note]
 >  It is more flexiable and is the best practise.
