@@ -252,7 +252,7 @@ These are the Sales SAP Business Contents imported into the space of my trial Da
  	- S/4HANA CDSView: **I_Customer** [SAP Help](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/a11849401368469fb9e7dfb34f44e9c7.html)
 
 > [!Note]
-> From the Busienss Content, you can see that SAP use the **Replication Flows** to replicate both master and transaction data from S/4(CDSViews) to **Local Tables**.
+> From the Busienss Content, you can see that SAP use the **Replication Flows** to replicate both master and transaction data from S/4HANA(CDSViews) to **Local Tables**.
 
 ![alt text](/Roadmap/images/BC4.png?raw=true)
 
