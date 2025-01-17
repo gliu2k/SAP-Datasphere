@@ -30,7 +30,7 @@
 I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 respectively because they are missing in the original dataset(flat files).
 
 # 2. Planning 
-1. Create **Data Actions** to copy the **2024Q4** Forecast version data to to **2025Q1**
+1. Create **Data Actions** to copy the **2024Q4** Forecast version data to to **2025Q1** and set up the locks which are covered in the below **Data Lock** section.
 ![alt text](/SAC/Planning/images/DP1.png)
 
 2. Add the planning model into Story/Canvas and copy the 2025Q1 data from the **Forecast** version to **Private Forecast** version
@@ -79,10 +79,14 @@ To be added...
 This tool can be used to do simualation during the planning.
 ![alt text](/SAC/Planning/images/VDT.png)
 
-# 4. Locks
-This is very critical duirng planning.
+# 4. Data Locks
+This is a very critical step duirng the planning. 
 
-To be added...
+Before starting the planning procedure, we must assign the ownership to the data(cells) and lock all the cells.
+![alt text](/SAC/Planning/images/LOCK1.png)
+
+Only the owners, like CIO in this case, can unlock the data and start the forecasting on IT expense.
+![alt text](/SAC/Planning/images/LOCK2.png)
 
 # 5. Calendar
 To be added...
