@@ -23,32 +23,29 @@
 
 5. Set up the planning model
 
-6. Check the loaded data in **Data Analyzer**
+6. Check the loaded forecast and actual versions data in **Data Analyzer**
 
 ![alt text](/SAC/Planning/images/PM3.png)
 
-I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 respectively because they are missing in the orignal dataset(flat files).
+I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 respectively because they are missing in the original dataset(flat files).
 
 # 2. Planning 
 1. Create **Data Actions** to copy the **2024Q4** Forecast version data to to **2025Q1**
 ![alt text](/SAC/Planning/images/DP1.png)
 
-2. Add the planning model into Story/Canvas
-![alt text](/SAC/Planning/images/DP2.png)
-
-3. Copy the 2025Q1 data from the **Forecast** version data to **Private Forecast** version
+2. Add the planning model into Story/Canvas and copy the 2025Q1 data from the **Forecast** version to **Private Forecast** version
 ![alt text](/SAC/Planning/images/DP3.png)
 
-4. Perform planning manually in the cell
+3. Perform planning on the **Private Forecast 2025Q1** version manually in the table cell
 ![alt text](/SAC/Planning/images/DP4.png)
 
 > [!Tip]
-> Use the **Distribut value** or **Allocation** (Menu Tools...) to fasten the process.
+> Use the **Distribute value** or **Allocation** (Menu Tools...) to fasten the process.
 
 # 3. Planning Functions
 To be added...
 ## 3.1. 
-- Distribut value
+- Distribute value
 - Allocation
 - Grid Pages
 
@@ -61,6 +58,7 @@ To be added...
 This is the tool to do planning simualation during the planning.
 
 ## 3.4. Publish
+
 ## 3.5. Version Control
 
 # 5. Authoriztion
