@@ -61,7 +61,7 @@ This is the tool to do planning simualation during the planning.
 
 ## 3.5. Version Control
 
-# 5. Authoriztion
+# 4. Authoriztion
 
 This is very critical duirng planning.
 
