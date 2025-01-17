@@ -13,6 +13,8 @@
 
 2. Add the master data into the dimension tables manually
 
+![alt text](/SAC/Planning/images/PM2.png)
+
 3. Perform dimension mapping and load the actual and planning data (option) from the flat files into model
    
 4. Set up the planning model 
@@ -24,8 +26,8 @@
 # 2. Planning 
 ![alt text](/SAC/Planning/images/DP1.png)
 
-1. Add the planning model in Story/Canvas
-2. Copy the Forecast version data into Private vesion
+1. Add the planning model into Story/Canvas
+2. Copy the Forecast version data into Private version
 3. Perform planning manually in the cell
 
 ![alt text](/SAC/Planning/images/DP2.png)
