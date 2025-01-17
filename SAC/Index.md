@@ -9,7 +9,7 @@ I first encountered SAP Analytics Cloud (SAC) in 2017 when I worked on a project
 
 ![alt text](/SAC/images/Overview.png)
 
-You can get 30days free trial version of SAP Datasphere from [here](https://www.sap.com/products/technology-platform/cloud-analytics/trial-basic.html).
+You can get 30days free trial version of SAP Datasphere and SAC from [here](https://www.sap.com/products/technology-platform/cloud-analytics/trial-basic.html).
 
 ## 1. Administration
 - [Admin](/SAC/Admin/Index.md)
