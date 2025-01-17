@@ -2,40 +2,51 @@
 
 # 1. Model
 
-![alt text](/SAC/images/Overview.png)
+![alt text](/SAC/Planning/images/PM1.png)
 
-1. Create an empty model with three types of dimesnis
+1. Create an empty model with three types of dimensions
 
 - Accounts
 - Organization - Used for currency
 - Generic
 - Version - created automatically by default
 
-2. Add the dimension tables manually
+2. Add the master data into the dimension tables manually
 
-3. Load the actual and planning data (option)
+3. Perform dimension mapping and load the actual and planning data (option) from the flat files into model
+   
+4. Set up the planning model 
 
-The master data and the actual transcation data in Step2 and Step3 can be loaded from Datasphere via OData connection. We can load the history planning data via flatfile as in step2.
+> [!Important]
+> The master data and the actual transactation data in **Step2** and **Step3** can be loaded from Datasphere via OData connection. We can load the history planning data via flat file as in **Step2**.
 
 
 # 2. Planning 
+![alt text](/SAC/Planning/images/DP1.png)
 
-We can use 
+1. Add the planning model in Story/Canvas
+2. Copy the Forecast version data into Private vesion
+3. Perform planning manually in the cell
+
+![alt text](/SAC/Planning/images/DP2.png)
+
+- Use the **distribut value** or **Allocation** to fasten the process.
 
 # 3. Planning Flows
-We can use **Data Action(Steps)** to create planning flow to achieev
+We can use **Data Action(Steps)** to create planning flow to achieve
+
 - Copy
 - Allocation
-- Convestion
+- Conversion
 - Others
 
-# 4. VTD
+# 4. Value Drive Tree
 
-This is the tool to do planning simualtion during planning.
+This is the tool to do planning simualation during the planning.
 
 # 5. Authoriztion
 
-This is very crical duirng planning
+This is very critical duirng planning
 
 Locks:
-Restriction:
+To be added...
