@@ -190,7 +190,7 @@ There are three types of DAC.
 **How to create a single value DAC:**
 1. Create a new **local table** with a field as the filter(control on the values) of the same field in **View**
 
-2. Create a Data Access Control(DAC) and define the DAC artifact by using the lcoal time above
+2. Create a Data Access Control(DAC) and define the DAC artifact by using the local table above
 
 3. Add the DAC into **View**
 
