@@ -21,7 +21,7 @@
 >
 > But, if you do want to write the planning data into ACDOCP table. Maybe you need to consider implementing BPC or the approach in this [article](https://www.linkedin.com/pulse/exporting-sac-planning-data-sap-s4-hana-aricordconsultinglimited-je1ie/)
 
-4. Validation Rule(optional)
+4. Create **Validation Rule**(optional)
    
 - It is used to ensure that valid combinations of the entities. See the details in this [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-analytics-cloud-planning-validation-rules/ba-p/13475166)
 
