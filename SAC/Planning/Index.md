@@ -71,14 +71,18 @@ You can define the actions(steps) and run them in sequence in the Canvas(Stories
 - Embeded Data
 - Conversion
 - Advanced Formulas
-  
-## 3.3. Value Drive Tree
-This is the tool to do planning simualation during the planning.
 
+## 3.3. Multi Actions
+To be added...
+
+## 3.4. Value Drive Tree
+This tool can be used to do simualation during the planning.
+![alt text](/SAC/Planning/images/VDT.png)
 
 # 4. Locks
 This is very critical duirng planning.
 
+To be added...
 
 # 5. Calendar
 To be added...
