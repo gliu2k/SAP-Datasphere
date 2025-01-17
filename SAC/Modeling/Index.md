@@ -31,21 +31,20 @@ These types dimension tables are mainly used for **Planning**.
 The **conversions** is for the currency conversion tables created manually or imported from BPC.
 
 ## 2.1. Creating Models by importing Data
-
-![alt text](/SAC/Modeling/images/NM2.png)
 We can import the data from differetn data sources. 
+![alt text](/SAC/Modeling/images/NM2.png)
 
-![alt text](/SAC/Modeling/images/TR1.png)
 After importing the data and saving the model, we can begin to transform(modify) the data.
+![alt text](/SAC/Modeling/images/TR1.png)
 
-![alt text](/SAC/Modeling/images/TR2.png)
 We can view the data and modify the data by using the formulas.
+![alt text](/SAC/Modeling/images/TR2.png)
 
-![alt text](/SAC/Modeling/images/NM3.png)
 We can also convert the field(dimension) to the property of other dimension like text or hierarchy.
+![alt text](/SAC/Modeling/images/NM3.png)
 
-![alt text](/SAC/Modeling/images/DE.png)
 Everything is done. We can now explore the data of the model in **Data Analyzer**.
+![alt text](/SAC/Modeling/images/DE.png)
 
 ## 2.2. Creating Empty Models 
 We can create an empty model and then import the data.  It will be covered in the **Planning** section.
