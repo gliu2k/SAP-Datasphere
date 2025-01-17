@@ -21,10 +21,14 @@
 >
 > But, if you do want to write the planning data into ACDOCP table. Maybe you need to consider implementing BPC or find a workaround.
 
-5. Set up the planning model
+5. Validation Rule(Option)
+It is used to ensure that valid combinations of the entities.
 
-6. Check the loaded forecast and actual versions data in **Data Analyzer**
+See the details in this [blogp](https://community.sap.com/t5/technology-blogs-by-members/sap-analytics-cloud-planning-validation-rules/ba-p/13475166)
 
+6. Set up the planning model
+
+7. Check the loaded forecast and actual versions data in **Data Analyzer**
 ![alt text](/SAC/Planning/images/PM3.png)
 
 > [!Note]
