@@ -19,7 +19,7 @@
 > [!Important]
 > The master data and the actual transactation data in **Step2** and **Step3** can be loaded from Datasphere via OData connection. We can load the history planning data via flat file as in **Step2**.
 >
-> But, if you do want to write the planning data into ACDOCP table. Maybe you need to consider implementing BPC or find a workaround.
+> But, if you do want to write the planning data into ACDOCP table. Maybe you need to consider implementing BPC or the approach in this [article](https://www.linkedin.com/pulse/exporting-sac-planning-data-sap-s4-hana-aricordconsultinglimited-je1ie/)
 
 4. Validation Rule(optional)
    
