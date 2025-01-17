@@ -258,7 +258,7 @@ These are the Sales SAP Business Contents imported into the space of my trial Da
 
 
 > [!Important]
-> **It is highiy recommendeded to leverage the Datasphere Business Content(and CDSViews) to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed a comprehensive suite of standard objects in both Datasphere and S/4HANA(CDSViews) systems for reuse. We should follow the best practise so that we don't need to worry about table relationship, data redundant, record duplication and the issues in the future system upgrade.** 
+> **It is highly recommendeded to leverage the Datasphere Business Content(and CDSViews) to alleviate the workload in the implementation and future maintenance. SAP has desgined and developed a comprehensive suite of standard objects in both Datasphere and S/4HANA(CDSViews) systems for reuse. We should follow the best practise so that we don't need to worry about table relationship, data redundant, record duplication and the issues in the future system upgrade.** 
 
 # 4. Delta Data Loading Within DataSphere
 Generally，this topic should be included in the Flow section in DataBuilder. In fact, the Delta feature is quite simple and straight-forward within SAP DataSphere. We need to consider more when we integrate it with other system like S/4HANA and BW Bridge.
