@@ -53,7 +53,7 @@ We can create an empty model and then import the data.  It will be covered in th
 > [!Note]
 >  It is more flexiable and is the best practise.
 
-# 2.3. Creating Model from LiveConnection
+## 2.3. Creating Model from LiveConnection
 
 ![alt text](/SAC/Modeling/images/NM4.png)
 
