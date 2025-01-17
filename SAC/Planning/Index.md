@@ -95,7 +95,7 @@ They are:
 > [!Note]
 > Different from **Data Actions**, the data action steps defined here are executed indepentently(not ONE step fails ALL get rollback).
 >
-> The jobs for data import are STEP2 and STEP3 in **Model** section above. 
+> **Data Import** is to run the jobs that are executed manually in STEP2 and STEP3 in the **Model** section above.
 
 See details in this [blog](https://assets.sapanalytics.cloud/production/help/help-release/en/a8435da6970041d2beb3299cdcff7026.html#loioa8435da6970041d2beb3299cdcff7026)
 
