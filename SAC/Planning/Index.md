@@ -13,11 +13,10 @@
 
 2. Add the master data into the dimension tables manually
 
+4. Perform dimension mapping and load the actual and planning data (option) from the flat files into model
 ![alt text](/SAC/Planning/images/PM2.png)
 
-3. Perform dimension mapping and load the actual and planning data (option) from the flat files into model
-   
-4. Set up the planning model 
+5. Set up the planning model 
 
 > [!Important]
 > The master data and the actual transactation data in **Step2** and **Step3** can be loaded from Datasphere via OData connection. We can load the history planning data via flat file as in **Step2**.
