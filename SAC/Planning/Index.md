@@ -13,7 +13,7 @@
 
 2. Add the master data into the dimension tables manually
 
-3. Perform dimension mapping and load the actual and planning data (optional) from the flat files into model
+3. Perform dimensions mapping and load the actual and planning transaction data (optional) from the flat files into model
 ![alt text](/SAC/Planning/images/PM2.png)
 
 > [!Important]
