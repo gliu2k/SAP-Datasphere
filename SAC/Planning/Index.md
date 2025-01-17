@@ -24,26 +24,35 @@
 >
 > But, if you do want to write the planning data into ACDOCP table. Maybe you need to consider implementing BPC or find a workaround.
 
+![alt text](/SAC/Planning/images/PM3.png)
+
+Browse the loaded data in **Data Analyzer** (I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 because they are missing in the orignal dataset.)
 
 # 2. Planning 
+
 ![alt text](/SAC/Planning/images/DP1.png)
 
 1. Add the planning model into Story/Canvas
-2. Copy the Forecast version data into Private version
-3. Perform planning manually in the cell
-
+2. Create **Data Actions** to copy the 2024Q4 Forecast version data to to **2025Q1**
 ![alt text](/SAC/Planning/images/DP2.png)
+4. Copy the Forecast version data into Private version
+5. Perform planning manually in the cell
+![alt text](/SAC/Planning/images/DP3.png)
 
 > [!Tip]
 > Use the **Distribut value** or **Allocation** (Menu Tools...) to fasten the process.
 
-# 3. Planning Flows
+# 3. Planning Functions
+# 3.1. Data Action
 We can use **Data Action(Steps)** to create planning flow to achieve
 
 - Copy
 - Allocation
 - Conversion
 - Others
+  
+# 3.2. Publish
+# 3.3. Version Control
 
 # 4. Value Drive Tree
 
