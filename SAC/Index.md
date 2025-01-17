@@ -3,7 +3,7 @@
 SAP offers a variety of reporting tools and BusinessObjects platforms. SAP Analytics Cloud (SAC) is a cloud-based reporting platform. SAC seamlessly connects to SAP BW, S/4HANA, Datasphere, BusinessObjects(BOBJ), and non-SAP cloud platform like Azure and Amazon.
 
 # Description
-I first encountered SAP Analytics Cloud (SAC) in 2017 when I worked on a project to build stories(and digital board room) that consumed the data from S/4HANA Cloud through CDS View Queries. Over the past three years, I've intermittently engaged with SAC and observed its continuous evolution. In this project, I will highlight the main functionalities of various areas, with a particular focus on the planning aspect.
+I first encountered SAP Analytics Cloud (SAC) in 2017 when I worked on a project to build stories(and Digital Boardroom) that consumed the data from S/4HANA Cloud through CDS View Queries. Over the past three years, I've intermittently engaged with SAC and observed its continuous evolution. In this project, I will highlight the main functionalities of various areas, with a particular focus on the planning aspect.
 
 # Requirements
 
