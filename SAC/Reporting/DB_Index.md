@@ -2,23 +2,16 @@
 
 It is similar to PowerBI, including dashboard and data modeling 
 
-# 1. Story 
+# 1.1 Layout 
 
-# 1.1 Cavos 
-
-# 1.1 Dispaly 
-Prompt Filer 
-Export (job)
-# 1.2 Other fucntions 
-
-# 2. Data Analyzer
+Cavos and sxx and grdid
 
 
-# 3. Digital Boardroom
-It requires three dispalys for you can show differnt stoies to analyze the data from different perfectives.
+# 1.2 Functions 
+
+It has controls, filters, format.
+"Start" and Tools...: conttain tools related to planning.
 
 
-# 4. SAP Analytics Cloud Add-In
-Different from "Analysis for Office", it can consume the data exposed from the Analytic Model in Datasphere through the LiveConnection.
 
-It is like the ##Data Analyzer## in office.
+# 1.3 Blending Model
