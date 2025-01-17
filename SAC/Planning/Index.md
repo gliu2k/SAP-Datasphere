@@ -28,7 +28,7 @@
 ![alt text](/SAC/Planning/images/PM3.png)
 
 > [!Note]
-> There are no actual(version) data of 2023Q3 and 2023Q4 in the original dataset(flat files).
+> There are no actual(version) data of 2024Q3 and 2024Q4 in the original dataset(flat files).
 > Therefore, I used the **Copy - Data Action** to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 respectively. You can see that they are identical.
 
 # 2. Planning 
@@ -73,6 +73,9 @@ You can define the actions(steps) and run them in sequence in the Canvas(Stories
 - Embeded Data
 - Conversion
 - Advanced Formulas
+
+**Advanced Formulas is very powerful**.
+![alt text](/SAC/Planning/images/DA3.png) 
 
 ## 3.3. Multi Actions
 
