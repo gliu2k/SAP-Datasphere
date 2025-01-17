@@ -16,16 +16,16 @@
 4. Perform dimension mapping and load the actual and planning data (option) from the flat files into model
 ![alt text](/SAC/Planning/images/PM2.png)
 
-5. Set up the planning model 
-
 > [!Important]
 > The master data and the actual transactation data in **Step2** and **Step3** can be loaded from Datasphere via OData connection. We can load the history planning data via flat file as in **Step2**.
 >
 > But, if you do want to write the planning data into ACDOCP table. Maybe you need to consider implementing BPC or find a workaround.
 
-![alt text](/SAC/Planning/images/PM3.png)
+5. Set up the planning model
 
-Browse the loaded data in **Data Analyzer** (I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 because they are missing in the orignal dataset.)
+6. Check the loaded data in **Data Analyzer** (I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 because they are missing in the orignal dataset.)
+
+![alt text](/SAC/Planning/images/PM3.png)
 
 # 2. Planning 
 1. Create **Data Actions** to copy the **2024Q4** Forecast version data to to **2025Q1**
