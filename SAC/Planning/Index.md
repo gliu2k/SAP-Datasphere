@@ -30,8 +30,8 @@
 
 ![alt text](/SAC/Planning/images/DP2.png)
 
-> [!Tips]
-> Use the **distribut value** or **Allocation** (Tools...) to fasten the process.
+> [!Tip]
+> Use the **distribut value** or **Allocation** (Menu Tools...) to fasten the process.
 
 # 3. Planning Flows
 We can use **Data Action(Steps)** to create planning flow to achieve
@@ -50,4 +50,5 @@ This is the tool to do planning simualation during the planning.
 This is very critical duirng planning
 
 Locks:
+
 To be added...
