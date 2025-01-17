@@ -35,7 +35,7 @@
 > Therefore, I used the **Copy - Data Action** to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 respectively. You can see that they are identical.
 
 # 2. Planning 
-1. Create **Data Actions** to copy the **2024Q4** Forecast version data to to **2025Q1** and set up the locks which are covered in the below **Data Locking** section.
+1. Create **Data Actions** to copy the **2024Q4** Forecast version data to to **2025Q1** and set up the locks which are covered in the below **Data Locking** section. See 2025Q1 version is copied in forecast data.
 ![alt text](/SAC/Planning/images/DP1.png)
 
 2. Add the planning model into Story/Canvas and copy the 2025Q1 data from the **Forecast** version to **Private Forecast** version
@@ -53,7 +53,7 @@
 5. Two ways to reverse the changes - **Undo** butoon or back to the step in the version history
 ![alt text](/SAC/Planning/images/DP6_Rev.png)
 
-6. In the story **View** mode, choose **Publish**, the planning data made by the user in the **Private** forecast version will be copied to the **public** forecast version.
+6. After the planning is completed, in the story **View** mode, choose **Publish**, the planning data made by the user in the **Private** forecast version will be copied to the **Public** forecast version.
  
 # 3. Planning Functions
 
