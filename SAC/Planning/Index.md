@@ -57,7 +57,7 @@
  
 # 3. Planning Functions
 
-## 3.1. Simple
+## 3.1. Manual Input
 - Distribute value
 - Allocation
 - Grid Pages (Deprecated)
