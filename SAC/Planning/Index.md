@@ -7,7 +7,7 @@
 1. Create an empty model with three types of dimensions
 
 - Account
-- Organization - Used for currency
+- Organization - used for currency
 - Generic
 - Version - created automatically by default
 
