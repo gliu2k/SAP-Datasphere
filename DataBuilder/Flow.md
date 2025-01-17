@@ -100,6 +100,7 @@ Save and Deploy the Replication Flow
 > [!Note] 
 > I got an error in deploying the Replication Flow due to the different types defined for the same field included in the source and target systems. So, I made the change in the target table as we used to do BW development. In BW implmentation, we usually copy the BI Content and make the enhancement to the copied Z-object.
 >
+> It can define and load multiple datasources at the same time (if supported by the hardware resources and network)
 
 # 2. Data Flow 
 
