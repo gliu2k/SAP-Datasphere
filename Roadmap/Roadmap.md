@@ -240,7 +240,7 @@ This is SAP Business Content in Datasphere, which is similar to SAP BW Content i
 They can be imported into the space.
 ![alt text](/Roadmap/images/BC2.png?raw=true)
 
-These are the parts of SAP Business Content imported into the space of my trial Datasphere environemnt. The data in the local tables are loaded from the CDSViews in the on-premise S/4HANA system.
+These are the Sales SAP Business Contents imported into the space of my trial Datasphere environemnt. The data in the local tables are loaded from the CDSViews in the on-premise S/4HANA system.
 ![alt text](/Roadmap/images/BC3.png?raw=true)
 
 - Transaction Data:
