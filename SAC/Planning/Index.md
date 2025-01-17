@@ -30,7 +30,8 @@
 
 ![alt text](/SAC/Planning/images/DP2.png)
 
-- Use the **distribut value** or **Allocation** to fasten the process.
+> [!Tips]
+> Use the **distribut value** or **Allocation** (Tools...) to fasten the process.
 
 # 3. Planning Flows
 We can use **Data Action(Steps)** to create planning flow to achieve
