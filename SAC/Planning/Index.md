@@ -93,7 +93,7 @@ They are:
 ![alt text](/SAC/Planning/images/MA1.png)
 
 > [!Note]
-> Different from **Data Actions**, the data action steps defined here are executed indepently(not one fails all rollback).
+> Different from **Data Actions**, the data action steps defined here are executed indepentently(not ONE step fails ALL get rollback).
 >
 > The jobs for data import are STEP2 and STEP3 in **Model** section above. 
 
