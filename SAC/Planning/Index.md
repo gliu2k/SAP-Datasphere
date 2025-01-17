@@ -42,6 +42,14 @@ I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q
 > [!Tip]
 > Use the **Distribute value** or **Allocation** (Menu Tools...) to fasten the process.
 
+4. Use **Distribute value** to distribue 2025Q1 data to P01, P02, P03 evenly.
+![alt text](/SAC/Planning/images/DP5_Dist.png)
+
+5. Two ways to reverse the changes - **Undo** butoon or back to the step in the version history
+![alt text](/SAC/Planning/images/DP6_Rev.png)
+
+6. In the story **View** mode, choose **Publish**, the planning data made by the user in the **Private** forecast version will be copied to the **puliic** forecast version.
+ 
 # 3. Planning Functions
 To be added...
 ## 3.1. 
