@@ -36,7 +36,7 @@ I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q
 2. Add the planning model into Story/Canvas
 ![alt text](/SAC/Planning/images/DP2.png)
 
-3. Copy the **Forecast** version data into **Private Forecast** version
+3. Copy the 2025Q1 data from the **Forecast** version data to **Private Forecast** version
 ![alt text](/SAC/Planning/images/DP3.png)
 
 4. Perform planning manually in the cell
@@ -46,7 +46,7 @@ I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q
 > Use the **Distribut value** or **Allocation** (Menu Tools...) to fasten the process.
 
 # 3. Planning Functions
-
+To be added...
 ## 3.1. 
 - Distribut value
 - Allocation
@@ -65,7 +65,7 @@ This is the tool to do planning simualation during the planning.
 
 # 5. Authoriztion
 
-This is very critical duirng planning
+This is very critical duirng planning.
 
 Locks:
 
