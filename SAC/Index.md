@@ -18,7 +18,7 @@ You can get 30days free trial version of SAP Datasphere and SAC from [here](http
 - [Modeling](/SAC/Modeling/Index.md)
 
 ## 3. Data Analyzer
-- [Report](/SAC/Reporting/DA_Index.md)
+- [Reporting](/SAC/Reporting/DA_Index.md)
 
 ## 4. Stories
 - [Dashboard](/SAC/Reporting/DB_Index.md)
