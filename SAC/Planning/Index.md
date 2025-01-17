@@ -50,7 +50,7 @@
 5. Two ways to reverse the changes - **Undo** butoon or back to the step in the version history
 ![alt text](/SAC/Planning/images/DP6_Rev.png)
 
-6. In the story **View** mode, choose **Publish**, the planning data made by the user in the **Private** forecast version will be copied to the **puliic** forecast version.
+6. In the story **View** mode, choose **Publish**, the planning data made by the user in the **Private** forecast version will be copied to the **public** forecast version.
  
 # 3. Planning Functions
 
@@ -75,7 +75,25 @@ You can define the actions(steps) and run them in sequence in the Canvas(Stories
 - Advanced Formulas
 
 ## 3.3. Multi Actions
-To be added...
+
+They are:
+- Data Action
+- Predictive
+- Version Management
+- Data Locking
+- Data Import
+- API
+
+![alt text](/SAC/Planning/images/VDT.png)
+
+The data action steps includes
+
+> [!Note]
+> Different from **Data Actions**, the data action steps defined here are executed indepently(not one fails all rollback).
+>
+> The jobs for data import are STEP2 and STEP3 in **Model** section above. 
+
+See details in this [blog](https://assets.sapanalytics.cloud/production/help/help-release/en/a8435da6970041d2beb3299cdcff7026.html#loioa8435da6970041d2beb3299cdcff7026)
 
 ## 3.4. Value Drive Tree
 This tool can be used to do simualation during the planning.
