@@ -57,11 +57,11 @@ To be added...
 - Allocation
 - Others
   
-# 3.3. Value Drive Tree
+## 3.3. Value Drive Tree
 This is the tool to do planning simualation during the planning.
 
-# 3.4. Publish
-# 3.5. Version Control
+## 3.4. Publish
+## 3.5. Version Control
 
 # 5. Authoriztion
 
