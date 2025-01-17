@@ -23,9 +23,11 @@
 
 5. Set up the planning model
 
-6. Check the loaded data in **Data Analyzer** (I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 respectively because they are missing in the orignal dataset.)
+6. Check the loaded data in **Data Analyzer**
 
 ![alt text](/SAC/Planning/images/PM3.png)
+
+I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 respectively because they are missing in the orignal dataset(flat files).
 
 # 2. Planning 
 1. Create **Data Actions** to copy the **2024Q4** Forecast version data to to **2025Q1**
