@@ -55,7 +55,7 @@ I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q
 ## 3.1. Simple
 - Distribute value
 - Allocation
-- Grid Pages (depreicate)
+- Grid Pages (Deprecated)
 
 ## 3.2. Data Actions
 
