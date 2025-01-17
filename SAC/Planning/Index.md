@@ -4,7 +4,7 @@
 
 ![alt text](/SAC/Planning/images/PM1.png)
 
-1. Create an empty model with three types of dimensions
+1. Create an empty model with four types of dimensions
 
 - Account
 - Organization - used for currency
@@ -27,7 +27,9 @@
 
 ![alt text](/SAC/Planning/images/PM3.png)
 
-I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 respectively because they are missing in the original dataset(flat files).
+> [!Note]
+> There are no actual(version) data of 2023Q3 and 2023Q4 in the original dataset(flat files).
+> Therefore, I used the **Copy - Data Action** to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 respectively. You can see that they are identical.
 
 # 2. Planning 
 1. Create **Data Actions** to copy the **2024Q4** Forecast version data to to **2025Q1** and set up the locks which are covered in the below **Data Lock** section.
@@ -65,7 +67,7 @@ You can define the actions(steps) and run them in sequence in the Canvas(Stories
 
 ![alt text](/SAC/Planning/images/DA2.png)
 
-**Step Types:**
+**Action Step Types:**
 - Copy
 - Allocation
 - Embeded Data
@@ -80,17 +82,17 @@ This tool can be used to do simualation during the planning.
 ![alt text](/SAC/Planning/images/VDT.png)
 
 # 4. Data Locks
-This is a very critical step during planning. 
+This is a very **critical** step during planning. 
 
 Before starting the planning procedure, we must assign the ownership to the data(cells) and lock all the cells.
 ![alt text](/SAC/Planning/images/LOCK1.png)
 
-Only the owners, like the CIOs or IT managers in this case, can unlock the data and start the forecasting on the IT expense.
+Only the owners, like the CIOs or IT managers in this case, can unlock the data/cells and do the data forecasting on the IT expense.
 ![alt text](/SAC/Planning/images/LOCK2.png)
 
 # 5. Calendar
 All the **Jobs** for the data(either master or transaction) loading and **Data Actions** can be grouped and scheduled in **Calendar**.
 
-They can be scheduled or triggered on event.
+They can be scheduled or triggered on events.
 
 ![alt text](/SAC/Planning/images/C1.png)
