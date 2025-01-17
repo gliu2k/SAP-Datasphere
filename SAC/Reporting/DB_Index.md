@@ -1,17 +1,23 @@
 # Story 
 
-It is similar to PowerBI, including dashboard and data modeling 
+It is similar to PowerBI, having dashboard and data modeling features. 
 
-# 1.1 Layout 
+# 1. Layout 
 
-Cavos and sxx and grdid
+![alt text](/SAC/Reporting/images/S1.png)
 
+- Responsive: pages can be opened in all kinds of devices and can adjust by themselves
+- Canvas: allow the freedom creation of pages
+- Grid: only support tables, tabular grid like office, mainly used in planning workflows
 
-# 1.2 Functions 
+# 2. Functions 
 
-It has controls, filters, format.
-"Start" and Tools...: conttain tools related to planning.
+![alt text](/SAC/Reporting/images/S2.png)
 
+Connect to **Datasphere** and consume the data in Analytic Modle 
 
+- Controls for chart, filter, format and etc.
+- **Starters** and **Tools...** conttain the tools to do planning.
 
-# 1.3 Blending Model
+# 3. Blending Model
+To be added...
