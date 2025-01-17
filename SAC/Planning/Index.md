@@ -85,8 +85,13 @@ This is a very critical step duirng the planning.
 Before starting the planning procedure, we must assign the ownership to the data(cells) and lock all the cells.
 ![alt text](/SAC/Planning/images/LOCK1.png)
 
+# 5. Data Lock
 Only the owners, like the CIOs or IT managers in this case, can unlock the data and start the forecasting on the IT expense.
 ![alt text](/SAC/Planning/images/LOCK2.png)
 
-# 5. Calendar
+# 6. Calendar
+All the **Jobs** for the data(either master or transaction) loading and **Data Actions** can be grouped and scheduled in **Calendar**.
 
+They can be scheduled or triggered on event.
+
+![alt text](/SAC/Planning/images/C1.png)
