@@ -59,6 +59,7 @@ I used the **COPY** action to copy the actual data of 2023Q3 and 2023Q4 to 2024Q
 
 ## 3.2. Data Actions
 
+This is the action I used to do the version copy.
 ![alt text](/SAC/Planning/images/DA1.png)
 You can define the actions(steps) and run them in sequence in the Canvas(Stories). If one step fails, the whole process will get reversed just as the transaction in database.
 
@@ -66,7 +67,7 @@ You can define the actions(steps) and run them in sequence in the Canvas(Stories
 
 **Step Types:**
 - Copy
-- Allocation (recommended)
+- Allocation
 - Embeded Data
 - Conversion
 - Advanced Formulas
