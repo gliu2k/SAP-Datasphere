@@ -32,7 +32,7 @@
 > Therefore, I used the **Copy - Data Action** to copy the actual data of 2023Q3 and 2023Q4 to 2024Q3 and 2024Q4 respectively. You can see that they are identical.
 
 # 2. Planning 
-1. Create **Data Actions** to copy the **2024Q4** Forecast version data to to **2025Q1** and set up the locks which are covered in the below **Data Lock** section.
+1. Create **Data Actions** to copy the **2024Q4** Forecast version data to to **2025Q1** and set up the locks which are covered in the below **Data Locking** section.
 ![alt text](/SAC/Planning/images/DP1.png)
 
 2. Add the planning model into Story/Canvas and copy the 2025Q1 data from the **Forecast** version to **Private Forecast** version
@@ -84,9 +84,7 @@ They are:
 - Data Import
 - API
 
-![alt text](/SAC/Planning/images/VDT.png)
-
-The data action steps includes
+![alt text](/SAC/Planning/images/MA1.png)
 
 > [!Note]
 > Different from **Data Actions**, the data action steps defined here are executed indepently(not one fails all rollback).
@@ -99,7 +97,7 @@ See details in this [blog](https://assets.sapanalytics.cloud/production/help/hel
 This tool can be used to do simualation during the planning.
 ![alt text](/SAC/Planning/images/VDT.png)
 
-# 4. Data Locks
+# 4. Data Locking
 This is a very **critical** step during planning. 
 
 Before starting the planning procedure, we must assign the ownership to the data(cells) and lock all the cells.
