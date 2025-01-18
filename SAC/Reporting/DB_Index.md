@@ -22,4 +22,8 @@ Connect to **Datasphere** and consume the data in Analytic Model
 # 3. Blending Model
 To be added...
 
-# 3. Blending Model
+# 4. Performance Optimization
+
+![alt text](/SAC/Reporting/images/PI.png)
+
+[Best Practice](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/fbe339efda1241b5a3f46cf17f54cdff.html?locale=en)
