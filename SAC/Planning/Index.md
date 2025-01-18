@@ -10,6 +10,7 @@
 - Organization - used for currency
 - Generic
 - Version - created automatically by default
+- Date - created automatically by default
 
 2. Add the master data into the dimension tables manually
 
