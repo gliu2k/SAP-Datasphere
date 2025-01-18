@@ -21,3 +21,5 @@ Connect to **Datasphere** and consume the data in Analytic Model
 
 # 3. Blending Model
 To be added...
+
+# 3. Blending Model
