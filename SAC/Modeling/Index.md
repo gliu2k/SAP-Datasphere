@@ -27,6 +27,8 @@ The dimension table is different from dimension(attribute) as in SAP BW. There a
 These types dimension tables are mainly used for **Planning**.
 - Account
 - Organizaion
+- Time (default)
+- Version (default)
 
 The **conversions** is for the currency conversion tables created manually or imported from BPC.
 
@@ -69,8 +71,8 @@ The structure of planning model is similar to the analytic model.
 Theare are special features. All details are covered in **Planning** section. 
 
 - Version(Category): budget/plan/forecast
-- Aduit Function
-- Authorization Control
+- Audit Function
+- Authorization Control to control data visibility
   
 # 4. Embedded Model
 It is part of story and can only be used with it.
