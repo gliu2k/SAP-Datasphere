@@ -17,7 +17,7 @@ It is similar to PowerBI, having dashboard and data modeling features.
 Connect to **Datasphere** and consume the data in Analytic Model
 
 - Controls for chart, filter, format and etc.
-- **Starters** and **Tools...** contain the tools to do planning.
+- **Starters** and **Tools...** contain the tools for planning.
 
 # 3. Blending Model
 To be added...
