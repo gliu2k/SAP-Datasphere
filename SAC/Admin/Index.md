@@ -14,7 +14,7 @@ If it is in the same tenatn with **Datasphere**, we can switch between **SAC** a
 
 ### 2.1.1. Live Connetion
 
-There is no data load into the SAC. The web browse will receive the metadata from the SAC and the data from the on-premeise system. Browsers follow a same-original policy. It forbids web-plages from sending requests to other websites or servers that are not trusted. Thus we need set up **CORS** or **Tunner** to make the trust relationship.
+There is no data loaded into the SAC. The web browse will receive the metadata from the SAC and the data from the on-premeise system. Browsers follow a same-original policy. It forbids web-plages from sending requests to other websites or servers that are not trusted. Thus we need set up **CORS** or **Tunner** to make the trust relationship.
 
 See the details in [SAP help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/c1cbf644b0a1434fbb4ea072a0562286.html)
 
@@ -38,3 +38,5 @@ To be added...
 
 # 4. Transport
 In theory, we need to set up three DEV, QAS and PROD environments.
+
+To be added...
