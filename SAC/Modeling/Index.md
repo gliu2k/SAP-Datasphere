@@ -27,7 +27,7 @@ The dimension table is different from dimension(attribute) as in SAP BW. There a
 These types dimension tables are mainly used for **Planning**.
 - Account
 - Organizaion
-- Time (default)
+- Date (default)
 - Version (default)
 
 The **conversions** is for the currency conversion tables created manually or imported from BPC.
