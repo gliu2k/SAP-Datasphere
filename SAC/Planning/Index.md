@@ -4,7 +4,7 @@
 
 ![alt text](/SAC/Planning/images/PM1.png)
 
-1. Create an empty model with four types of dimensions
+1. Create an empty model with five types of dimensions
 
 - Account
 - Organization - used for currency
