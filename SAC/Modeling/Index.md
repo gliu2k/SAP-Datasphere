@@ -47,7 +47,7 @@ The **conversions** is for the currency conversion tables created manually or im
 4. We can also convert the field(dimension) to the property of other dimension like text or hierarchy.
 ![alt text](/SAC/Modeling/images/NM3.png)
 
-5. We can set up the **Data Access Control**.
+5. We can set up the **Data Access Control**. This is a good [blog](https://community.sap.com/t5/technology-blogs-by-members/managing-data-access-control-in-sap-analytics-cloud/ba-p/13578327).
 ![alt text](/SAC/Modeling/images/DAC.png)
 
 6. Everything is done. We can now explore the data of the model in **Data Analyzer**.
