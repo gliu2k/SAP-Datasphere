@@ -14,7 +14,11 @@
 
 2. Add the master data into the dimension tables manually
 
-3. Perform dimensions mapping and load the actual and planning transaction data (optional) from the flat files into model
+> [!Note]
+> It is possible to use formula to create dimension on the fly, like the KPIs below. They cannot be set to aggregation(SUM) type. It can be applied in "Value Drive Tree". 
+![alt text](/SAC/Planning/images/FM1.png)
+
+4. Perform dimensions mapping and load the actual and planning transaction data (optional) from the flat files into model
 ![alt text](/SAC/Planning/images/PM2.png)
 
 > [!Important]
@@ -80,6 +84,8 @@ You can define the actions(steps) and run them in sequence in the Canvas(Stories
 
 **Advanced Formulas is very powerful**.
 ![alt text](/SAC/Planning/images/DA3.png) 
+
+This is a good [blog[(https://community.sap.com/t5/technology-blogs-by-sap/sap-analytics-cloud-for-planning-optimizing-calculations/ba-p/13459349).
 
 ## 3.3. Multi Actions
 
