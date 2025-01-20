@@ -28,8 +28,8 @@
 
 4. Create **Validation Rule**(optional)
    
-- It is used to ensure that valid combinations of the entities during input and disaggregation. See the details in this [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-analytics-cloud-planning-validation-rules/ba-p/13475166)
- and [blog](https://community.sap.com/t5/technology-blogs-by-sap/dimension-combination-rule-in-sac/ba-p/13456596)
+- It is used to ensure that valid combinations of the entities during input and disaggregation. See the details in these two [blog1](https://community.sap.com/t5/technology-blogs-by-members/sap-analytics-cloud-planning-validation-rules/ba-p/13475166)
+ and [blog2](https://community.sap.com/t5/technology-blogs-by-sap/dimension-combination-rule-in-sac/ba-p/13456596)
 5. Set up the planning model
 
 6. Check the loaded forecast and actual versions data in **Data Analyzer**
