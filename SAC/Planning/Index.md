@@ -85,7 +85,7 @@ You can define the actions(steps) and run them in sequence in the Canvas(Stories
 **Advanced Formulas is very powerful**.
 ![alt text](/SAC/Planning/images/DA3.png) 
 
-This is a good [blog[(https://community.sap.com/t5/technology-blogs-by-sap/sap-analytics-cloud-for-planning-optimizing-calculations/ba-p/13459349).
+This is a good [blog](https://community.sap.com/t5/technology-blogs-by-sap/sap-analytics-cloud-for-planning-optimizing-calculations/ba-p/13459349).
 
 ## 3.3. Multi Actions
 
