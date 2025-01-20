@@ -77,5 +77,11 @@ Theare are special features. All details are covered in **Planning** section.
 # 4. Embedded Model
 It is part of story and can only be used with it.
 
+# 5. Currency Conversion
+1. Create the currency conversion table (source/target/rate/time)
+2. Turn on the currency conversion setting in hte model
+3. Create the currency variable in the model or calculation measure in the story
+
+See the details [here](https://learning.sap.com/learning-journeys/leveraging-sap-analytics-cloud-functionality-for-enterprise-planning/configuring-currency-translation_ce44b7c8-5020-44c0-94b2-b54b68ec5d92)
 
 
