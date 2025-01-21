@@ -39,7 +39,7 @@ This is SAP [best practice](https://help.sap.com/docs/SUPPORT_CONTENT/boc/335460
 # 4. Transport
 In theory, we need to set up three DEV, QAS and PROD environments.
 
-To be added...
+Due to the trial system, I don't the access to the CI/DI function.
 
 # 5. Cockpit
 The statistics are very important for the dialy monitoring and maintenance of the system. But, as I am on the trial version, I am not able to dive into this function. See details [here]([# 4. Transport](https://community.sap.com/t5/technology-blogs-by-sap/sap-analytics-cloud-administration-cockpit/ba-p/13515678)
