@@ -40,3 +40,23 @@ To be added...
 In theory, we need to set up three DEV, QAS and PROD environments.
 
 To be added...
+
+# 5. Cockpit
+The statistics are very important for the dialy monitoring and maintenance of the system. But, as I am on the trial version, I am not able to dive into this function. See details [here]([# 4. Transport](https://community.sap.com/t5/technology-blogs-by-sap/sap-analytics-cloud-administration-cockpit/ba-p/13515678)
+
+# 6. Tools
+The network connections are very critical as all the systems are now in Cloud environment. There are several measurement tools avaialble in SAC to run the test.
+
+![alt text](/SAC/Admin/images/TOOLS1.png)
+
+> [!NOTE]
+> Your browser and hardware performance will be scored based on multiple measurements.
+> 
+> Score >= 75: Excellent
+> 
+> Score >= 50 and < 75: Good
+> 
+> Score < 50: Poor
+
+
+
