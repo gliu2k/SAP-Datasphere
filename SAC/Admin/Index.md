@@ -41,6 +41,11 @@ We can create the LiveConnection to the Datasphere system. In addtion, the LiveC
    
 This is SAP [best practice](https://help.sap.com/docs/SUPPORT_CONTENT/boc/3354605643.html).
 
+> [!NOTE]
+> SAP BOBJ can seamless integrate the security of S/4HANA or BW. It can import the role defined in ABAP system.
+>
+> However, I cannot find how to achieve that in Datasphere and SAC. 
+
 
 # 4. Transport
 In theory, we need to set up three DEV, QAS and PROD environments.
