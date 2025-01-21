@@ -32,6 +32,8 @@ You can get 30days free trial version of SAP Datasphere and SAC from [here](http
 We need to download and install the Add-in. It will show up in the office toolbar like **Analysis for Office**.
 I am not able to connect to SAC trial version. 
   
-## 7. Others
+## 7. Predictive Scenarios
+It took too much time to train on a small dataset in a time series forecasting model. I am not sure if it is due to the trail version.
+
 To be added...
 
