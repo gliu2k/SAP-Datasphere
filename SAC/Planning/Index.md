@@ -119,7 +119,7 @@ Before starting the planning procedure, we must assign the ownership to the data
 Only the owners, like the CIOs or IT managers in this case, can unlock the data/cells and do the data forecasting on the IT expense accounts.
 ![alt text](/SAC/Planning/images/LOCK2.png)
 
-# 5. Calendar
+# 5. Calendar - Planning Workflow 
 All the **Jobs** for the data(either master or transaction) loading and **Data Actions** can be grouped and scheduled in **Calendar**.
 
 They can be scheduled or triggered on events.
