@@ -59,10 +59,10 @@ What is SDI? Simply put, it is an ETL tool to access or load the data from exter
 
 ## 7. Manage User and Role
 
-## 7.1 User Management
+### 7.1 User Management
 We can import the users from *CSV* file in the GoLive. And, we can synchronize the users and achieve the SSO via SAML. See this [Blog](https://community.sap.com/t5/technology-blogs-by-members/integrate-sap-data-warehouse-cloud-with-azure-active-directory/ba-p/13480455) for daily maintenance.
 
-## 7.2 Role Management
+### 7.2 Role Management
 
 This [link](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-architecture-and-security-concept/ba-p/13702030) is about the architecture and security concept in Datashphere.
 
@@ -73,5 +73,6 @@ This is the [administration guide](https://help.sap.com/docs/SAP_DATASPHERE/9f80
 
 **SAP Best Practice - [link](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**
 
-
+## 8. Tools
+The network connections are very critical as all the systems are now in Cloud environment. There are several measurement tools avaialble in SAC to run the test.
 
