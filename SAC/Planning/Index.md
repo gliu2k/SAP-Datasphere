@@ -128,4 +128,4 @@ They can be scheduled or triggered on events.
 
 # 6. Integration
 It is possbile to create data model in SAC and save it in Dataphere.
-[Here](https://learning.sap.com/learning-journeys/leveraging-sap-analytics-cloud-functionality-for-enterprise-planning/using-seamless-planning-with-sap-)datasphere
+[Here](https://learning.sap.com/learning-journeys/leveraging-sap-analytics-cloud-functionality-for-enterprise-planning/using-seamless-planning-with-sap-)
