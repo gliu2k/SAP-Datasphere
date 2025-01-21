@@ -34,7 +34,12 @@ OData is used to import the data from **Datasphere** into SAC as well. See this 
 We can create the LiveConnection to the Datasphere system. In addtion, the LiveConnection is also used by the SAP Analytics Cloud Add-In.
 
 # 3. Users/Permissions
+
+-  Do NOT use the default roles
+-  Use Teams to group your Roles
+....
 This is SAP [best practice](https://help.sap.com/docs/SUPPORT_CONTENT/boc/3354605643.html).
+
 
 # 4. Transport
 In theory, we need to set up three DEV, QAS and PROD environments.
