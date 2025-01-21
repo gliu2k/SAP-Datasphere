@@ -36,7 +36,7 @@ We can create the LiveConnection to the Datasphere system. In addtion, the LiveC
 # 3. Users/Permissions
 
 -  Do NOT use the default roles
--  Use Teams to group your Roles
+-  Use Teams to group your Roles (Team in SAC = Group in BOBJ = Composite Role in S/4)
 -  ....
    
 This is SAP [best practice](https://help.sap.com/docs/SUPPORT_CONTENT/boc/3354605643.html).
