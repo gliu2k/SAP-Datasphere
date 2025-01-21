@@ -76,3 +76,10 @@ This is the [administration guide](https://help.sap.com/docs/SAP_DATASPHERE/9f80
 ## 8. Tools
 The network connections are very critical as all the systems are now in Cloud environment. There are several measurement tools avaialble in SAC to run the test.
 
+## 9. Cockpit
+There seems to be no cockpit to have the statistics of the usage like the access number or the response time on the objects. 
+
+Maybe we need to rely on the HANA views to get the information. See this [blog](https://community.sap.com/t5/technology-blogs-by-members/sap-datasphere-sap-hana-database-monitoring/ba-p/13696750).
+
+Otherwise, we may leverage on the SAC cockpit. See the admin section in SAC.
+
