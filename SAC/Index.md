@@ -39,6 +39,6 @@ I am not able to connect to SAC trial version.
 To be added...
 
 ## 8. Business Content
-It is not availbe in the trial version. 
+It is not available in the trial version. 
 
 Refer to this [article](https://pages.community.sap.com/topics/cloud-analytics/business-content).
