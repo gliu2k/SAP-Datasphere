@@ -33,7 +33,5 @@ We need to download and install the Add-in. It will show up in the office toolba
 I am not able to connect to SAC trial version. 
   
 ## 7. Predictive Scenarios
-It took too much time to train on a small dataset in a time series forecasting model. I am not sure if it is due to the trail version.
-
 To be added...
 
