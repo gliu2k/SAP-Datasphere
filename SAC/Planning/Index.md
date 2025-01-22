@@ -51,6 +51,8 @@
 
 > [!Tip]
 > Use the **Distribute value** or **Allocation** (Menu Tools...) to fasten the process.
+>
+> If the planning model is using LiveConnection, Data Entry - fluid(not good for perf)/single/mass(commit to db 1 time) may affect the performance.
 
 4. Use **Distribute value** to distribue 2025Q1 data to P01, P02, P03 evenly.
 ![alt text](/SAC/Planning/images/DP5_Dist.png)
