@@ -17,7 +17,9 @@ it is a common practice to create separate tenants for development (DEV), qualit
 > 
 > Even for IT, SAP recommends creating multiple spaces for dedicated functions. We may need to create a dedicated space for administration and a dedicated space to manage the virtual tables.
 >
-> Users can share the data(objects) to other **Spaces**.
+> Users can share the data(objects) with other **Spaces**.
+
+- Good [blog](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-space-data-integration-and-data-modeling-best-practices/ba-p/13651889) regarding how to create spaces.
 
 
 ## 3. SQL EndPoint (SQL Console or Database Explorer)
