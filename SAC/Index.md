@@ -13,6 +13,9 @@ You can get 30days free trial version of SAP Datasphere and SAC from [here](http
 
 **All the contents and scenarios in this project are created in my trial version Datasphere and SAC environments.**
 
+> [!IMPORTANT]
+> First and foremost, I highly recommend this SAP [Site](https://pages.community.sap.com/topics/cloud-analytics/best-practices-troubleshooting) which contains the **best practices** and **troubleshooting** regarding SAC.
+
 ## 1. Administration
 - [Admin](/SAC/Admin/Index.md)
  
