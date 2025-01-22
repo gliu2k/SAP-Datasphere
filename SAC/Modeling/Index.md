@@ -47,8 +47,7 @@ The **conversions** is for the currency conversion tables created manually or im
 4. We can also convert the field(dimension) to the property of other dimension like text or hierarchy.
 ![alt text](/SAC/Modeling/images/NM3.png)
 
-5. We can set up the **Data Access Control**. This is a good [blog](https://community.sap.com/t5/technology-blogs-by-members/managing-data-access-control-in-sap-analytics-cloud/ba-p/13578327).
-![alt text](/SAC/Modeling/images/DAC.png)
+5. We can set up the **Data Access Control** (See section #6)
 
 6. Everything is done. We can now explore the data of the model in **Data Analyzer**.
 ![alt text](/SAC/Modeling/images/DE.png)
@@ -83,5 +82,13 @@ It is part of story and can only be used with it.
 3. Create the currency variable in the model or calculation measure in the story
 
 See the details [here](https://learning.sap.com/learning-journeys/leveraging-sap-analytics-cloud-functionality-for-enterprise-planning/configuring-currency-translation_ce44b7c8-5020-44c0-94b2-b54b68ec5d92)
+
+# 6. Data Access Control
+Set the data access control(row level) on the value(member) in dimension table
+
+![alt text](/SAC/Modeling/images/DAC2.png)
+
+This is a good [blog](https://community.sap.com/t5/technology-blogs-by-members/managing-data-access-control-in-sap-analytics-cloud/ba-p/13578327).
+
 
 
