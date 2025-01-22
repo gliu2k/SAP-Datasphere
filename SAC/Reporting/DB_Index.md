@@ -18,7 +18,7 @@ Connect to **Datasphere** and consume the data in Analytic Model
 
 - Controls for chart, filter, format and etc.
 - **Starters** and **Tools...** contain the tools for planning.
-- Schedule running(sharing) a story - See SAP [help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/86c2d7d88b134e45907453612c4f559a.html)
+- Schedule a publishing/running/sharing a story - See SAP [help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/86c2d7d88b134e45907453612c4f559a.html)
 
 # 3. Blending Model
 To be added...
