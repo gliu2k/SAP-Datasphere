@@ -70,10 +70,15 @@ This [link](https://community.sap.com/t5/technology-blogs-by-members/sap-datasph
 
 This is the [administration guide](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/2d8b7d04dcae402f911d119437ce0a74.html).
 
+
 **E.g.** You can find the role that contains the **update** privilege of the local tables. But it is an app feature. It does not say how to control the access to a specific object. 
 ![alt text](/Admin/images/Roles.png)
 
 **SAP Best Practice - [link](https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-security-amp-data-access-controls-overview/ba-p/13805353)**
+
+### 7.3 Automation - SCIM API 
+
+Leverage the **SCIM API** to achieve the automation. See SAP help [blog](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/1ca8c4a9467f43df9ae6d4ed3734f05a.html) or refer to the Admin section in SAC.
 
 ## 8. Tools
 The network connections are very critical as all the systems are now in Cloud environment. There are several measurement tools avaialble in SAC to run the test.
