@@ -53,7 +53,7 @@ In theory, we need to set up three DEV, QAS and PROD environments.
 Due to the trial system, I don't the access to the CI/DI function.
 
 # 5. Cockpit
-The statistics are very important for the dialy monitoring and maintenance of the system. But, as I am on the trial version, I am not able to dive into this function. See details [here]([# 4. Transport](https://community.sap.com/t5/technology-blogs-by-sap/sap-analytics-cloud-administration-cockpit/ba-p/13515678)
+The statistics are very important for the dialy monitoring and maintenance of the system. But, as I am on the trial version, I am not able to dive into this function. See details [here](https://community.sap.com/t5/technology-blogs-by-sap/sap-analytics-cloud-administration-cockpit/ba-p/13515678)
 
 # 6. Tools
 The network connections are very critical as all the systems are now in Cloud environment. There are several measurement tools avaialble in SAC to run the test.
